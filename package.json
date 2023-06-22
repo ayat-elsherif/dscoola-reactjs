@@ -37,7 +37,6 @@
     "lodash": "^4.17.21",
     "lodash.sum": "^4.0.2",
     "mdb-react-ui-kit": "^2.3.0",
-    "node-sass": "^7.0.3",
     "otp-input-react": "^0.3.0",
     "query-string": "^8.1.0",
     "react": "^18.2.0",
@@ -105,7 +104,7 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.62.0",
+    "sass": "^1.63.6",
     "sass-loader": "^13.2.0",
     "videojs-contrib-quality-levels": "^2.1.0"
   }
