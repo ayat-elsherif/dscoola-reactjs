@@ -1,7 +1,7 @@
-import React from "react";
-import InstructorCard from "../../../helpers/cards/instructorCard/InstructorCard";
-import MultipleSlider from "../../../helpers/carousels/multipleSlider/MultipleSlider";
-import { SwiperSlide } from "swiper/react";
+import React from 'react';
+import InstructorCard from '../../../helpers/cards/instructorCard/InstructorCard';
+import MultipleSlider from '../../../helpers/carousels/multipleSlider/MultipleSlider';
+import { SwiperSlide } from 'swiper/react';
 
 /******fake array to loop through course boxes****** */
 const CourseArr = () => {
@@ -16,7 +16,7 @@ const CourseArr = () => {
             <InstructorCard sliderToggle={true} />
           </div>
         </li>
-      </SwiperSlide>
+      </SwiperSlide>,
     );
   }
   return myArr;

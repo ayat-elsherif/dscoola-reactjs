@@ -2,13 +2,6 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import './footer.scss';
 import { FacebookIcon } from '../../../assets/svg';
-import {
-  MDBDropdown,
-  MDBDropdownMenu,
-  MDBDropdownToggle,
-  MDBDropdownItem,
-  MDBDropdownLink,
-} from 'mdb-react-ui-kit';
 
 import { Link } from 'react-router-dom';
 import { footerLogo, globeIcon } from '../../../SVGs';
@@ -216,16 +209,6 @@ function Footer() {
         <div className="container">
           <div className="mb-sm-0 mb-3">
             Scoola © powered by Kimit innovations 2022.
-          </div>
-          <div>
-            <MDBDropdown className="langDropdown">
-              <MDBDropdownToggle>{globeIcon} English</MDBDropdownToggle>
-              <MDBDropdownMenu className="lang-list">
-                <MDBDropdownItem>
-                  <MDBDropdownLink href="#">Arabic</MDBDropdownLink>
-                </MDBDropdownItem>
-              </MDBDropdownMenu>
-            </MDBDropdown>
           </div>
         </div>
       </div>
