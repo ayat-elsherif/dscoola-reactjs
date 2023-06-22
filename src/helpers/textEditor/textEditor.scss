@@ -1,0 +1,123 @@
+@import "../../sass/var";
+@import "../../sass/_mixins.scss";
+
+.rdw-editor-wrapper {
+  border: 1px solid $hover-color;
+  border-radius: 5px 5px 0 0;
+  font-size: 14px;
+
+  .rdw-editor-toolbar {
+    background-color: $grey-color;
+
+    .bold-option-classname {
+      img {
+        width: 10px;
+      }
+    }
+
+    .italic-option-classname {
+      img {
+        width: 15px;
+      }
+    }
+
+    .color-option-custom,
+    .list-option-classname,
+    .linked-option-classname {
+      img {
+        width: 12px;
+      }
+    }
+
+    .rdw-block-dropdown {
+      border-right: 1px solid $border-color;
+    }
+
+    .rdw-link-modal {
+      height: 305px;
+    }
+
+    .rdw-dropdown-selectedtext,
+    .rdw-option-wrapper,
+    .rdw-dropdown-wrapper {
+      background-color: $grey-color;
+      color: $desc-color;
+      text-decoration: none;
+    }
+  }
+
+  .rdw-editor-main {
+    padding: 0 10px;
+
+    .DraftEditor-root {
+      height: 100px;
+    }
+  }
+
+  .rdw-editor-toolbar {
+    border-radius: 5px 5px 0 0;
+    padding: 2px 5px;
+  }
+
+  .rdw-block-wrapper,
+  .rdw-inline-wrapper,
+  .rdw-link-wrapper,
+  .rdw-colorpicker-wrapper {
+    margin-bottom: 0 !important;
+  }
+
+  .rdw-dropdown-carettoopen {
+    top: 40%;
+  }
+}
+
+.quill {
+  .ql-toolbar.ql-snow {
+    background-color: $grey-color;
+    border-color: $hover-color;
+    border-radius: 5px 5px 0 0;
+    .ql-formats {
+      margin-right: 0;
+    }
+    .ql-picker.ql-header {
+      width: 90px;
+    }
+    button {
+      width: 26px;
+    }
+  }
+  .ql-container.ql-snow {
+    border-color: $hover-color;
+    min-height: 80px;
+    .ql-editor ol,
+    .ql-editor ul {
+      padding-left: 1em;
+    }
+  }
+  svg {
+    width: 15px;
+    height: 15px;
+    path,
+    line,
+    rect,
+    circle,
+    polyline {
+      stroke: lighten($color: $desc-color, $amount: 10%) !important;
+    }
+    .ql-fill,
+    .ql-stroke.ql-fill {
+      fill: lighten($color: $desc-color, $amount: 10%) !important;
+    }
+  }
+  .ql-active {
+    svg {
+      path,
+      line,
+      rect,
+      circle,
+      polyline {
+        stroke: $title-color !important;
+      }
+    }
+  }
+}

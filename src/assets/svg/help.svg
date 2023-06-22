@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="help">
+      <path id="Path_12968" data-name="Path 12968" d="M0,0H14V14H0Z" transform="translate(-788 1323)" fill="#6a6f73" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_711" data-name="Mask Group 711" transform="translate(788 -1323)" clip-path="url(#help)">
+    <g id="svgexport-6_-_2022-05-11T141813.343" data-name="svgexport-6 - 2022-05-11T141813.343" transform="translate(-788 1323)">
+      <g id="Group_14804" data-name="Group 14804">
+        <g id="Group_14803" data-name="Group 14803">
+          <path id="Path_12969" data-name="Path 12969" d="M7,0a7,7,0,1,0,7,7A7,7,0,0,0,7,0ZM7,13.023A6.023,6.023,0,1,1,13.023,7,6.03,6.03,0,0,1,7,13.023Z" fill="#6a6f73"/>
+        </g>
+      </g>
+      <g id="Group_14806" data-name="Group 14806">
+        <g id="Group_14805" data-name="Group 14805">
+          <path id="Path_12970" data-name="Path 12970" d="M6.793,8.857a.71.71,0,0,0,0,1.419.709.709,0,0,0,0-1.419Z" fill="#6a6f73"/>
+        </g>
+      </g>
+      <g id="Group_14808" data-name="Group 14808">
+        <g id="Group_14807" data-name="Group 14807">
+          <path id="Path_12971" data-name="Path 12971" d="M6.913,3.485C5.669,3.485,5.1,4.223,5.1,4.72a.528.528,0,0,0,.553.525c.5,0,.295-.71,1.235-.71.461,0,.829.2.829.627,0,.5-.516.783-.82,1.041a1.687,1.687,0,0,0-.617,1.4c0,.479.129.617.507.617.451,0,.544-.2.544-.378a1.157,1.157,0,0,1,.516-1.152A2.359,2.359,0,0,0,8.875,5.006C8.875,4.14,8.092,3.485,6.913,3.485Z" fill="#6a6f73"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

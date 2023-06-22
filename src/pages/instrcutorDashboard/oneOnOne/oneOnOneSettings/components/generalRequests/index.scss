@@ -1,0 +1,132 @@
+.general-requests {
+  background: #ffffff;
+  border-radius: 2px;
+  padding: 28px;
+}
+
+.days-container {
+  display: flex;
+  margin: 20px 0;
+  max-width: 100%;
+  padding-bottom: 8px;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #7e59d1;
+    border-radius: 4px;
+  }
+
+  .day-card {
+    cursor: pointer;
+    min-width: 130px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #dbdfea;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+
+    p {
+      color: #707070;
+      font-size: 14px;
+    }
+
+    &:last-child {
+      margin-left: 0;
+    }
+
+    &.active {
+      background-color: #7e59d1;
+      border-color: #7e59d1;
+
+      p {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.time-slots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid #dbdfea;
+
+  button {
+    background-color: transparent;
+    span {
+      &:first-of-type {
+        width: 15px;
+        height: 15px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid;
+        border-radius: 50%;
+        margin-right: 6px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.time-slots-wrapper {
+  display: flex;
+  max-width: 100%;
+  overflow-x: auto;
+  padding-bottom: 8px;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #7e59d1;
+    border-radius: 4px;
+  }
+
+  .time-slots-card {
+    margin: 16px 0;
+    margin-left: 12px;
+    height: 40px;
+    min-width: 150px;
+    background: #ffffff;
+    border: 1px solid #382464;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+    p {
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #382464;
+      text-transform: uppercase;
+      opacity: 1;
+      white-space: nowrap;
+    }
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}

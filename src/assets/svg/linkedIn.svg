@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="linkedIn">
+      <rect id="Rectangle_29367" data-name="Rectangle 29367" width="22" height="22" transform="translate(661 1080)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_704" data-name="Mask Group 704" transform="translate(-661 -1080)" clip-path="url(#linkedIn)">
+    <g id="svgexport-6_-_2022-05-11T145903.307" data-name="svgexport-6 - 2022-05-11T145903.307" transform="translate(661 1080)">
+      <g id="Layer_2" data-name="Layer 2">
+        <g id="linkedin">
+          <rect id="background" width="22" height="22" rx="3" fill="#afaeb7"/>
+          <g id="icon">
+            <path id="Path_12111" data-name="Path 12111" d="M7.925,6A1.875,1.875,0,1,1,6.05,4.125,1.875,1.875,0,0,1,7.925,6Z" fill="#fff"/>
+            <path id="Path_12112" data-name="Path 12112" d="M7.5,9.125v8.284a.464.464,0,0,1-.464.466H5.06a.464.464,0,0,1-.465-.465V9.125A.465.465,0,0,1,5.06,8.66H7.036a.465.465,0,0,1,.464.465Z" fill="#fff"/>
+            <path id="Path_12113" data-name="Path 12113" d="M17.83,13.438v4.01a.426.426,0,0,1-.427.427H15.278a.426.426,0,0,1-.427-.427V13.561c0-.58.17-2.54-1.516-2.54-1.306,0-1.573,1.341-1.625,1.944v4.483a.428.428,0,0,1-.421.428H9.235a.426.426,0,0,1-.426-.427V9.089a.426.426,0,0,1,.426-.427h2.052a.427.427,0,0,1,.427.427v.723a2.91,2.91,0,0,1,2.738-1.289c3.4,0,3.377,3.172,3.377,4.915Z" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

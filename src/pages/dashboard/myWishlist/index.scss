@@ -1,0 +1,39 @@
+.my-wishlist {
+  .wish-list-wrapper {
+    > .ant-row {
+      > .ant-col {
+        > div {
+          min-height: fit-content;
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+  .page-header-right {
+    align-items: flex-start;
+  }
+  .page-header-left {
+    p {
+      margin: 0 0 30px;
+    }
+  }
+  .empty-list {
+    img {
+      width: 293px;
+      height: 313px;
+    }
+    p {
+      margin: 40px 0 0;
+    }
+    a {
+      margin-top: 24px;
+    }
+  }
+  .mainCard {
+    .card-img {
+      .add-to-cart-btn {
+        width: 129px;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.course-requests-form {
+  background: #fff;
+  border-radius: 3px;
+  padding: 24px 35px 32px 15px;
+  .ant-form-item {
+    margin-bottom: 24px;
+    .ant-form-item-label {
+      label {
+        font-size: 14px;
+      }
+    }
+    .ant-form-item-control {
+      .ant-form-item-control-input {
+        .ant-form-item-control-input-content {
+          .ant-select {
+            .ant-select-selector {
+              box-shadow: none;
+              .ant-select-selection-placeholder {
+                margin-top: 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .dashboard-form {
+    .amount-provide {
+      .currency-container {
+        .ant-input-group-wrapper {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+}
+
+.dashboard-form
+  .ant-form-item
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .ant-select.course-one-o-one
+  .ant-select-selector
+  .ant-select-selection-item {
+  line-height: 20px !important;
+}

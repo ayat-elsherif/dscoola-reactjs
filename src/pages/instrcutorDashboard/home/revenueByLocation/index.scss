@@ -1,0 +1,30 @@
+.revenueby-location {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #b1b0b05e;
+  border-radius: 6px;
+  padding: 24px 24px 28px 15px;
+  h4 {
+    font-size: 16px;
+    font-family: 'Poppins-Medium';
+    color: #707070;
+    margin: 0 0 24px;
+  }
+  .details {
+    h5 {
+      font-size: 16px;
+      color: #707070;
+      margin: 0 0 12px;
+    }
+    .progress-w-percent {
+      margin-bottom: 20px;
+    }
+    .ant-progress-small.ant-progress-line {
+      padding: 0;
+      display: flex;
+      .ant-progress-text {
+        font-size: 14px;
+        color: #707070;
+      }
+    }
+  }
+}

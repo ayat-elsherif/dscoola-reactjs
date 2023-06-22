@@ -1,0 +1,120 @@
+@import '../../../sass/mixins';
+.file-manager {
+  .create-file-btn {
+    width: 146px;
+    height: 40px;
+    background: #7e59d1 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    padding: 0;
+    margin-left: 16px;
+    cursor: pointer;
+    span {
+      margin-left: 10px;
+    }
+  }
+  .file-manager-card {
+    background: #ffffff;
+    margin-top: 11px;
+    display: flex;
+    border-radius: 3px;
+    height: 611px;
+    .file-Manager-menu {
+      width: 187px;
+      border-right: 1px solid #dbdfea;
+      // @include breakpoint(xxl) {
+      //   width: 351px;
+      // }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .file-Manager-nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 34px;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 7px 32px;
+          font-size: 15px;
+          color: #6a6f73;
+
+          &:hover,
+          &:focus {
+            color: #7e59d1;
+            svg {
+              path {
+                fill: #7e59d1;
+              }
+            }
+          }
+          span {
+            &:first-of-type {
+              display: flex;
+              align-items: center;
+              svg {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        a.active {
+          background: #dbdfea80 0% 0% no-repeat padding-box;
+
+          color: #7e59d1;
+          svg {
+            path {
+              fill: #7e59d1;
+            }
+          }
+        }
+      }
+      .menu-footer {
+        padding: 0 22px 32px 32px;
+        .header {
+          color: #6a6f73;
+          font-size: 15px;
+          display: flex;
+          align-items: center;
+          span {
+            display: inline-block;
+            margin-left: 10px;
+          }
+        }
+        .ant-progress {
+          .ant-progress-outer {
+            .ant-progress-inner {
+              background-color: #e0e0ee;
+              .ant-progress-bg {
+                height: 4px !important;
+                background-color: #7e59d1;
+              }
+              .ant-progress-success-bg {
+                background-color: #7e59d1;
+              }
+            }
+          }
+        }
+        .used-data {
+          white-space: nowrap;
+          color: #6a6f73;
+          font-size: 12px;
+          margin: 10px 0 8px;
+        }
+        .upgrade {
+          color: #7e59d1;
+          font-size: 12px;
+        }
+      }
+    }
+    .card-content {
+      width: calc(100% - 187px);
+      padding: 36px 24px;
+    }
+  }
+}

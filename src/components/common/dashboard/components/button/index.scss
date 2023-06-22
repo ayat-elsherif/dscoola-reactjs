@@ -1,0 +1,78 @@
+@import '../../../../../sass/_var.scss';
+@import '../../../../../sass/_mixins.scss';
+.dashboard-button {
+  background-color: $theme-color;
+  color: #fff !important;
+  padding: 8px 25px !important;
+  box-shadow: none;
+  outline: none;
+  height: auto;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $theme-hover-color;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    transition: all 0.25s ease-out;
+    border: 1px solid $theme-hover-color;
+  }
+  &:disabled {
+    border: 0;
+    background-color: #aeaec1;
+    color: #fff;
+  }
+}
+.btn-modal {
+  width: 111px;
+  height: 35px;
+  border-radius: 4px;
+  padding: 0 !important;
+}
+.gray-btn {
+  background-color: $grey-color;
+  color: $desc-color;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    color: $desc-color;
+  }
+}
+.delete {
+  background: #eaeaea;
+  color: #7e59d1;
+  border-color: #eaeaea;
+  border-radius: 4px;
+  padding: 0 !important;
+  width: 80px;
+  height: 35px;
+  font-size: 12px;
+  font-family: 'Poppins-Medium';
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $hover-color;
+    border-color: #eaeaea;
+    color: $desc-color;
+  }
+}
+.update {
+  border: 0;
+  border-radius: 4px;
+  padding: 0 !important;
+  width: 80px;
+  height: 35px;
+  font-size: 12px;
+  font-family: 'Poppins-Medium';
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $theme-hover-color;
+    outline: none !important;
+    box-shadow: none !important;
+    color: #fff;
+    border: 1px solid $theme-hover-color;
+  }
+}

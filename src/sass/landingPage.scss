@@ -1,0 +1,332 @@
+@import '/src/sass/var.scss';
+@import '/src/sass/mixins.scss';
+
+.landingPage {
+  .layout-hero-holder {
+    background-color: $background-color;
+    img {
+      &.landingPageHero {
+        margin-top: -50px;
+        margin-bottom: -24px;
+        width: auto;
+      }
+    }
+
+    p {
+      @media screen and (min-width: 1024px) {
+        width: 430px;
+        line-height: 1.5;
+      }
+
+      @media screen and (min-width: 1200px) {
+        width: Auto;
+      }
+    }
+  }
+
+  .briefSection,
+  .tabsSection {
+    max-width: 1120px;
+    margin: 70px auto;
+
+    @media screen and (max-width: 1199px) {
+      margin: 30px auto;
+    }
+
+    .headSection {
+      text-align: center;
+      margin-bottom: 40px;
+
+      h2 {
+        margin-bottom: 16px;
+        font-size: 30px;
+      }
+
+      p {
+        line-height: 27px;
+        font-size: 16px;
+      }
+
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 20px;
+
+        h2 {
+          font-size: 26px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .bodySection {
+      .bodySectionSvg {
+        svg {
+          @media screen and (max-width: 1199px) {
+            width: 400px;
+            height: 300px;
+          }
+        }
+      }
+    }
+  }
+
+  .briefSection {
+    .headSection {
+      margin-bottom: 40px;
+    }
+
+    .bodySection {
+      .bodySectionDetail {
+        & > .d-flex {
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          svg {
+            margin-right: 0.75rem;
+          }
+
+          h5 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 18px;
+          }
+
+          p {
+            line-height: 24px;
+            font-size: 15px;
+          }
+
+          @media screen and (max-width: 1200px) {
+            margin-bottom: 10px;
+
+            h5 {
+              font-size: 16px;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .tabsSection {
+    .bodySection {
+      .scoolaInnerTabs {
+        .ant-tabs-nav-wrap {
+          justify-content: center;
+
+          .ant-tabs-tab {
+            padding: 12px 0 16px;
+
+            &:hover {
+              color: $title-color;
+            }
+
+            & + .ant-tabs-tab {
+              margin: 0 0 0 60px;
+            }
+          }
+
+          .ant-tabs-tab-btn {
+            color: $desc-color;
+            font-size: 18px;
+          }
+
+          .ant-tabs-tab-active {
+            .ant-tabs-tab-btn {
+              color: $title-color;
+            }
+          }
+        }
+
+        .ant-tabs-nav:before {
+          border-bottom: 2px solid #d6d6ff;
+        }
+
+        .ant-tabs-ink-bar {
+          background: $title-color;
+        }
+      }
+
+      .bodySectionDetails {
+        .bodySectionItem {
+          padding-right: 90px;
+          margin-bottom: 30px;
+
+          h4 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+            font-weight: 600;
+          }
+
+          p {
+            font-size: 15px;
+            line-height: 24px;
+          }
+
+          @media screen and (max-width: 1199px) {
+            h4 {
+              font-size: 16px;
+            }
+
+            p {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .takeActionSection {
+    background-color: $background-color;
+    min-height: 270px;
+    position: relative;
+    padding: 3.5rem 0;
+
+    svg {
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+
+      @media screen and (max-width: 1199px) {
+        left: 1%;
+      }
+    }
+
+    .actionTopSvg {
+      svg {
+        top: 10%;
+        bottom: auto;
+      }
+    }
+
+    .actionBottomSvg {
+      svg {
+        left: auto;
+        right: 10%;
+      }
+    }
+
+    .headSection {
+      text-align: center;
+
+      h2 {
+        margin-bottom: 15px;
+        font-size: 28px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.instructorForm {
+  margin: 6rem auto;
+
+  .instructorForm-brief {
+    svg {
+      margin-left: -25px;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 38px;
+      font-weight: 600;
+      margin-top: 2.5rem;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 1rem;
+    }
+  }
+
+  .instructorForm-block {
+    box-shadow: 0px 2px 6px #00000029;
+    padding: 26px;
+    margin-bottom: 1.5rem;
+
+    .instructorForm-title {
+      display: flex;
+      align-items: center;
+
+      svg {
+        margin-right: 1rem;
+      }
+
+      h4 {
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-select {
+      margin-top: 1.5rem;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $desc-color;
+
+      &.ant-select-focused {
+        .ant-select-selector {
+          box-shadow: none;
+        }
+      }
+
+      .ant-select-selector {
+        border: none;
+      }
+    }
+  }
+
+  .instructorForm-submit {
+    button {
+      margin-left: auto;
+    }
+  }
+
+  @include breakpoint(max-xl) {
+    .instructorForm-brief {
+      h3 {
+        font-size: 28px;
+        margin-top: 1.5rem;
+      }
+
+      p {
+        font-size: 15px;
+        margin-top: 0.5rem;
+        line-height: 28px;
+      }
+    }
+
+    .instructorForm-block {
+      padding: 18px 14px 20px;
+
+      .instructorForm-title {
+        h4 {
+          font-size: 15px;
+          line-height: 22px;
+        }
+
+        svg {
+          margin-right: 0.5rem;
+          width: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+@import '/src//sass/var.scss';
+.rate-modal {
+  .ant-modal-content {
+    border: 1px solid #707070;
+    border-radius: 8px;
+    box-shadow: none;
+    .ant-modal-body {
+      padding: 0px 38px 30px;
+      text-align: center;
+      img {
+        width: 125px;
+        height: 115px;
+        border-radius: 4px;
+        margin-top: -57.5px;
+      }
+      h3 {
+        color: #2a2a2a;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: 'Poppins-Medium';
+        margin: 18px 0 8px;
+      }
+      p {
+        color: #7e7e7e;
+        font-size: 13px;
+        font-weight: normal;
+        font-family: 'Poppins-Regular';
+        margin: 0;
+      }
+
+      .ratingStars {
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        .MuiSvgIcon-root,
+        .MuiRating-icon {
+          fill: $star-color;
+          color: $star-color;
+          font-size: 35px;
+        }
+        .MuiRating-iconEmpty {
+          svg {
+            fill: #e0e0f5;
+            color: #e0e0f5;
+          }
+        }
+      }
+      textarea.ant-input {
+        background: 0% 0% no-repeat padding-box padding-box #e0e0f566;
+        border-radius: 4px;
+        box-shadow: none;
+        border: 0px;
+        padding: 12px 14px;
+        &::placeholder {
+          /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: #382464;
+          opacity: 1; /* Firefox */
+          font-size: 13px;
+          font-weight: normal;
+          font-family: 'Poppins-Regular';
+        }
+
+        &:-ms-input-placeholder {
+          /* Internet Explorer 10-11 */
+          color: #382464;
+          opacity: 1; /* Firefox */
+          font-size: 13px;
+          font-weight: normal;
+          font-family: 'Poppins-Regular';
+        }
+
+        &::-ms-input-placeholder {
+          /* Microsoft Edge */
+          color: #382464;
+          opacity: 1; /* Firefox */
+          font-size: 13px;
+          font-weight: normal;
+          font-family: 'Poppins-Regular';
+        }
+      }
+      .btn-modal {
+        margin-top: 24px;
+        width: 105px;
+        height: 40px;
+        font-family: 'Poppins-Medium';
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../../../../../../sass/_var.scss";
+@import "../../../../../../../sass/_mixins.scss";
+
+.rdw-editor-wrapper {
+  border: 1px solid $hover-color;
+  font-size: 14px;
+
+  .rdw-editor-toolbar {
+    background-color: $grey-color;
+
+    .bold-option-classname {
+      img {
+        width: 10px;
+      }
+    }
+
+    .italic-option-classname {
+      img {
+        width: 15px;
+      }
+    }
+
+    .color-option-custom,
+    .list-option-classname,
+    .linked-option-classname {
+      img {
+        width: 12px;
+      }
+    }
+
+    .rdw-block-dropdown {
+      border-right: 1px solid $border-color;
+    }
+
+    .rdw-link-modal {
+      height: 305px;
+    }
+
+    .rdw-dropdown-selectedtext,
+    .rdw-option-wrapper,
+    .rdw-dropdown-wrapper {
+      background-color: $grey-color;
+      color: $desc-color;
+      text-decoration: none;
+      font-size: 12px;
+      margin: auto 0.1rem;
+
+    }
+  }
+
+  .rdw-editor-main {
+    padding: 0 10px;
+
+    .DraftEditor-root {
+      height: 100px;
+    }
+  }
+}

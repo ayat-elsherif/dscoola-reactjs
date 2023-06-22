@@ -1,0 +1,24 @@
+.deactivate-account {
+  .deactivate-body {
+    text-align: center;
+    & > div {
+      display: flex;
+      justify-content: flex-end;
+      margin: 20px 0 15px;
+      .main-btn-dashboard {
+        border-radius: 2px;
+        background: #aeaec1;
+        color: #fff;
+        &:active,
+        &:hover,
+        &:focus {
+          border: 0;
+        }
+      }
+    }
+    img {
+      width: 277px;
+      height: 277px;
+    }
+  }
+}

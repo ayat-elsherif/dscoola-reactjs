@@ -1,0 +1,30 @@
+.on-go {
+  .page-header-right {
+    a {
+      width: 129px;
+      height: 40px;
+      display: inline-block;
+      background: #7e59d1;
+      border-radius: 3px;
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      line-height: 40px;
+      margin-left: 16px;
+      &:hover,
+      &:focus,
+      &:active {
+        background: #4b20d0;
+        outline: none !important;
+        box-shadow: none !important;
+        color: #fff;
+        transition: all 0.25s ease-out;
+      }
+    }
+    .status-filter {
+      &:nth-last-of-type(2) {
+        margin: 0 16px;
+      }
+    }
+  }
+}

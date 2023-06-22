@@ -1,0 +1,76 @@
+@import '../../../../../sass/var';
+
+.side-nav {
+  height: 100vh;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow: auto;
+  z-index: 999;
+  background: #313a46 !important;
+  box-shadow: 0px 3px 6px #74747447;
+
+  .hide-group-title {
+    .ant-menu-item-group-title {
+      display: none;
+    }
+  }
+
+  // .nav-logo {
+  //   display: flex;
+  //   align-items: flex-end;
+  //   height: 71px;
+  //   margin-bottom: 50px;
+  //   padding: 0 26px;
+
+  //   img {
+  //     width: 110px;
+  //     height: 38px;
+  //     cursor: pointer;
+  //   }
+
+  //   img.logo-collapsed {
+  //     width: 53px;
+  //     height: 27px;
+  //     cursor: pointer;
+  //   }
+  // }
+
+  .navCollapsed-container {
+    width: 80px !important;
+    justify-content: center;
+  }
+
+  .ant-menu {
+    background-color: #313a46 !important;
+  }
+
+  .sidenav-logout {
+    padding-left: 26px;
+    height: 45px !important;
+    line-height: 45px !important;
+    font-family: 'Poppins-Regular';
+    font-size: 16px;
+    color: #8391a2;
+    cursor: pointer;
+
+    .sid-icon {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      color: #fffffd;
+
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+}
+
+.mobile-nav-menu {
+  height: calc(100vh - 72px - 10px);
+}

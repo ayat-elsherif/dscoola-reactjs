@@ -1,0 +1,33 @@
+@import "/src/sass/var";
+@import "/src//sass//mixins";
+
+.sendGift {
+    .sendGift-toggle {
+        color: $theme-color;
+        cursor: pointer;
+    }
+}
+
+.giftForm {
+    p {
+        margin-bottom: 0;
+    }
+
+    .modal-dialog {
+        @include breakpoint(lg) {
+            max-width: 515px;
+        }
+
+        .ant-form-item-row,
+        .ant-form-item {
+            display: block;
+            margin-bottom: 0;
+
+            .ant-form-item-control-input {
+                input.ant-input {
+                    height: 45px;
+                }
+            }
+        }
+    }
+}

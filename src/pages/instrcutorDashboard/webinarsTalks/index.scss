@@ -1,0 +1,35 @@
+.webinars-talks {
+  .dashboard-page-header-container {
+    h3 {
+      margin: 0;
+    }
+    .page-header-right {
+      a {
+        width: 88px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #7e59d1 0% 0% no-repeat padding-box;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 15px;
+        svg {
+          margin-right: 10px;
+        }
+        margin-left: 12px;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #382464;
+          transition: all 0.25s ease-out;
+        }
+      }
+    }
+  }
+  .status-filter {
+    margin-left: 12px;
+  }
+}

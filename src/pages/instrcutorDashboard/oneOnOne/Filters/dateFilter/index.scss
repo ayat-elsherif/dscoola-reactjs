@@ -1,0 +1,39 @@
+.date-filter {
+  .ant-picker-focused {
+    box-shadow: 0 0 0 1px #8e6dd7;
+  }
+  .ant-picker {
+    width: 180px;
+    height: 40px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 6px #e0e0f585;
+    border-radius: 3px;
+    border: 0;
+    input {
+      &::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #aeaec1;
+        opacity: 1; /* Firefox */
+        font-size: 12px;
+        font-weight: normal;
+        font-family: 'Poppins-Regular';
+      }
+
+      &::-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #aeaec1;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: 'Poppins-Regular';
+      }
+
+      &::-ms-input-placeholder {
+        /* Microsoft Edge */
+        color: #aeaec1;
+        font-size: 12px;
+        font-weight: normal;
+        font-family: 'Poppins-Regular';
+      }
+    }
+  }
+}

@@ -1,0 +1,265 @@
+@import '../../../sass/mixins';
+.my-profile {
+  .profile-card {
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    margin-top: 11px;
+    display: flex;
+    min-height: 80vh;
+
+    .myprofile-menu {
+      width: 294px;
+      border-right: 1px solid #dbdfea;
+      @include breakpoint(xxl) {
+        width: 351px;
+      }
+      .menu-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 33px 20px 24px;
+        .more {
+          width: 4px;
+          height: 14px;
+        }
+      }
+      .myprofile-nav {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+        a {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 14px 20px;
+          font-size: 15px;
+          color: #6a6f73;
+          font-family: 'Poppins-Medium';
+          &:hover,
+          &:focus {
+            color: #7e59d1;
+            svg {
+              path {
+                fill: #7e59d1;
+              }
+            }
+          }
+          span {
+            &:first-of-type {
+              display: flex;
+              align-items: center;
+              svg {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+        a.active {
+          color: #7e59d1;
+          svg {
+            path {
+              fill: #7e59d1;
+            }
+          }
+        }
+      }
+    }
+    .my-info {
+      width: calc(100% - 294px);
+      @include breakpoint(xxl) {
+        width: calc(100% - 351px);
+      }
+      padding: 33px 28px 24px;
+      position: relative;
+      .info-header {
+        h3 {
+          margin: 0;
+          color: #2a2a2a;
+          font-size: 18px;
+          font-family: 'Poppins-Medium';
+        }
+        h4 {
+          margin: 6px 0 0;
+          font-size: 14px;
+          color: #6a6f73;
+          font-weight: normal;
+          font-family: 'Poppins-Regular';
+        }
+      }
+
+      .basic-info {
+        .profil-photo-conrainer {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          .photo {
+            margin-right: 18px;
+            width: 67px;
+            height: 67px;
+            border-radius: 50%;
+
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: contain;
+            }
+          }
+
+          .outline {
+            width: 81px;
+            height: 30px;
+            border: 1px solid var(--unnamed-color-7e59d1);
+            border: 1px solid #7e59d1;
+            background: #fff;
+            color: #7e59d1;
+            font-size: 12px;
+            padding: 0;
+            margin-left: 10px;
+            box-shadow: none;
+          }
+          .main-btn {
+            padding: 7px 10px;
+          }
+        }
+        .inner-form-container {
+          width: 449px;
+          @include breakpoint(xxl) {
+            width: 627px;
+          }
+        }
+        .social-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .ant-form-item {
+            margin-bottom: 14px;
+            .ant-form-item-control {
+              .ant-form-item-control-input {
+                .ant-form-item-control-input-content {
+                  .ant-input-affix-wrapper {
+                    height: 40px;
+                    width: 372px;
+                    padding: 0 12px;
+                    border-radius: 6px;
+                    @include breakpoint(xxl) {
+                      width: 627px;
+                    }
+                    .ant-input-prefix {
+                      background: transparent;
+                    }
+                    .ant-input {
+                      height: 38px !important;
+                    }
+                    .ant-input-disabled {
+                      background: #fff;
+                    }
+                  }
+                  .ant-switch {
+                    width: 45px;
+                    height: 22px;
+                    background-color: #e0e0f5;
+                  }
+                  .ant-switch-checked {
+                    background-color: #7e59d1;
+                  }
+                }
+                .ant-input-affix-wrapper-disabled {
+                  background: #fff;
+                }
+              }
+            }
+          }
+        }
+        .custom-divider {
+          margin-bottom: 14px;
+          &:last-of-type {
+            display: none;
+          }
+        }
+        .form-actions {
+          margin-top: 42px;
+        }
+      }
+    }
+  }
+}
+.form-section-title {
+  background: #7e59d11a;
+  color: #7e59d1;
+  height: 35px;
+  font-size: 14px;
+  font-family: 'Poppins-Medium';
+  padding: 0 0 0 18px;
+  line-height: 35px;
+  margin: 20px 0 13px;
+}
+.form-section-title-work {
+  background: #7e59d11a;
+  color: #7e59d1;
+  height: 35px;
+  font-family: 'Poppins-Medium';
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 18px;
+  line-height: 35px;
+  margin: 20px 0 13px;
+  col {
+    font-size: 14px;
+  }
+}
+.col-Certifications {
+  cursor: pointer;
+}
+.work-experiences-container {
+  background: #f8f8f866;
+  border: 1px solid #e0e0f5;
+  border-radius: 4px;
+  margin: 0 !important;
+}
+.work-experiences-item {
+  padding: 28px;
+}
+.work-experiences-image {
+  width: 116px !important;
+  height: 94px !important;
+}
+.cert-title {
+  font-size: 15px;
+}
+.cert-detail {
+  font-size: 15px;
+  color: #6a6f73;
+}
+.anticon-ellipsis {
+  font-size: 20px !important;
+  cursor: pointer;
+}
+.ant-divider-horizontal {
+  // margin: 0 !important;
+}
+.add-certificate-form {
+  input {
+    height: 40px;
+  }
+  .ant-form-item {
+    margin-bottom: 10px;
+  }
+  .ant-avatar {
+    background-color: #e0e0f5;
+  }
+  .cer-containrt {
+    background-color: #e0e0f5;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .cer-icon {
+    position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,229 @@
+@import '/src//sass/_var';
+@import '/src//sass/_mixins';
+
+.instructor-page-container {
+  min-height: 700px;
+}
+
+.userBio {
+  margin: 3rem auto;
+
+  &.container {
+    max-width: 950px;
+
+    @include breakpoint(max-xl) {
+      max-width: 860px;
+    }
+  }
+
+  .userBio-first {
+    .userBio-details {
+      .userBio-img {
+        margin-right: 1.5rem;
+
+        img {
+          width: 145px;
+          height: 145px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+      span {
+        small {
+          font-size: 16px;
+          color: $desc-color;
+        }
+      }
+
+      h3 {
+        font-size: 22px;
+      }
+    }
+
+    .userBio-stats {
+      span {
+        small {
+          font-size: 14px;
+          color: $desc-color;
+          font-weight: 500;
+        }
+      }
+
+      h5 {
+        font-size: 22px;
+        font-weight: 500;
+        margin-top: 0.25rem;
+      }
+    }
+  }
+
+  hr {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .userBio-second {
+    min-height: 60px;
+
+    img {
+      width: auto;
+    }
+
+    h4 {
+      font-size: 22px;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+}
+
+.tryOneOnOne {
+  max-width: 1400px;
+  position: relative;
+  margin: auto;
+
+  &.container {
+    max-width: 950px;
+
+    @include breakpoint(max-xl) {
+      max-width: 860px;
+    }
+  }
+
+  .oneToOneCont {
+    height: 200px;
+
+    .group3 {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      z-index: -1;
+    }
+
+    .oneOnOne {
+      position: absolute;
+      top: 0;
+      left: 15px;
+      z-index: -1;
+    }
+
+    .computerGirl {
+      position: absolute;
+      bottom: 0px;
+      left: 40px;
+    }
+  }
+
+  .oneOnOneLearning {
+    // width: 49%;
+    margin-left: 6%;
+    padding-top: 2rem;
+
+    .oneOnOne-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      width: 52%;
+
+      @include breakpoint(max-xl) {
+        width: 58%;
+      }
+
+      h3 {
+        font-size: 19px;
+        color: #fff;
+      }
+
+      & > div {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+
+        span {
+          font-size: 16px;
+          font-weight: 500;
+          display: inline-block;
+          margin: auto 0.5rem;
+        }
+      }
+    }
+
+    p {
+      color: darken($color: #fff, $amount: 5%);
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}
+
+.userCourses {
+  &.container {
+    max-width: 950px;
+    margin-top: 1rem;
+    padding-bottom: 40px;
+    @include breakpoint(max-xl) {
+      max-width: 860px;
+    }
+  }
+
+  .ant-tabs-tab-btn,
+  .ant-tabs-tab-remove {
+    color: $desc-color;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $title-color;
+  }
+}
+
+.no-courses {
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.no-courses-container {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.Certifications-container {
+  width: 100%;
+  min-height: 371px;
+  padding: 30px;
+  border: 1px solid #e0e0f5;
+  background: #f8f8f866;
+  margin-bottom: 50px;
+}
+
+.cer-title {
+  font-size: 18px;
+  padding-bottom: 28px;
+}
+
+.certificate-image {
+  width: 129px;
+  height: 101px;
+  padding-right: 13px;
+  object-fit: contain;
+}
+
+.certificate-description {
+  font-size: 16px;
+  color: #6a6f73;
+}
+
+.certificate-title {
+  font-size: 18px;
+}

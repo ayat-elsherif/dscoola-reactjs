@@ -1,0 +1,138 @@
+.main-header-wrapper {
+  & + .ant-alert {
+    p {
+      display: flex;
+      align-items: center;
+
+      // button {
+      //   width: fit-contentx;
+      // }
+    }
+  }
+
+  .nav-wrapper {
+    height: 7.3rem;
+    // padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.7rem;
+
+    li {
+      .header-link {
+        font-size: 1.5rem;
+        letter-spacing: 0px;
+        white-space: nowrap;
+        color: #2a2a2a;
+        transition: 0.2s;
+        text-decoration: none;
+
+        &:hover {
+          color: #7e59d1;
+        }
+      }
+
+      // img,
+      svg {
+        width: 2.2rem;
+        mix-blend-mode: multiply;
+      }
+
+      &.brand-wrapper {
+        img {
+          width: 10.6rem;
+        }
+      }
+
+      .category-btn {
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      &.search-wrapper {
+        flex: 1;
+
+        .search-input {
+          // width: 39.4rem;
+          max-width: 100%;
+          min-height: 4.5rem;
+          background: #efeff6 0% 0% no-repeat padding-box;
+          border-radius: 6px;
+
+          .ant-input-prefix {
+            color: #6a6f73;
+            font-size: 1.6rem;
+          }
+
+          input {
+            font-size: 1.6rem;
+
+            &::placeholder {
+              font-size: 1.4rem;
+              color: #6a6f73;
+            }
+          }
+        }
+      }
+
+      &.talks-wrapper {
+        a {
+          color: #cc1915;
+        }
+      }
+    }
+  }
+}
+
+.avatar-round-holder {
+  .ant-image {
+    width: 100% !important;
+    height: 100%;
+    border-radius: 50%;
+    img {
+      width: 100% !important;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+  }
+}
+
+form.ais-SearchBox-form {
+  max-width: 100%;
+  min-height: 4.5rem;
+  background: #efeff6 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  padding: 7px 11px;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 394px;
+  position: relative;
+  padding-left: 35px;
+  display: flex;
+  align-items: center;
+
+  input {
+    background-color: transparent;
+    border: 0;
+    width: calc(100% - 56px);
+  }
+
+  .ais-SearchBox-submit {
+    position: absolute;
+    left: 3px;
+
+    svg {
+      width: 2.2rem;
+      height: 13px;
+    }
+  }
+
+  .ais-SearchBox-reset {
+    display: none;
+  }
+}

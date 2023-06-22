@@ -1,0 +1,56 @@
+.revenue {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #b1b0b05e;
+  border-radius: 6px;
+  padding: 24px;
+  margin-bottom: 25px;
+  h4 {
+    font-size: 16px;
+    font-family: 'Poppins-Medium';
+    color: #707070;
+    margin: 0 0 24px;
+  }
+  .header-card {
+    height: 116px;
+    background: #e0e0f51a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .revenue-info {
+      text-align: center;
+      div {
+        font-size: 27px;
+        color: #2a2a2a;
+        &:first-of-type {
+          font-size: 14px;
+          color: #707070;
+          margin-bottom: 12px;
+        }
+        &:last-of-type {
+          display: flex;
+          align-items: center;
+          .bult {
+            display: block;
+            width: 10px;
+            height: 10px;
+            background: #7e59d1;
+            border-radius: 50%;
+            margin-right: 4px;
+          }
+        }
+      }
+      &:last-of-type {
+        div {
+          &:last-of-type {
+            .bult {
+              background: #f2b636;
+            }
+          }
+        }
+      }
+    }
+  }
+  .apex-charts {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,173 @@
+.course-details {
+  &_body {
+    padding: 25px;
+    width: 811px;
+    .dashboard-form {
+      .ant-form-item {
+        .ant-form-item-label {
+          & > label {
+            font-size: 16px;
+            font-family: 'Poppins-Medium';
+          }
+        }
+      }
+      h4 {
+        font-size: 16px;
+        font-family: 'Poppins-Medium';
+        margin: 0 0 8px;
+      }
+      .custom-text-editor {
+        .rdw-editor-wrapper {
+          .rdw-editor-main .DraftEditor-root {
+            height: 80px;
+          }
+          .public-DraftStyleDefault-block {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+      .photo-container {
+        h4 {
+          margin-top: 25px;
+        }
+      }
+      .vedio-container {
+        h4 {
+          margin-top: 30px;
+        }
+      }
+      .course-upload-image {
+        width: 309px;
+        height: 187px;
+      }
+      p {
+        font-size: 15px;
+        margin: 0 0 25px;
+        span {
+          font-family: 'Poppins-Medium';
+        }
+      }
+      .upload {
+        width: 132px;
+        height: 40px;
+        background: #efeff6;
+        border-radius: 3px;
+        font-size: 15px;
+        color: #7e59d1;
+      }
+    }
+    .action-container {
+      margin-top: 25px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+}
+.upload-img {
+  height: 50px;
+}
+input[type='file'] {
+  display: none !important;
+}
+.custom-file-upload {
+  cursor: pointer;
+  width: 132px;
+  height: 40px;
+  background-color: #efeff6;
+  border-radius: 3px;
+  color: #7e59d1;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.upload-err {
+  color: red;
+  padding-top: 5px;
+}
+.total-errors {
+  border: 1px solid #e9c5c5;
+  padding: 9px;
+  border-radius: 4px;
+  background-color: #f7f2f2;
+  margin-top: 13px;
+}
+.bundel-container {
+  border: 1px solid #dbdfea;
+  border-radius: 2px;
+  padding: 15px;
+  h4 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #7e59d1;
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  h6 {
+    font-size: 16px;
+    color: #6a6f73;
+  }
+  .form-bundel {
+    width: 100%;
+    .ant-col {
+      min-height: initial !important;
+    }
+  }
+  form-item .ant-form-item-label > label {
+    font-size: 12px !important;
+  }
+}
+.returned-bundels {
+  background: #f9fafc;
+  border-radius: 2px;
+  padding: 25px;
+  .bundel-divider {
+    width: 1px;
+    height: 20px;
+    background: #afaeb7;
+  }
+  &:hover {
+    .bundles-actions {
+      display: inline-block;
+    }
+  }
+}
+.bundles-actions {
+  display: none;
+}
+.action-icon {
+  cursor: pointer;
+  margin-right: 15px;
+}
+.ant-tooltip .ant-tooltip-inner {
+  color: #6a6f73;
+  background-color: rgb(255 255 255 / 85%);
+}
+.ant-radio-wrapper {
+  width: 100%;
+}
+.ant-radio-wrapper span.ant-radio + * {
+  width: 100%;
+}
+.dashboard-form
+  .ant-form-item
+  .ant-form-item-control
+  .ant-form-item-control-input
+  .ant-form-item-control-input-content
+  .ant-radio-group
+  .ant-radio-wrapper
+  .ant-radio-checked
+  .ant-radio-inner::after {
+  background-color: #ffffff;
+}
+
+.end-time-radio-creation {
+  .ant-radio {
+    margin-top: 13px;
+  }
+}

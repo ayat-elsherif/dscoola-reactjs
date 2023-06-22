@@ -1,0 +1,83 @@
+.form-container {
+  width: 500px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.room-container {
+  background: #f9f8f8;
+  min-height: 100vh;
+  // padding: 0 37px;
+}
+.room {
+  padding: 37px;
+  margin: 0 auto;
+  & > div {
+    width: 100%;
+    height: 537px;
+    position: relative;
+    margin: 0 auto;
+  }
+  .remote-participants {
+    width: 100%;
+    height: 537px;
+    margin: 0 auto;
+    background: #333e5a;
+    padding: 5px;
+    border-radius: 18px;
+    video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .local-participant {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 214px;
+    height: 141px;
+    background: #333e5a;
+    padding: 5px;
+    border-radius: 18px;
+    video {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+    }
+  }
+  .controles {
+    display: flex;
+    justify-content: space-between;
+    padding: 34px 0;
+    width: 650px;
+    margin: 0 auto;
+    height: 40px;
+    button {
+      border: 0;
+      box-shadow: none;
+      background: transparent;
+    }
+    .controle-rooom {
+      width: 71px;
+      height: 40px;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border-radius: 4px;
+      margin-right: 30px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .leave-room {
+      width: 166px;
+      height: 40px;
+      background: #cc1915;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 15px;
+    }
+  }
+}

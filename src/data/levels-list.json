@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "Beginner",
+    "icon": "/assets/images/icons/Mask Group 583.svg"
+  },
+  {
+    "id": 2,
+    "title": "Intermediate",
+    "icon": "/assets/images/icons/Mask Group 582.svg"
+  },
+  {
+    "id": 3,
+    "title": "Advanced",
+    "icon": "/assets/images/icons/Icon awesome-signal.svg"
+  },
+  {
+    "id": 4,
+    "title": "Pro",
+    "icon": "/assets/images/icons/Icon awesome-signal.svg"
+  }
+]

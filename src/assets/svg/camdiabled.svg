@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26.865" height="24" viewBox="0 0 26.865 24">
+  <defs>
+    <clipPath id="camdiabled">
+      <rect id="Rectangle_30254" data-name="Rectangle 30254" width="24" height="24" transform="translate(167 685)" fill="#382464" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_85927" data-name="Group 85927" transform="translate(-209.135 -689)">
+    <g id="Mask_Group_854" data-name="Mask Group 854" transform="translate(45 4)" clip-path="url(#camdiabled)">
+      <g id="svgexport-6_-_2022-08-22T144921.539" data-name="svgexport-6 - 2022-08-22T144921.539" transform="translate(167 689.997)">
+        <g id="Group_85900" data-name="Group 85900" transform="translate(0 0)">
+          <g id="Group_85899" data-name="Group 85899">
+            <path id="Path_47952" data-name="Path 47952" d="M13.705,6.187H2.651A2.659,2.659,0,0,0,0,8.838v8.934a2.659,2.659,0,0,0,2.651,2.651H13.705a2.659,2.659,0,0,0,2.651-2.651V8.838A2.642,2.642,0,0,0,13.705,6.187Z" transform="translate(0 -6.187)" fill="#382464"/>
+          </g>
+        </g>
+        <g id="Group_85902" data-name="Group 85902" transform="translate(17.682 1.415)">
+          <g id="Group_85901" data-name="Group 85901">
+            <path id="Path_47953" data-name="Path 47953" d="M26.479,7.982a1.35,1.35,0,0,0-.451.186l-4.135,2.386V16.7l4.162,2.386a1.576,1.576,0,0,0,2.174-.583,1.619,1.619,0,0,0,.212-.8V9.52A1.6,1.6,0,0,0,26.479,7.982Z" transform="translate(-21.893 -7.939)" fill="#382464"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="Path_47972" data-name="Path 47972" transform="translate(210.499 689.698) rotate(43)" fill="#382464">
+      <path d="M 30.70000076293945 1.700000047683716 L 0.300000011920929 1.700000047683716 L 0.300000011920929 0.300000011920929 L 30.70000076293945 0.300000011920929 L 30.70000076293945 1.700000047683716 Z" stroke="none"/>
+      <path d="M 0.6000003814697266 0.6000000238418579 L 0.6000003814697266 1.399999976158142 L 30.39999961853027 1.399999976158142 L 30.39999961853027 0.6000000238418579 L 0.6000003814697266 0.6000000238418579 M 0 0 L 31 0 L 31 2 L 0 2 L 0 0 Z" stroke="none" fill="#f5f5f5"/>
+    </g>
+  </g>
+</svg>

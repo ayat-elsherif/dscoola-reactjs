@@ -1,0 +1,42 @@
+.main-table {
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: none;
+  .ant-table-bordered {
+    .ant-table-content {
+      table {
+        border: 0;
+        border-top: 0 !important;
+        .ant-table-tbody {
+          tr {
+            td {
+              &:first-of-type {
+                color: #6a6f73;
+                font-size: 13px;
+                font-family: 'Poppins-Medium';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .course-title {
+    display: flex;
+    align-items: center;
+    div {
+      &:first-of-type {
+        width: 40px;
+        margin-right: 12px;
+        img {
+          width: 100%;
+          height: 40px;
+          object-fit: cover;
+        }
+      }
+      &:last-of-type {
+        width: calc(100% - 40px);
+      }
+    }
+  }
+}

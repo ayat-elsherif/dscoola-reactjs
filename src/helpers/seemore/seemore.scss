@@ -1,0 +1,17 @@
+@import "/src/sass/var";
+
+.seemore {
+    text-decoration: dashed;
+    color: $theme-color;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 14px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    svg {
+        margin-left: .5rem;
+    }
+}

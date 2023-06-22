@@ -1,0 +1,23 @@
+.custom-pagination {
+  .MuiPagination-ul {
+    justify-content: center;
+    li {
+      .Mui-selected {
+        background: #7e59d1;
+        color: #fff;
+      }
+      button {
+        &:hover {
+          background: #7e59d1;
+          color: #fff;
+        }
+      }
+      .MuiPaginationItem-previousNext {
+        &:hover {
+          color: #7e59d1;
+          background: transparent;
+        }
+      }
+    }
+  }
+}

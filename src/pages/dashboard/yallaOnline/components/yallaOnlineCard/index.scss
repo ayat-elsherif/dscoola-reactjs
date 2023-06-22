@@ -1,0 +1,125 @@
+.yallaOnline-card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #44444429;
+  border: 1px solid #e0e0f5;
+  border-radius: 4px;
+  padding: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  cursor: pointer;
+  height: 245px;
+  img {
+    width: 90px;
+    height: 88px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  h4 {
+    color: #2a2a2a;
+    font-family: 'Poppins-Medium';
+    font-size: 14px;
+    line-height: 23px;
+    margin: 15px 0 0;
+  }
+  p {
+    color: #6a6f73;
+    font-size: 13px;
+    white-space: nowrap;
+    margin: 0 0 10px;
+  }
+  .rate {
+    font-size: 14px;
+    color: #f2b636;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .ant-rate-star {
+      svg {
+        width: 11px;
+        height: 10px;
+      }
+    }
+    .ant-rate-star:not(:last-child) {
+      margin-right: 0;
+    }
+    .ant-rate-star-full {
+      svg {
+        fill: #f2b636;
+      }
+    }
+    span {
+      &:first-of-type {
+        margin-right: 5px;
+        font-family: 'Poppins-Medium';
+      }
+    }
+
+    .number {
+      color: #6a6f73;
+      font-size: 12px;
+      margin-left: 6px;
+    }
+  }
+}
+.yalla-popover {
+  width: 380px;
+  .ant-popover-inner-content {
+    padding: 29px 0 28px 30px;
+  }
+
+  .meeting-details {
+    .title {
+      font-size: 14px;
+      font-family: 'Poppins-Medium';
+      color: #2a2a2a;
+      margin-bottom: 5px;
+    }
+    .meeting-members {
+      margin-bottom: 20px;
+    }
+    .date {
+      color: #6a6f73;
+      font-size: 13px;
+      font-family: 'Poppins-Regular';
+    }
+    .my-rate {
+      .rated {
+        color: #afaeb7;
+        font-size: 12px;
+      }
+      .not-rated {
+        color: #f2b636;
+        font-size: 13px;
+      }
+    }
+    a {
+      text-decoration: underline;
+    }
+    a.button {
+      text-decoration: none;
+      width: 186px;
+      height: 40px;
+      line-height: 40px;
+      background: #7e59d1 0% 0% no-repeat padding-box;
+      border-radius: 6px;
+      display: block;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 18px;
+    }
+    .meeting-status {
+      font-size: 14px;
+      color: #7e59d1;
+      &.now,
+      .Upcoming {
+        color: #7e59d1;
+      }
+
+      &.Expired {
+        color: #cc1915;
+      }
+    }
+  }
+}

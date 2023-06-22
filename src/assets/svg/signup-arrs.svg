@@ -1,0 +1,127 @@
+ <svg
+                          className="svg-arrow"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlnsxlink="http://www.w3.org/1999/xlink"
+                          width="33"
+                          height="16"
+                          viewBox="0 0 33 16"
+                        >
+                          <defs>
+                            <clipPath id="clip-path-arrow">
+                              <rect
+                                id="Rectangle_29703"
+                                data-name="Rectangle 29703"
+                                width="16"
+                                height="16"
+                                fill="#fff"
+                                stroke="#707070"
+                                stroke-width="1"
+                              />
+                            </clipPath>
+                            <clipPath id="clip-path-2">
+                              <rect
+                                id="Rectangle_29704"
+                                data-name="Rectangle 29704"
+                                width="15"
+                                height="16"
+                                transform="translate(0.471)"
+                                fill="#fff"
+                                stroke="#707070"
+                                stroke-width="1"
+                              />
+                            </clipPath>
+                            <clipPath id="clip-path-3">
+                              <rect
+                                id="Rectangle_29705"
+                                data-name="Rectangle 29705"
+                                width="16"
+                                height="16"
+                                transform="translate(-0.117)"
+                                fill="#fff"
+                                stroke="#707070"
+                                stroke-width="1"
+                              />
+                            </clipPath>
+                          </defs>
+                          <g
+                            id="Group_15942"
+                            data-name="Group 15942"
+                            transform="translate(-204 -515.5)"
+                          >
+                            <g
+                              id="Mask_Group_754"
+                              data-name="Mask Group 754"
+                              transform="translate(204 515.5)"
+                              opacity="0.5"
+                              clip-path="url(#clip-path-arrow)"
+                            >
+                              <g
+                                id="svgexport-7_16_"
+                                data-name="svgexport-7 (16)"
+                                transform="translate(2.666 -0.001)"
+                              >
+                                <g id="layer1" transform="translate(0 0)">
+                                  <path
+                                    id="path9429"
+                                    d="M11.23,1491.206a1.067,1.067,0,0,0-.7,1.891l6.531,5.595-6.531,5.592a1.067,1.067,0,1,0,1.386,1.616l7.477-6.4a1.067,1.067,0,0,0,0-1.624l-7.477-6.4a1.066,1.066,0,0,0-.684-.269Z"
+                                    transform="translate(-10.092 -1491.206)"
+                                    fill="#fff"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                            <g
+                              id="Mask_Group_755"
+                              data-name="Mask Group 755"
+                              transform="translate(212.529 515.5)"
+                              opacity="0.8"
+                              clip-path="url(#clip-path-2)"
+                            >
+                              <g
+                                id="svgexport-7_16_2"
+                                data-name="svgexport-7 (16)"
+                                transform="translate(2.666 -0.001)"
+                              >
+                                <g
+                                  id="layer1-2"
+                                  data-name="layer1"
+                                  transform="translate(0 0)"
+                                >
+                                  <path
+                                    id="path9429-2"
+                                    data-name="path9429"
+                                    d="M11.23,1491.206a1.067,1.067,0,0,0-.7,1.891l6.531,5.595-6.531,5.592a1.067,1.067,0,1,0,1.386,1.616l7.477-6.4a1.067,1.067,0,0,0,0-1.624l-7.477-6.4a1.066,1.066,0,0,0-.684-.269Z"
+                                    transform="translate(-10.092 -1491.206)"
+                                    fill="#fff"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                            <g
+                              id="Mask_Group_756"
+                              data-name="Mask Group 756"
+                              transform="translate(221.117 515.5)"
+                              clip-path="url(#clip-path-3)"
+                            >
+                              <g
+                                id="svgexport-7_16_3"
+                                data-name="svgexport-7 (16)"
+                                transform="translate(2.666 -0.001)"
+                              >
+                                <g
+                                  id="layer1-3"
+                                  data-name="layer1"
+                                  transform="translate(0 0)"
+                                >
+                                  <path
+                                    id="path9429-3"
+                                    data-name="path9429"
+                                    d="M11.23,1491.206a1.067,1.067,0,0,0-.7,1.891l6.531,5.595-6.531,5.592a1.067,1.067,0,1,0,1.386,1.616l7.477-6.4a1.067,1.067,0,0,0,0-1.624l-7.477-6.4a1.066,1.066,0,0,0-.684-.269Z"
+                                    transform="translate(-10.092 -1491.206)"
+                                    fill="#fff"
+                                  />
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>

@@ -1,0 +1,53 @@
+ <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="18"
+    height="18"
+    viewBox="0 0 18 18"
+  >
+    <g data-name="svgexport-6 (92)" transform="translate(1.906 6.998)">
+      <path
+        data-name="Path 10683"
+        d="m3.082 2.001 8.893-4.713-.445-.815-9.734 5.068v.919l10.152 5.068.445-.815Z"
+        fill="#c1cdd3"
+      />
+      <circle
+        data-name="Ellipse 1831"
+        cx="3.144"
+        cy="3.144"
+        r="3.144"
+        transform="rotate(-67.486 1.82 3.279)"
+        fill="#ffad39"
+      />
+      <path
+        data-name="Path 10684"
+        d="M5.343 1.985a3.144 3.144 0 0 1-5.85 1.6 3.144 3.144 0 0 0 5.1-2.461 3.112 3.112 0 0 0-.436-1.6 3.126 3.126 0 0 1 1.186 2.461Z"
+        fill="#e68c15"
+      />
+      <circle
+        data-name="Ellipse 1832"
+        cx="2.984"
+        cy="2.984"
+        r="2.984"
+        transform="rotate(-67.486 10.67 -1.85)"
+        fill="#7e59d1"
+      />
+      <path
+        data-name="Path 10685"
+        d="M15.172 7.099a2.984 2.984 0 0 1-5.553 1.517 2.983 2.983 0 0 0 4.43-3.85 2.971 2.971 0 0 1 1.123 2.333Z"
+        fill="#7859bc"
+      />
+      <circle
+        data-name="Ellipse 1833"
+        cx="2.984"
+        cy="2.984"
+        r="2.984"
+        transform="rotate(-67.486 2.94 -6.804)"
+        fill="#7e59d1"
+      />
+      <path
+        data-name="Path 10686"
+        d="M14.978-3.097A2.984 2.984 0 0 1 9.425-1.58a2.983 2.983 0 0 0 4.425-3.846 2.967 2.967 0 0 1 1.128 2.329Z"
+        fill="#7859bc"
+      />
+    </g>
+  </svg>

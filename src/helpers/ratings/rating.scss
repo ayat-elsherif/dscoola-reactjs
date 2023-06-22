@@ -1,0 +1,25 @@
+@import '/src/sass/var.scss';
+
+.readOnlyRating {
+  .ratingAverage {
+    margin-top: 0.1rem;
+    margin-right: 0.25rem;
+    color: $star-color;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .MuiRating-root {
+    font-size: 16px;
+    color: $star-color;
+  }
+
+  .ratingTotal {
+    color: #6a6f73;
+    margin-left: 0.25rem;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0.09rem;
+    margin-inline-start: 4px;
+  }
+}

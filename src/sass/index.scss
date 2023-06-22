@@ -1,0 +1,477 @@
+@import 'var';
+@import 'mixins';
+@import 'reset';
+@import 'buttons';
+@import 'inputs';
+@import 'typography';
+
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('../assets/poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('../assets/poppins/Poppins-Medium.ttf') format('truetype');
+}
+
+/*import font*/
+
+@font-face {
+  font-family: 'Segoe';
+  src: url('../helpers/fonts/SegoeUISemibold/Segoe\ UI\ Semibold.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('../assets/poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+html {
+  scroll-behavior: auto !important;
+  font-size: 100%;
+
+  @include mq('xs', max) {
+    font-size: 48%;
+  }
+
+  @include mq('xs') {
+    font-size: 52%;
+  }
+
+  @include mq('sm') {
+    font-size: 55%;
+  }
+
+  @include mq('md') {
+    font-size: 57%;
+  }
+
+  @include mq('lg') {
+    font-size: 60%;
+  }
+
+  @include mq('xl') {
+    font-size: 62.5%; // 16px
+  }
+
+  @include mq('xxl') {
+    font-size: 68%;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-size: 100%;
+  letter-spacing: 0px;
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+}
+
+body,
+html,
+#root {
+  height: 100vh;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a,
+a:hover {
+  color: $theme-color; //don't add !important, it will cost a lot
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $title-color;
+}
+
+ul {
+  padding-left: 1.4rem;
+  padding-left: 0;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.trinary-color {
+  color: $trinary-color;
+}
+
+.btn,
+.form-check-input[type='checkbox']:checked,
+.form-check-input[type='checkbox']:checked:focus {
+  background-color: $theme-color;
+  color: #fff;
+  border-color: $theme-color;
+}
+
+.main-title {
+  font-size: calc(0.93vw + 11px);
+  // font-size: calc(0.9vw + 13px);
+  font-size: calc(1vw + 9px);
+
+  font-weight: 600;
+  color: $title-color;
+  // margin-bottom:2rem;
+  // margin-left: 1.5rem;
+  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.topCategories {
+  margin-bottom: 2.75rem;
+}
+
+span.anchor {
+  color: $theme-color;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// .container,
+// .container-lg,
+// .container-md,
+// .container-sm,
+// .container-xl {
+//   @include breakpoint(lg) {
+//     max-width: 860px;
+//   }
+
+//   @include breakpoint(xl) {
+//     max-width: 1200px;
+//     max-width: 1170px;
+//   }
+// }
+
+.card {
+  margin-bottom: 30px;
+}
+
+::selection {
+  background: $theme-color;
+  color: #fff;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.page-spacing {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
+.ant-select-item-option-content {
+  text-transform: capitalize;
+}
+
+.ant-form-item-explain-error {
+  margin-top: 0.5rem;
+}
+
+.ant-picker-dropdown {
+  .ant-picker-today-btn {
+    color: $theme-color;
+  }
+
+  .ant-picker-content {
+    .ant-picker-cell-selected {
+      .ant-picker-cell-inner {
+        background-color: $theme-color;
+        color: #fff;
+      }
+    }
+
+    .ant-picker-cell-today {
+      .ant-picker-cell-inner {
+        &:before {
+          border-color: $theme-color;
+        }
+      }
+    }
+  }
+
+  .ant-btn-primary:not(:disabled) {
+    background-color: $theme-color;
+    border-color: darken($color: $theme-color, $amount: 2%);
+  }
+}
+
+.ant-picker-focused,
+.ant-select-focused:not(.ant-select-disabled).ant-select:not(
+    .ant-select-customize-input
+  )
+  .ant-select-selector {
+  box-shadow: 0 0 0 2px lighten($color: $theme-color, $amount: 5%);
+}
+
+.ant-input:focus,
+.ant-input:focus-visible {
+  box-shadow: 0 0 0 1px lighten($color: $theme-color, $amount: 5%);
+  outline: 1px solid lighten($color: $theme-color, $amount: 5%);
+}
+
+.ant-checkbox-checked {
+  .ant-checkbox-inner {
+    background-color: $theme-color;
+    border-color: $theme-color;
+    outline-color: $theme-color;
+  }
+}
+
+.ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.ant-checkbox:hover .ant-checkbox-inner {
+  border-color: $theme-color;
+  outline-color: $theme-color;
+}
+
+.ant-checkbox-checked:after {
+  border-color: $theme-color;
+}
+
+.modal-dialog {
+  .modal-header {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  .modal-body {
+    padding: 2rem;
+    padding-top: 0 !important;
+  }
+}
+
+.ant-form-item {
+  display: block;
+
+  .ant-picker {
+    width: 100%;
+    height: 40px !important;
+  }
+
+  .ant-form-item-label {
+    margin-top: 0.75rem;
+
+    label {
+      color: $title-color;
+      font-weight: 500;
+      font-size: 15px;
+    }
+  }
+
+  .ant-select-selector,
+  .ant-input:not(textarea) {
+    // height: 45px !important;
+
+    .ant-select-selection-item,
+    .ant-select-selection-placeholder {
+      // margin-top: 15px !important; //NOTE: hashed so it can work well in "create new meeting" modal
+    }
+  }
+
+  textarea.ant-input {
+    resize: none;
+  }
+}
+
+/*dashboard general styles*/
+.dashboard-page-title {
+  color: #2a2a2a;
+  font-size: 18px;
+  font-family: 'Poppins-Medium';
+  letter-spacing: 0px;
+}
+
+.main-btn {
+  padding: 10px 21px;
+  background: #7e59d1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.upcoming-meeting-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    font-size: 12px;
+    font-family: 'Poppins-Medium';
+  }
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-size: 12px;
+    font-family: 'Poppins-Medium';
+  }
+}
+
+.created-by {
+  span {
+    font-size: 12px;
+    color: #6a6f73;
+
+    &:last-of-type {
+      font-family: 'Poppins-Medium';
+      color: #7e59d1;
+    }
+  }
+}
+
+.pagination {
+  margin-bottom: 2rem;
+
+  .ant-pagination {
+    text-align: center;
+    width: 100%;
+
+    .ant-pagination-disabled {
+      .ant-pagination-item-link {
+        display: none;
+      }
+    }
+
+    .ant-pagination-next,
+    .ant-pagination-prev {
+      .ant-pagination-item-link {
+        border: none;
+        line-height: 0.6rem;
+        font-size: 16px;
+      }
+    }
+
+    .ant-pagination-item {
+      border: none;
+      font-weight: 500;
+      font-size: 15px;
+      border-radius: 50%;
+    }
+
+    .ant-pagination-item-active {
+      background-color: $theme-color;
+      color: #fff;
+    }
+  }
+}
+
+.zoomSdkContainer {
+  min-height: 750px;
+  position: relative;
+
+  .defaultCourePreview {
+    position: absolute;
+    width: 100%;
+    top: 0%;
+    z-index: -1;
+    height: 750px;
+  }
+}
+
+#meetingSDKElement {
+  margin-left: calc(50% - 500px);
+}
+
+.meetingSDKElement {
+  margin-top: -850px;
+  height: 580px;
+
+  [class*='zmwebsdk-makeStyles-videoCustomize'] {
+    height: 580px;
+  }
+}
+
+#transition-popper {
+  z-index: 1000000;
+}
+
+.skeleton-holder {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 360px;
+  // background: #fcfcfc;
+  background: #fff;
+  box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1), 0px 0px 6px rgba(0, 0, 0, 0.07);
+
+  .ant-skeleton-content {
+    padding: 0.7rem 1rem 10px;
+  }
+
+  .ant-skeleton-element {
+    width: 100%;
+  }
+
+  .ant-skeleton-image {
+    width: 100% !important;
+    height: 130px !important;
+    background: #bebebe1a;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+.grid-full-width {
+  flex: 1;
+}
+.ant-tooltip .ant-tooltip-inner {
+  color: #6a6f73;
+  background-color: rgb(255 255 255 / 85%);
+}
+.ant-select-selection-item {
+  .instractur-row-holder {
+    .ant-avatar {
+      width: 26px;
+      height: 26px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.instractur-row-holder {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.website-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  .website-main-holder {
+    flex: 1;
+  }
+}

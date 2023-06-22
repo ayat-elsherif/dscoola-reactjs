@@ -1,0 +1,23 @@
+.one-to-one {
+  .dashboard-page-header-container {
+    margin-bottom: 30px;
+    .page-header-left {
+      p {
+        margin: 0;
+      }
+    }
+  }
+  .filter-container {
+    .ant-select {
+      .ant-select-selector {
+        padding: 0 25px;
+        .ant-select-selection-placeholder {
+          padding-right: 10px;
+        }
+      }
+      .ant-select-arrow {
+        right: 25px;
+      }
+    }
+  }
+}

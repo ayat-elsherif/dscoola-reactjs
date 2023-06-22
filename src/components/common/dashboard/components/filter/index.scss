@@ -1,0 +1,40 @@
+.filter-container {
+  margin-left: 16px;
+  width: 215px !important;
+  box-shadow: 0px 0px 6px #94949428;
+  background: #fff;
+  .ant-select {
+    outline: none;
+    .ant-select-selector {
+      border: 0;
+      width: 215px !important;
+      height: 40px !important;
+      border: 0 !important;
+      align-items: center;
+      margin: 0 auto;
+      border-radius: 4px;
+      padding: 0 40px;
+      .ant-select-selection-placeholder {
+        color: #6a6f73;
+        font-size: 14px;
+      }
+    }
+    .ant-select-arrow {
+      right: 40px;
+    }
+  }
+  .ant-select-focused {
+    .ant-select-selector {
+      box-shadow: none !important;
+    }
+  }
+}
+
+.ant-select-dropdown {
+  box-shadow: 0px 0px 6px #24242429;
+  border-radius: 4px;
+  .ant-select-item {
+    color: #6a6f73;
+    font-weight: normal;
+  }
+}

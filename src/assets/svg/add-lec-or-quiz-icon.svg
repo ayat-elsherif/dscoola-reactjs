@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="AddLecOrQuizIcon">
+      <rect id="Rectangle_27364" data-name="Rectangle 27364" width="16" height="16" transform="translate(676 439)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_372" data-name="Mask Group 372" transform="translate(-676 -439)" clip-path="url(#AddLecOrQuizIcon)">
+    <g id="svgexport-6_33_" data-name="svgexport-6 (33)" transform="translate(676 439)">
+      <path id="Path_10597" data-name="Path 10597" d="M8,0a8,8,0,1,0,8,8A8.009,8.009,0,0,0,8,0ZM8,0" fill="#7e59d1"/>
+      <path id="Path_10598" data-name="Path 10598" d="M11.5,8.667H8.667V11.5a.667.667,0,1,1-1.333,0V8.667H4.5a.667.667,0,0,1,0-1.333H7.333V4.5a.667.667,0,1,1,1.333,0V7.333H11.5a.667.667,0,1,1,0,1.333Zm0,0" fill="#fafafa"/>
+    </g>
+  </g>
+</svg>

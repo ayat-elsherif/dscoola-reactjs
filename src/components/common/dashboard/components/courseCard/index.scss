@@ -1,0 +1,106 @@
+.course-card {
+  height: 341px;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  .card-header {
+    width: 100%;
+    height: 139px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px 8px 0px 0px;
+    }
+    .unit-view {
+      position: absolute;
+      bottom: -100%;
+      right: 0;
+      z-index: -1;
+      clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+      background: #7e59d1;
+      width: 149px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      transition: all 0.3s;
+      a {
+        color: #ffffff;
+        font-size: 15px;
+      }
+    }
+    &:hover {
+      .unit-view {
+        bottom: 0;
+        z-index: 1;
+      }
+    }
+  }
+  .card-body {
+    padding: 16px 7px 16px 10px;
+    .status-units {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      .status,
+      .units {
+        display: flex;
+        align-items: center;
+        span {
+          display: inline-block;
+          margin-left: 3px;
+        }
+      }
+      .status {
+        span {
+          font-family: 'Poppins-Medium';
+          color: #7e59d1;
+        }
+      }
+    }
+    h4 {
+      color: #2a2a2a;
+      font-size: 15px;
+      font-family: 'Poppins-Medium';
+      margin: 6px 0 12px;
+    }
+    p {
+      color: #2a2a2a;
+      font-size: 12px;
+      margin: 0 0 17px;
+      height: 40px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .members {
+      display: flex;
+      .member {
+        .ant-avatar {
+          width: 29px !important;
+          height: 29px !important;
+          line-height: 29px !important;
+          font-size: 10px !important;
+          .ant-avatar-string {
+            line-height: 29px !important;
+            .text {
+              font-size: 10px !important;
+            }
+          }
+        }
+        &:not(:first-child) {
+          margin-left: -15px;
+        }
+        .text {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

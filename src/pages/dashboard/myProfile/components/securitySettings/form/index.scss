@@ -1,0 +1,99 @@
+@import '../../../../../../sass/mixins';
+.change-pass-form {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 4px;
+  margin-top: 18px;
+  padding: 20px;
+  p {
+    color: #3f3a4a;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Poppins-Medium';
+    margin: 0 0 4px;
+  }
+  .dashboard-form {
+    .ant-form-item {
+      margin-bottom: 16px;
+      .ant-form-item-label {
+        padding: 0 0 4px;
+        & > label {
+          font-size: 13px;
+          font-family: 'Poppins-Medium';
+          color: #6a6f73;
+        }
+      }
+      .ant-form-item-control {
+        width: 291px;
+        @include breakpoint(xxl) {
+          width: 450px;
+        }
+        .ant-form-item-control-input {
+          .ant-form-item-control-input-content {
+            .ant-input {
+              height: 35px !important;
+              &::placeholder {
+                /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: #aeaec1;
+                opacity: 1; /* Firefox */
+                font-size: 12px;
+                font-weight: normal;
+                font-family: 'Poppins-Regular';
+              }
+
+              &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: #aeaec1;
+                font-size: 12px;
+                font-weight: normal;
+                font-family: 'Poppins-Regular';
+              }
+
+              &::-ms-input-placeholder {
+                /* Microsoft Edge */
+                color: #aeaec1;
+                font-size: 12px;
+                font-weight: normal;
+                font-family: 'Poppins-Regular';
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .password-rules {
+    background: #7e59d10d;
+    border-radius: 2px;
+    padding: 14px 22px;
+    margin-bottom: 55px;
+    h3 {
+      margin: 0;
+      font-size: 13px;
+      font-weight: normal;
+      font-family: 'Poppins-Medium';
+      color: #6a6f73;
+    }
+    p {
+      font-size: 12px;
+      font-family: 'Poppins-Regular';
+      color: #8391a2;
+      letter-spacing: 0;
+      margin: 8px 0 17px;
+    }
+    .rule {
+      font-size: 12px;
+      color: #8391a2;
+      letter-spacing: 0;
+      font-family: 'Poppins-Regular';
+      span {
+        width: 6px;
+        height: 6px;
+        background: #aeaec1 0% 0% no-repeat padding-box;
+        display: inline-block;
+        border-radius: 50%;
+        margin-right: 6px;
+      }
+    }
+  }
+}

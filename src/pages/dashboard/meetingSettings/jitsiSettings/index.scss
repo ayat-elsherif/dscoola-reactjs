@@ -1,0 +1,29 @@
+.jitsi-settings {
+  .dashboard-page-title {
+    margin-bottom: 27px;
+  }
+  .jitsi-card {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    padding: 28px 66px 28px 28px;
+    .dashboard-form {
+      .ant-form-item {
+        .ant-form-item-label {
+          font-size: 16px;
+          color: #2a2a2a;
+          &::after {
+            content: '*';
+            color: #fa5c7c;
+            font-size: 16px;
+            margin-left: 5px;
+          }
+          padding: 0 0 12px;
+        }
+      }
+    }
+  }
+  .form-actions {
+    justify-content: center;
+    margin-top: 42px;
+  }
+}

@@ -1,0 +1,84 @@
+.ant-btn {
+  min-width: 50px;
+  // width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: -0.13px;
+  padding: 0 26px;
+  transition: all 0.5s ease;
+  border: 1px solid transparent;
+
+  &.ant-btn-primary {
+    background-color: #7e59d1;
+    font-size: 1.6rem;
+
+    &:hover,
+    &:focus {
+      background-color: #7e59d1;
+    }
+
+    &.ant-btn-background-ghost {
+      background: transparent;
+      border: 1px solid #7e59d1;
+    }
+
+    &.ant-btn-lg {
+      height: 45px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 6px;
+    }
+
+    &.ant-btn-sm {
+      height: 35px;
+      font-size: 14px;
+    }
+
+    &.primary-light {
+      background-color: #efeff6;
+      color: #7e59d1;
+    }
+
+    &.ant-btn-dangerous {
+      background: #ff4d4f;
+      color: white;
+      height: 53px;
+    }
+
+    &.ant-btn-success {
+      background: #57a721;
+      color: white;
+      height: 53px;
+    }
+
+    &.ant-btn-success:hover {
+      background: #81c454;
+      color: white;
+      height: 53px;
+    }
+
+    &:disabled {
+      color: #fff;
+      opacity: 0.6;
+    }
+  }
+
+  &.ant-btn-default {
+    background-color: #efeff6;
+    color: #7e59d1 !important;
+    border: 0 !important;
+
+    &:disabled {
+      opacity: 0.6;
+    }
+  }
+
+  &.ant-btn-link {
+    color: #7e59d1;
+    // text-decoration: underline;
+  }
+}

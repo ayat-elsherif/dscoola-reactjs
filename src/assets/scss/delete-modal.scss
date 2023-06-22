@@ -1,0 +1,29 @@
+.delete-modal {
+  height: 299px;
+
+  .ant-modal-content {
+    border-radius: 8px;
+    box-shadow: none;
+    .ant-modal-body {
+      padding: 36px 36px 40px;
+      text-align: center;
+      .delete-modal_header {
+        h3 {
+          color: #2a2a2a;
+          font-size: 18px;
+          font-weight: normal;
+          font-family: 'Poppins-Medium';
+          margin: 21px 0 11px;
+        }
+        p {
+          margin-bottom: 24px;
+          color: #7e7e7e;
+          font-size: 14px;
+        }
+      }
+
+      .delete-actions {
+      }
+    }
+  }
+}

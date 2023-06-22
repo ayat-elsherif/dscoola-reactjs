@@ -1,0 +1,271 @@
+@import "../../../../../../sass/var";
+@import "../../../../../../sass/mixins";
+
+
+
+.makeAppointmentTitle {
+
+    @include breakpoint(max-xl) {
+        .longButton {
+            padding: 0.45rem 1.2rem !important;
+            font-size: 15px;
+        }
+    }
+}
+
+.singleComment {
+    margin-top: 2rem;
+    padding-bottom: 0.75rem;
+    // border-bottom: 1px solid $hover-color;
+    position: relative;
+
+    a {
+        text-decoration: none;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    figure {
+        img {
+            width: 48px;
+            height: 48px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+    }
+
+    h5 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    p {
+        font-size: 15px;
+        color: #6a6f73;
+    }
+
+    .commentBody {
+        p {
+            margin-bottom: 5px;
+        }
+    }
+
+    .commentFooter {
+        p {
+            font-size: 15px;
+        }
+
+        .commentReplies {
+            color: $separator-color;
+
+            svg {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        width: calc(100% + 40px);
+        height: 1px;
+        background-color: lighten($color: $border-color, $amount: 8%);
+    }
+
+    &:last-child {
+        &::after {
+            display: none;
+        }
+    }
+
+    @include breakpoint(max-xl) {
+        p {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 15px;
+        }
+    }
+}
+
+.studentComment {
+    border-top: 1px solid $hover-color;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+
+    .secondaryComment {
+        margin-bottom: 0.5rem;
+
+        small {
+            font-size: 13px;
+            color: $desc-color;
+        }
+
+        P {
+            font-size: 14px;
+        }
+    }
+
+    @include breakpoint(max-xl) {
+        .secondaryComment {
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.singleAppointment {
+    background-color: $grey-color;
+    padding: 1.25rem 1.65rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+    .appointmentStatus {
+        font-size: 13px;
+
+        &.upcoming {
+            color: $theme-color;
+        }
+
+        &.done {
+            color: $secondary-color;
+        }
+
+        &.expired {
+            color: $primary-color;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    small {
+        font-size: 13px;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    button.btn {
+        font-size: 12px;
+        font-weight: 500;
+        margin-top: 1.5rem;
+        padding: 8px 16px;
+        text-transform: capitalize;
+        transition: all 0.15s ease-in;
+
+        &.btn-light {
+            background-color: $hover-color;
+            color: $theme-color;
+            margin-right: 0.5rem;
+            border-color: $hover-color;
+
+            &:hover {
+                background-color: darken($color: $hover-color, $amount: 3%);
+            }
+        }
+
+        &.btn-primary {
+            background-color: $theme-color;
+            color: #fff;
+
+            &:hover {
+                background-color: darken($color: $theme-color, $amount: 3%);
+                border-color: $theme-color;
+            }
+        }
+    }
+
+    @include breakpoint(max-xl) {
+        .text-end {
+            width: 50%;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+.site-calendar-demo-card {
+    width: 300px;
+    border: 1px solid #f0f0f0;
+    border-radius: 2px;
+}
+
+.select-date {
+    font-size: 15px;
+
+    font-weight: 500;
+
+    padding-top: 30px;
+}
+
+.time-slot-btn {
+    width: 76px;
+    height: 34px;
+    margin-right: 12px;
+    font-size: 11px;
+    border-radius: 4px;
+    margin-top: 12px;
+    background-color: #f9fafc;
+    border: none;
+
+    &:focus {
+        background: #7e59d1;
+        color: white;
+    }
+
+    //   &:hover {
+
+    //     color: #5107f1;
+    // }
+}
+
+.available-times {
+    margin-bottom: 11px;
+    display: inline-block;
+    font-size: 13px;
+    color: #6A6F73
+}
+
+.available-for {
+    color: #7e59d1 !important;
+}
+
+.ant-picker {
+    height: 45px;
+}
+
+.title-input {
+    height: 45px;
+}
+
+.one-on-one-form {
+    .ant-form-item .ant-form-item-label {
+        margin-top: 0px !important
+    }
+}
+
+
+.css-1okj3ks-MuiStack-root {
+    min-height: 20px;
+}

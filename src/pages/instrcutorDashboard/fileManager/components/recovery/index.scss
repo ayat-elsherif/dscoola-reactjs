@@ -1,0 +1,19 @@
+.recovery {
+  h3 {
+    font-size: 18px;
+    font-family: 'Poppins-Medium';
+    color: #2a2a2a;
+    margin: 0 0 24px;
+  }
+  .recovery-content {
+    display: flex;
+    justify-content: space-between;
+    .dashboard-form {
+      width: 189px;
+      margin-right: 24px;
+    }
+    .recovery-table {
+      width: calc(100% - 189px);
+    }
+  }
+}

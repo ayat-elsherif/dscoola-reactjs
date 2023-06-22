@@ -1,0 +1,149 @@
+{
+  "price": 150,
+  "course_chapter": [
+    {
+      "name": "Microsoft Excel - Useful Tools",
+      "status": "active",
+      "classes": [
+        {
+          "title": "Inserting a Line Break with Alt + Enter",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": true
+        },
+        {
+          "title": "Create Easily Printable Excel Documents",
+          "type": "pdf",
+          "icon": "fa-ok",
+          "url": "https://img-c.udemycdn.com/course/240x135/548278_b005_9.jpg",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": false,
+          "is_seen": true
+        },
+        {
+          "title": "Create Easily Printable Excel Documents",
+          "type": "pdf",
+          "icon": "fa-ok",
+          "url": "https://img-c.udemycdn.com/course/240x135/548278_b005_9.jpg",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": false,
+          "is_seen": false
+        }
+      ]
+    },
+    {
+      "name": "Excel Formulas & What To Be Aware of",
+      "status": "active",
+      "classes": [
+        {
+          "title": "How Excel Calculates - Order of Precedence",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": false
+        },
+        {
+          "title": "Essential Excel Rule (Don't Skip!)",
+          "type": "pdf",
+          "icon": "fa-icon",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": false
+        }
+      ]
+    },
+    {
+      "name": "Sparklines",
+      "status": "active",
+      "classes": [
+        {
+          "title": "Creating A Sparkline",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": false
+        },
+        {
+          "title": "Altering The Design Of Sparklines",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "59:00",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": false
+        },
+        {
+          "title": " Sparklines",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "5:00",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": false
+        },
+        {
+          "title": "Dealing With Empty Cells",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": false,
+          "is_seen": false
+        }
+      ]
+    },
+    {
+      "name": "still trying",
+      "status": "active",
+      "classes": [
+        {
+          "title": "Creating A Sparkline",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "01:30",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": false
+        },
+        {
+          "title": "Altering The Design Of Sparklines",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "9:00",
+          "status": "active",
+          "is_featured": true,
+          "is_seen": false
+        },
+        {
+          "title": "Dealing With Empty Cells",
+          "type": "video",
+          "icon": "fa-ok",
+          "url": "https://www.youtube.com/watch?v=0W6i5LYKCSI",
+          "duration": "02:30",
+          "status": "active",
+          "is_featured": false,
+          "is_seen": false
+        }
+      ]
+    }
+  ]
+}

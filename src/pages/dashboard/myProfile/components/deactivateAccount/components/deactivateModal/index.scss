@@ -1,0 +1,32 @@
+.deactivate-modal {
+  height: 287px;
+  .ant-modal-content {
+    border: 1px solid #707070;
+    border-radius: 8px;
+    box-shadow: none;
+    .ant-modal-body {
+      padding: 36px 39px 32px;
+
+      h3 {
+        color: #2a2a2a;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: 'Poppins-Medium';
+        margin: 0 0 14px;
+      }
+      p {
+        margin-bottom: 20px;
+        color: #2a2a2a;
+        font-size: 14px;
+      }
+
+      .form-actions {
+        margin-top: 7px;
+        button {
+          padding: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

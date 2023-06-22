@@ -1,0 +1,74 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: clip;
+
+  max-width: 100% !important;
+
+  &.over-visible {
+    overflow-x: visible;
+  }
+
+  @include mq('md', max) {
+    width: 100%;
+    // padding: 0 1rem;
+  }
+
+  @include mq('md') {
+    width: 723px;
+  }
+
+  @include mq('lg') {
+    width: 933px;
+    width: 960px; // custom
+  }
+
+  @include mq('xl') {
+    width: 1127px;
+    width: 1190px; // custom
+  }
+
+  @include mq('xxl') {
+    width: 1290px;
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// for categories menu
+div[class*='ant-dropdown-menu-submenu ant-dropdown-menu-submenu-popup ant-dropdown-menu ant-dropdown-menu-light'] {
+  top: 60px !important;
+}
+
+// .ant-carousel {
+//   .slick-list {
+//     overflow-x: clip;
+//     overflow-y: visible;
+//     padding: 1rem;
+//     margin: -1rem;
+//   }
+// }
+
+.typ-btn-icon {
+  min-width: auto;
+  max-width: 2.4rem;
+}
+
+.typ-sec-title {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  color: #2a2a2a;
+  margin-bottom: 1.5rem;
+}
+
+.clickable {
+  cursor: pointer;
+}

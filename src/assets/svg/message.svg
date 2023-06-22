@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="message">
+      <rect id="Rectangle_29291" data-name="Rectangle 29291" width="16" height="16" transform="translate(288 352)" fill="#7e59d1" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_688" data-name="Mask Group 688" transform="translate(-288 -352)" clip-path="url(#message)">
+    <g id="svgexport-6_-_2022-05-09T105527.997" data-name="svgexport-6 - 2022-05-09T105527.997" transform="translate(288 352)">
+      <g id="Group_11628" data-name="Group 11628">
+        <g id="Group_11627" data-name="Group 11627">
+          <path id="Path_11658" data-name="Path 11658" d="M10.367,8.664l-1.34,1.345a1.483,1.483,0,0,1-2.055,0L5.633,8.664.82,13.493a1.392,1.392,0,0,0,.587.132H14.594a1.391,1.391,0,0,0,.587-.132Z" fill="#7e59d1"/>
+        </g>
+      </g>
+      <g id="Group_11630" data-name="Group 11630">
+        <g id="Group_11629" data-name="Group 11629">
+          <path id="Path_11659" data-name="Path 11659" d="M14.594,2.375H1.406a1.392,1.392,0,0,0-.587.132l5.143,5.16h0L7.636,9.347a.563.563,0,0,0,.727,0l1.672-1.678h0l5.143-5.16A1.391,1.391,0,0,0,14.594,2.375Z" fill="#7e59d1"/>
+        </g>
+      </g>
+      <g id="Group_11632" data-name="Group 11632">
+        <g id="Group_11631" data-name="Group 11631">
+          <path id="Path_11660" data-name="Path 11660" d="M.15,3.163A1.389,1.389,0,0,0,0,3.781v8.438a1.389,1.389,0,0,0,.15.618L4.971,8Z" fill="#7e59d1"/>
+        </g>
+      </g>
+      <g id="Group_11634" data-name="Group 11634">
+        <g id="Group_11633" data-name="Group 11633">
+          <path id="Path_11661" data-name="Path 11661" d="M15.85,3.163,11.029,8l4.821,4.837a1.389,1.389,0,0,0,.15-.618V3.781A1.389,1.389,0,0,0,15.85,3.163Z" fill="#7e59d1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

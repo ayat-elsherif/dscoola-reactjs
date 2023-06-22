@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="camara">
+      <rect id="Rectangle_30254" data-name="Rectangle 30254" width="24" height="24" transform="translate(167 685)" fill="#382464" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_854" data-name="Mask Group 854" transform="translate(-167 -685)" clip-path="url(#camara)">
+    <g id="svgexport-6_-_2022-08-22T144921.539" data-name="svgexport-6 - 2022-08-22T144921.539" transform="translate(167 689.997)">
+      <g id="Group_85900" data-name="Group 85900" transform="translate(0 0)">
+        <g id="Group_85899" data-name="Group 85899">
+          <path id="Path_47952" data-name="Path 47952" d="M13.705,6.187H2.651A2.659,2.659,0,0,0,0,8.838v8.934a2.659,2.659,0,0,0,2.651,2.651H13.705a2.659,2.659,0,0,0,2.651-2.651V8.838A2.642,2.642,0,0,0,13.705,6.187Z" transform="translate(0 -6.187)" fill="#382464"/>
+        </g>
+      </g>
+      <g id="Group_85902" data-name="Group 85902" transform="translate(17.682 1.415)">
+        <g id="Group_85901" data-name="Group 85901">
+          <path id="Path_47953" data-name="Path 47953" d="M26.479,7.982a1.35,1.35,0,0,0-.451.186l-4.135,2.386V16.7l4.162,2.386a1.576,1.576,0,0,0,2.174-.583,1.619,1.619,0,0,0,.212-.8V9.52A1.6,1.6,0,0,0,26.479,7.982Z" transform="translate(-21.893 -7.939)" fill="#382464"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+.webinar-card {
+  position: relative;
+
+  .webinar-status {
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 5px 13px;
+    background-color: #cc1915;
+    border-radius: 1.3rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    letter-spacing: 0px;
+    color: #ffffff;
+
+    svg {
+      width: 1.1rem;
+    }
+  }
+}

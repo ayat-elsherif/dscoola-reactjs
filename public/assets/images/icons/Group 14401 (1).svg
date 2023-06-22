@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68" height="68" viewBox="0 0 68 68">
+  <defs>
+    <filter id="Ellipse_1825" x="0" y="0" width="68" height="68" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#e0e0f5"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_27334" data-name="Rectangle 27334" width="24" height="24" transform="translate(-19433 -17530)" fill="#3aaaf5" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_14401" data-name="Group 14401" transform="translate(-1039 -621)">
+    <g transform="matrix(1, 0, 0, 1, 1039, 621)" filter="url(#Ellipse_1825)">
+      <circle id="Ellipse_1825-2" data-name="Ellipse 1825" cx="25" cy="25" r="25" transform="translate(9 9)" fill="#fff"/>
+    </g>
+    <g id="Mask_Group_446" data-name="Mask Group 446" transform="translate(20494 18173)" clip-path="url(#clip-path)">
+      <g id="svgexport-9_1_" data-name="svgexport-9 (1)" transform="translate(-19433 -17530)">
+        <g id="Group_10473" data-name="Group 10473">
+          <g id="Group_10472" data-name="Group 10472">
+            <path id="Path_10618" data-name="Path 10618" d="M23.894,5.135a.715.715,0,0,0-.672-.338l-1.2.1,1.144-2.306a.716.716,0,0,0-.956-.961L19.186,3.117a5.114,5.114,0,0,0-5.815.77,6.192,6.192,0,0,0-1.916,4.977,10.42,10.42,0,0,1-8.232-5.6.716.716,0,0,0-1.2-.085,4.91,4.91,0,0,0-.312,5.147c-.235-.059-.486-.14-.763-.233a.716.716,0,0,0-.933.8,6.019,6.019,0,0,0,3.418,4.553,6.011,6.011,0,0,1-.751.208.716.716,0,0,0-.377,1.19,9.692,9.692,0,0,0,4.715,2.51C5.43,18.588,3.719,18.8,1.233,18.71a.716.716,0,0,0-.555,1.2c1.036,1.142,4.812,2.43,8.781,2.527q.235.006.481.006c2.787,0,6.47-.6,9.113-3.241a12.9,12.9,0,0,0,3.72-6.846A13.313,13.313,0,0,0,22.8,7.865c-.008-.058-.017-.12-.025-.174l1.119-1.8A.716.716,0,0,0,23.894,5.135Z" fill="#3aaaf5"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

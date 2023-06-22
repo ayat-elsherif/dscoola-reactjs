@@ -1,0 +1,54 @@
+.edit-meeting-modal {
+  .ant-modal-header {
+    border: 0;
+    padding: 26px 35px 0;
+    border-radius: 0;
+    .ant-modal-title {
+      color: #2a2a2a;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'Poppins-Medium';
+    }
+  }
+  .ant-modal-content {
+    border: 1px solid #d1d7dc;
+    border-radius: 0;
+    box-shadow: none;
+    .ant-modal-close-x {
+      width: 20px;
+      position: absolute;
+      height: 20px;
+      top: 27px;
+      right: 35px;
+      line-height: 20px;
+    }
+    .ant-modal-body {
+      padding: 24px 35px 32px;
+      .dashboard-form {
+        .ant-form-item {
+          margin-bottom: 24px;
+          .ant-form-item-control {
+            .ant-form-item-control-input {
+              .ant-form-item-control-input-content {
+                .ant-radio-group {
+                  .ant-radio-wrapper {
+                    margin: 0 63px 0 0;
+                    span {
+                      &:last-of-type {
+                        padding: 0 0 0 10px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .modal-actions {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

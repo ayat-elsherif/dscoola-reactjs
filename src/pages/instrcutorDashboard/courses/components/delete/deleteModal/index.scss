@@ -1,0 +1,39 @@
+.deactivate-modal {
+  height: 287px;
+  .ant-modal-content {
+    border: 1px solid #707070;
+    border-radius: 8px;
+    box-shadow: none;
+    .ant-modal-body {
+      padding: 27px 26px 23px;
+
+      h3 {
+        color: #2a2a2a;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: 'Poppins-Medium';
+        margin: 0 0 14px;
+      }
+      .dashboard-form {
+        .ant-form-item {
+          .ant-form-item-control {
+            .ant-form-item-control-input {
+              .ant-form-item-control-input-content {
+                .ant-input {
+                  height: 85px !important;
+                  padding: 16px !important;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .delete-actions {
+        margin-top: 7px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}

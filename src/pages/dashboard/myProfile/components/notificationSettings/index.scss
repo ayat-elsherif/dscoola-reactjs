@@ -1,0 +1,15 @@
+.notifications-settings {
+  .form-section-title {
+    margin: 20px 0 16px;
+  }
+  .notifications-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    & > div {
+      color: #6a6f73;
+      font-size: 14px;
+    }
+  }
+}

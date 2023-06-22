@@ -1,0 +1,98 @@
+.zoom-setting-form {
+  .ant-form {
+    // width: 449px;
+    .radio-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-flow: nowrap;
+      justify-content: space-between;
+      margin-bottom: 46px;
+      &:last-of-type {
+        margin: 0;
+      }
+      .ant-form-item-label {
+        padding: 0;
+        min-width: 181px;
+
+        & > label {
+          font-size: 16px;
+        }
+      }
+      .ant-form-item-control {
+        .ant-form-item-control-input {
+          .ant-form-item-control-input-content {
+            .ant-radio-group {
+              .ant-radio-wrapper {
+                align-items: center;
+                &:first-of-type {
+                  margin-right: 100px;
+                }
+                span {
+                  &:last-of-type {
+                    padding: 0;
+                    font-size: 14px;
+                    color: #6a6f73;
+                    padding-left: 6px;
+                  }
+                }
+                margin: 0;
+                .ant-radio {
+                  color: #efeff6;
+                  &:hover {
+                    border-color: #7e59d1;
+                    .ant-radio-inner {
+                      border-color: #7e59d1;
+                    }
+                  }
+                  .ant-radio-input {
+                    &:focus {
+                      & + .ant-radio-inner {
+                        box-shadow: none;
+                        border-color: #7e59d1;
+                      }
+                    }
+                  }
+                }
+                .ant-radio-checked {
+                  .ant-radio-inner {
+                    border-color: #7e59d1;
+                    &::after {
+                      background-color: #7e59d1;
+                    }
+                  }
+                }
+              }
+              .ant-radio-wrapper-disabled {
+                .ant-radio-checked {
+                  .ant-radio-inner {
+                    border-color: #d7d7e5;
+                    &::after {
+                      background-color: #d7d7e5;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ant-select-disabled.ant-select:not(.ant-select-customize-input)
+      .ant-select-selector {
+      background: #efeff6;
+    }
+  }
+  .form-card {
+    background: #fff;
+    padding: 28px;
+  }
+  .form-actions {
+    justify-content: center;
+    margin-top: 50px;
+    button {
+      width: 125px;
+      height: 45px;
+    }
+  }
+}

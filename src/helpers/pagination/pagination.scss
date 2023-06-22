@@ -1,0 +1,39 @@
+@import "/src/sass/var";
+@import "/src/sass/mixins";
+
+.pagination {
+    margin-bottom: 2rem;
+
+    .ant-pagination {
+        text-align: center;
+        width: 100%;
+
+        .ant-pagination-disabled {
+            .ant-pagination-item-link {
+                display: none;
+            }
+        }
+
+        .ant-pagination-next,
+        .ant-pagination-prev {
+            .ant-pagination-item-link {
+                border: none;
+                line-height: .6rem;
+                font-size: 16px;
+            }
+        }
+
+        .ant-pagination-item {
+            border: none;
+            font-weight: 500;
+            font-size: 15px;
+            border-radius: 50%;
+
+        }
+
+        .ant-pagination-item-active {
+            background-color: $theme-color;
+            color: #fff;
+        }
+    }
+}

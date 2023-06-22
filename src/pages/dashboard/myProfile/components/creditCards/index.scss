@@ -1,0 +1,23 @@
+.credit-cards {
+  .form-section-title {
+    margin: 20px 0 24px;
+  }
+}
+
+.empty-state {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  opacity: 0.5;
+}
+.payment-plus-card {
+  color: #7e59d1;
+  font-size: 16px;
+  cursor: pointer;
+  padding-bottom: 15px;
+}
+.PlusCardIcon {
+  margin-right: 5px;
+}

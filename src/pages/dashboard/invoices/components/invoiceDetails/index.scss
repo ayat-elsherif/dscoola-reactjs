@@ -1,0 +1,130 @@
+.invoice-details {
+  .invoice-details_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      color: #2a2a2a;
+      font-size: 18px;
+      font-family: 'Poppins-Medium';
+      display: flex;
+      align-items: center;
+      svg {
+        margin: 0 5px;
+      }
+      span {
+        color: #7e59d1;
+      }
+    }
+    .back {
+      color: #7e59d1;
+      font-size: 15px;
+      cursor: pointer;
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  .invoice-details_body {
+    margin-top: 24px;
+    height: 721px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    padding: 37px 28px;
+    .invoice-logo {
+      text-align: center;
+      margin-bottom: 36px;
+      img {
+        width: 124px;
+        height: 42px;
+      }
+    }
+    .invoice-header {
+      display: flex;
+      justify-content: space-between;
+      .user-details {
+        h5 {
+          color: #6a6f73;
+          font-size: 16px;
+          font-family: 'Poppins-Medium';
+          margin: 0;
+        }
+        h4 {
+          color: #7e59d1;
+          font-size: 24px;
+          font-family: 'Poppins-Medium';
+          margin: 0 0 22px;
+        }
+        div {
+          font-size: 16px;
+          font-family: 'Poppins-Medium';
+          color: #6a6f73;
+          display: flex;
+          align-items: center;
+          &:first-of-type {
+            margin-bottom: 16px;
+          }
+          span {
+            margin-left: 10px;
+          }
+        }
+      }
+      .invoice-data {
+        width: 28%;
+        h4 {
+          color: #7e59d1;
+          font-size: 24px;
+          font-family: 'Poppins-Medium';
+          margin: 0 0 24px;
+        }
+        div {
+          display: flex;
+
+          &:first-of-type {
+            margin-bottom: 12px;
+          }
+          span {
+            color: #6a6f73;
+            font-size: 16px;
+            font-family: 'Poppins-Medium';
+            white-space: nowrap;
+            &:first-of-type {
+              width: 58.6%;
+            }
+          }
+        }
+      }
+    }
+    .invoice-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 28%;
+        &:first-of-type {
+          margin-bottom: 10px;
+        }
+        span {
+          color: #6a6f73;
+          font-size: 14px;
+          white-space: nowrap;
+        }
+        &:last-of-type {
+          span {
+            &:first-of-type {
+              color: #2a2a2a;
+              font-family: 'Poppins-Medium';
+            }
+          }
+        }
+      }
+      .custom-divider {
+        background: #e5e9f2;
+        margin: 10px 0;
+      }
+    }
+  }
+}

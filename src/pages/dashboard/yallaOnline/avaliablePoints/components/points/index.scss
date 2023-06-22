@@ -1,0 +1,17 @@
+.point-card {
+  height: 206px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #d1cdcdb3;
+  text-align: center;
+  padding: 17px 0;
+  svg {
+    margin-bottom: 12px;
+  }
+  .points-discount {
+    color: #6a6f73;
+    font-size: 16px;
+    span {
+      color: #7e59d1;
+    }
+  }
+}

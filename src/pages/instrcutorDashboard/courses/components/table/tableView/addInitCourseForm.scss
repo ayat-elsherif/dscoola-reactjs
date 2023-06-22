@@ -1,0 +1,40 @@
+.init-course-form {
+  .ant-input,
+  .ant-select-selector {
+    height: 40px !important;
+    width: 100%;
+    border: 1px solid #dbdfea;
+    border-radius: 4px;
+  }
+
+  .create-course-btn {
+    width: 100% !important;
+    margin-top: 35px;
+    border-radius: 3px;
+    height: 40px;
+  }
+}
+.init-course-modal {
+  .ant-modal-header {
+    border-bottom: none !important;
+    //  padding-top: 28px !important;
+  }
+  .ant-modal-body {
+    padding: 0 !important;
+    //  padding-bottom: 24px !important;
+    //  padding-left: 24px !important;
+    //  padding-right: 24px !important;
+  }
+  .ant-modal-title {
+    font-size: 18px !important;
+  }
+}
+.ant-form-item {
+  margin-bottom: 0 !important;
+}
+// .ant-select-selection-placeholder {
+//   line-height: 11px !important;
+// }
+// .ant-select-selection-item {
+//   line-height: 11px !important;
+// }

@@ -1,0 +1,14 @@
+.dashboard-form {
+  .ant-form-item {
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 12px;
+    }
+  }
+  .reset-filter {
+    height: 19px;
+    line-height: 19px;
+    color: #7e59d1;
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,75 @@
+@import '../../sass/var';
+
+.rating-header {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 23px;
+}
+
+.rating-container {
+  gap: 25px;
+  margin-bottom: 25px;
+  .ant-progress {
+    height: 25px;
+    .ant-progress-inner {
+      background-color: $divider-line-color;
+    }
+    .ant-progress-bg {
+      background-color: $theme-color;
+      height: 6px !important;
+    }
+  }
+
+  .ant-rate-star {
+    margin-left: -4px;
+  }
+
+  .ant-rate-star-full {
+    path {
+      color: $star-color;
+    }
+  }
+}
+
+.rating-summary {
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 100%;
+  padding: 25px;
+  box-shadow: $header-box-shadow;
+  border-radius: 6px;
+
+  .rating-number {
+    font-size: 42px;
+    font-weight: 400;
+    color: $title-color;
+  }
+
+  .rating-stars {
+    p {
+      margin-top: 9px;
+      font-size: 10px;
+      color: $desc-color;
+    }
+  }
+}
+
+.rating-stat {
+  display: flex;
+  flex-direction: row;
+  //   justify-content: space-between;
+  flex-grow: 1;
+  gap: 22px;
+  .rating-stat-bar {
+    width: 60%;
+  }
+}
+
+.rating-stats {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,45 @@
+.statistics-widget-card {
+  height: 161px;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px #b1b0b05e;
+  margin-bottom: 25px;
+  padding: 25px 25px 25px 20px;
+  &_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-info {
+      h3 {
+        font-size: 16px;
+        color: #6a6f73;
+        margin: 0 0 18px;
+      }
+      .numbers {
+        font-size: 23px;
+        color: #131523;
+        font-family: 'Poppins-Medium';
+      }
+    }
+    .icon-container {
+      width: 62px;
+      height: 62px;
+      line-height: 62px;
+      text-align: center;
+      background: #7e59d11a;
+      border: 1px solid #7e59d11a;
+      border-radius: 50%;
+    }
+  }
+  &_footer {
+    margin-top: 14px;
+    span {
+      color: #7e84a3;
+      font-size: 12px;
+      &:first-of-type {
+        color: #3dd598;
+        font-size: 16px;
+        font-family: 'Poppins-Medium';
+      }
+    }
+  }
+}

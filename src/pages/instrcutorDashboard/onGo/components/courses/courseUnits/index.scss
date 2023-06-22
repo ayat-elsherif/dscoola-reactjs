@@ -1,0 +1,68 @@
+.course-units {
+  .course-units_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+    .title {
+      color: #2a2a2a;
+      font-size: 18px;
+      font-family: 'Poppins-Medium';
+      span {
+        color: #7e59d1;
+      }
+    }
+    .back {
+      color: #7e59d1;
+      font-size: 15px;
+      cursor: pointer;
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  .course-units_body {
+    .unite-card {
+      padding: 24px 18px;
+      border: 1px solid #dbdfea;
+      border-radius: 2px;
+      margin-bottom: 18px;
+      display: flex;
+      background: #fff;
+      .unite-banner {
+        width: 132px;
+        height: 83px;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 6px;
+        }
+      }
+      .unite-info {
+        margin-left: 18px;
+        width: calc(100% - 132px);
+        h4 {
+          color: #2a2a2a;
+          font-size: 16px;
+          font-family: 'Poppins-Medium';
+          margin: 0 0 7px;
+        }
+        p {
+          font-size: 14px;
+          color: #6a6f73;
+          margin: 0 0 15px;
+        }
+        .applied {
+          color: #0acf97;
+          font-size: 16px;
+          font-family: 'Poppins-Medium';
+        }
+        .not-applied {
+          color: #7e59d1;
+          font-size: 16px;
+          font-family: 'Poppins-Medium';
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

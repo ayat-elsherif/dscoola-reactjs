@@ -1,0 +1,59 @@
+@import '../../sass/_var.scss';
+@import '../../sass/_mixins.scss';
+
+.custom-text-editor {
+  .textEditor-withRecord {
+    .rdw-editor-wrapper {
+      .rdw-editor-toolbar {
+        background: #fff;
+        padding: 0;
+        border: 0;
+        border-bottom: 1px solid #dbdfea;
+        .rdw-block-wrapper {
+          margin: 0;
+          .rdw-block-dropdown {
+            border: 0;
+            border-right: 1px solid #dbdfea;
+            background-color: #fff;
+            &:hover {
+              box-shadow: none;
+            }
+            .rdw-dropdown-selectedtext {
+              background-color: #fff;
+            }
+          }
+        }
+        .rdw-inline-wrapper {
+          background-color: #fff;
+          margin: 0;
+          .rdw-option-wrapper {
+            background-color: #fff;
+            border: 0;
+          }
+        }
+        .rdw-link-wrapper,
+        .rdw-colorpicker-wrapper {
+          background-color: #fff;
+          margin: 0;
+          .rdw-option-wrapper {
+            background-color: #fff;
+            border: 0;
+          }
+        }
+        .rdw-dropdown-wrapper {
+          background-color: #fff;
+          border: 0;
+          &:hover {
+            box-shadow: none;
+          }
+          .rdw-dropdown-selectedtext {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+    .recordMessage {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <clipPath id="excel">
+      <rect id="Rectangle_29217" data-name="Rectangle 29217" width="50" height="50" transform="translate(757 433)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_642" data-name="Mask Group 642" transform="translate(-757 -433)" clip-path="url(#excel)">
+    <g id="svgexport-6_78_" data-name="svgexport-6 (78)" transform="translate(763.3 433)">
+      <g id="Group_11472" data-name="Group 11472" transform="translate(0)">
+        <g id="Vrstva_x0020_1_5_">
+          <path id="Path_11512" data-name="Path 11512" d="M14.324,0H31.046L45.21,14.777V43.486A6.514,6.514,0,0,1,38.7,50H14.324a6.514,6.514,0,0,1-6.511-6.511V6.511A6.514,6.514,0,0,1,14.324,0Z" transform="translate(-7.812)" fill="#1a975a" fill-rule="evenodd"/>
+          <g id="Group_11471" data-name="Group 11471" transform="translate(11.014)">
+            <path id="Path_11513" data-name="Path 11513" d="M36.6,0V14.65H50.782Z" transform="translate(-24.399)" fill="#fff" fill-rule="evenodd" opacity="0.302"/>
+            <path id="Path_11514" data-name="Path 11514" d="M21.471,42.4h6.638v2.516H21.471Zm8.71-12.853H36.84V32.04H30.181Zm-8.71,0h6.638V32.04H21.471Zm8.71,4.228H36.84v2.516H30.181Zm-8.71,0h6.638v2.516H21.471Zm8.71,4.4H36.84v2.516H30.181Zm-8.71,0h6.638v2.516H21.471Zm8.71,4.228H36.84v2.516H30.181Z" transform="translate(-21.471 -5.72)" fill="#fff" fill-rule="evenodd"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,57 @@
+.ant-picker-dropdown {
+  z-index: 1090 !important;
+}
+
+.time-slots-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .time-slots-card {
+    margin: 16px 0;
+    margin-right: 12px;
+    height: 40px;
+    background: #ffffff;
+    border: 1px solid #382464;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    cursor: pointer;
+
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+
+    .ant-dropdown-trigger {
+      margin-left: 12px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      font-size: 21px;
+    }
+
+    .ant-dropdown-menu-title-content {
+      span {
+        cursor: pointer;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      letter-spacing: 0px;
+      color: #382464;
+      text-transform: uppercase;
+      opacity: 1;
+    }
+
+    &.active-day {
+      background: #7e59d1;
+
+      p {
+        color: #fff;
+      }
+    }
+  }
+}

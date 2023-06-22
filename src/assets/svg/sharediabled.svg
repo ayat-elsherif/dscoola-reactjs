@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="sharediabled">
+      <rect id="Rectangle_30301" data-name="Rectangle 30301" width="24" height="24" transform="translate(394 688)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_867" data-name="Mask Group 867" transform="translate(-394 -688)" clip-path="url(#sharediabled)">
+    <g id="svgexport-6_-_2022-08-22T152617.550" data-name="svgexport-6 - 2022-08-22T152617.550" transform="translate(392.286 686.286)">
+      <path id="Path_47992" data-name="Path 47992" d="M7.714,20.571H4.286A2.571,2.571,0,0,1,1.714,18V6.857A2.572,2.572,0,0,1,4.286,4.286H23.143a2.571,2.571,0,0,1,2.571,2.571V18a2.571,2.571,0,0,1-2.571,2.571H19.714v.668a1.9,1.9,0,0,1-1.9,1.9H9.618a1.9,1.9,0,0,1-1.9-1.9Zm1.714,0v.668a.189.189,0,0,0,.189.189h8.193A.189.189,0,0,0,18,21.239v-.668ZM12.857,11.5l-.961.961a.857.857,0,0,1-1.212-1.212l2.424-2.424a.857.857,0,0,1,1.212,0l2.424,2.424a.857.857,0,1,1-1.212,1.212l-.961-.961v3.931a.857.857,0,1,1-1.714,0Z" fill="#382464"/>
+    </g>
+    <g id="icon_close" data-name="icon/close" transform="translate(395.707 689.707)">
+      <path id="Vector_Stroke_" data-name="Vector (Stroke)" d="M.764.131,3,2.367,5.236.131a.447.447,0,1,1,.633.633L3.633,3,5.869,5.236a.447.447,0,0,1-.633.633L3,3.633.764,5.869a.447.447,0,0,1-.633-.633L2.367,3,.131.764A.447.447,0,0,1,.764.131Z" transform="translate(7.293 6.293)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

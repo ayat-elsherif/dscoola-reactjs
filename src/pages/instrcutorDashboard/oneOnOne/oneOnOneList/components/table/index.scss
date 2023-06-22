@@ -1,0 +1,93 @@
+.student-request-table {
+  margin-top: 18px;
+  background: #ffffff;
+  box-shadow: 0px 0px 6px #d1cdcd82;
+  border-radius: 3px;
+  .ant-table-bordered {
+    .ant-table-thead {
+      & > tr {
+        & > th {
+          background: transparent;
+          border-right: none !important;
+          color: #2a2a2a;
+          font-size: 14px;
+          font-family: 'Poppins-Medium';
+        }
+      }
+      tr {
+        th {
+          &:first-of-type {
+            padding: 0 !important;
+          }
+          &:nth-of-type(2) {
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+    .ant-table-tbody {
+      tr {
+        td {
+          &:first-of-type {
+            color: #2a2a2a;
+            font-size: 14px;
+            padding: 0 !important;
+          }
+          &:nth-of-type(2) {
+            padding-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .select-Pending {
+    .ant-select-selector {
+      height: 24px;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      border-color: #ffefbb;
+      color: #f2b636;
+      background: #ffefbb;
+      border: 0;
+    }
+    .ant-select-arrow {
+      font-size: 9px;
+      color: #f2b636;
+    }
+  }
+  .ant-select-focused,
+  .ant-select-single.ant-select-open .ant-select-selection-item {
+    color: inherit !important;
+  }
+
+  .ant-picker-focused,
+  .ant-select-focused:not(.ant-select-disabled).ant-select:not(.ant-select-customize-input)
+    .ant-select-selector {
+    box-shadow: none;
+  }
+  .ant-dropdown-trigger {
+    width: 96px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 9px;
+    background: #ffefbb 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    color: #f2b636;
+    font-size: 12px;
+    white-space: nowrap;
+    span {
+      &:nth-of-type(2) {
+        margin: 0 6px 0 4px;
+      }
+    }
+  }
+  .ant-dropdown-open svg path {
+    fill: #f2b636;
+  }
+}
+.ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  background: #8e6dd7 !important;
+  color: #fff;
+}

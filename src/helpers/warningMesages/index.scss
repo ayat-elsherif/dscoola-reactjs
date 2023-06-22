@@ -1,0 +1,15 @@
+.message-container {
+  width: 100%;
+  min-height: 47px;
+  background: #fff1f4;
+  border-radius: 2px;
+  font-size: 13px;
+  padding: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  span:first-child {
+    color: #cc1915;
+    font-size: 13px;
+  }
+}

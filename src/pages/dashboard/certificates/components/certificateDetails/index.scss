@@ -1,0 +1,71 @@
+.certificate-details {
+  .certificate-details_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      color: #2a2a2a;
+      font-size: 18px;
+      font-family: 'Poppins-Medium';
+      span {
+        color: #7e59d1;
+      }
+    }
+    .back {
+      color: #7e59d1;
+      font-size: 15px;
+      cursor: pointer;
+      svg {
+        margin-right: 5px;
+      }
+    }
+  }
+  .certificate-details_body {
+    margin-top: 26px;
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    .congratulations-card {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 0px 6px #94949428;
+      border-radius: 6px;
+      padding: 24px 17px;
+      height: 242px;
+      h3 {
+        font-size: 18px;
+        font-family: 'Poppins-Medium';
+        color: #7e59d1;
+        margin: 0 0 14px;
+      }
+      p {
+        font-size: 18px;
+        color: #2a2a2a;
+        margin: 0 0 11px;
+        font-weight: normal;
+      }
+      .date {
+        font-size: 15px;
+        color: #6a6f73;
+      }
+      .actions {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 18px;
+        button {
+          width: 214px;
+          height: 40px;
+          padding: 0;
+          box-shadow: none;
+          font-size: 15px;
+          margin-right: 10px;
+        }
+        .share {
+          background: #eaeaea;
+          color: #7e59d1;
+          border: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23" fill="#382464">
+  <defs>
+    <clipPath id="mic">
+      <rect id="Rectangle_30255" data-name="Rectangle 30255" width="23" height="23" transform="translate(279 685)"  stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_855" data-name="Mask Group 855" transform="translate(-279 -685)" clip-path="url(#mic)">
+    <g id="svgexport-6_-_2022-08-22T145004.935" data-name="svgexport-6 - 2022-08-22T145004.935" transform="translate(284.074 686.471)">
+      <g id="Group_85904" data-name="Group 85904" transform="translate(0 9.659)">
+        <g id="Group_85903" data-name="Group 85903">
+          <path id="Path_47954" data-name="Path 47954" d="M18.241,15.156a.708.708,0,1,0-1.416,0,5.01,5.01,0,0,1-10.02,0,.708.708,0,0,0-1.416,0,6.433,6.433,0,0,0,5.718,6.386V23.43H8.532a.708.708,0,1,0,0,1.416H15.1a.708.708,0,1,0,0-1.416H12.522V21.542A6.433,6.433,0,0,0,18.241,15.156Z" transform="translate(-5.388 -14.448)" />
+        </g>
+      </g>
+      <g id="Group_85906" data-name="Group 85906" transform="translate(2.478)">
+        <g id="Group_85905" data-name="Group 85905">
+          <path id="Path_47955" data-name="Path 47955" d="M13.043,0A3.948,3.948,0,0,0,9.095,3.948v6.393a3.948,3.948,0,1,0,7.9,0V3.948A3.948,3.948,0,0,0,13.043,0Z" transform="translate(-9.095)" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

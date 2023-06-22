@@ -1,0 +1,106 @@
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wallet-wrapper {
+  .wallet-header {
+    margin-bottom: 24px;
+
+    h2 {
+      font-size: 18px;
+      color: #2a2a2a;
+      font-family: "Poppins-Medium";
+      margin: 0;
+    }
+
+    p {
+      font-size: 14px;
+      color: #6a6f73;
+      margin: 6px 0 0 0;
+      font-family: "Poppins-Regular";
+    }
+  }
+
+  .wallet-cards-wrapper {
+    margin-bottom: 40px;
+
+    .wallet-cards {
+      align-items: flex-start;
+      padding: 15px 30px;
+      padding-right: 18px;
+      box-shadow: 0px 0px 6px #d1cdcd82;
+      border-left: 3px solid #f2b636;
+      width: 100%;
+      margin-right: 20px;
+
+      &:first-of-type {
+        border-left-color: #7e59d1;
+      }
+
+      &:last-of-type {
+        border-left-color: #16b286;
+        margin-right: 0;
+      }
+
+      p {
+        font-family: "Poppins-Regular";
+        font-size: 12px;
+        color: #6a6f73;
+        margin-bottom: 6px;
+      }
+
+      span {
+        &:not(.card-icon) {
+          font-size: 20px;
+          color: #2a2a2a;
+          font-family: "Poppins-Medium";
+        }
+
+        &.card-icon {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 36px;
+          padding: 12px;
+          background: #f2eefa;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .transactions-list {
+    p {
+      font-size: 16px;
+      color: #2a2a2a;
+      font-family: "Poppins-Medium";
+    }
+
+    .ant-table-content {
+      table {
+        box-shadow: 0px 0px 6px #d1cdcd82;
+        border: none !important;
+        border-radius: 3px;
+      }
+      .ant-table-thead {
+        .ant-table-cell {
+          background-color: #fff;
+          border: none !important;
+          color: #6a6f73;
+          border-bottom: 1px solid #dbdfea !important;
+        }
+      }
+
+      .ant-table-tbody {
+        tr {
+          td {
+            border: none !important;
+          }
+        }
+      }
+    }
+  }
+}

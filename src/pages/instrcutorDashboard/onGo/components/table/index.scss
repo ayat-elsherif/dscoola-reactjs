@@ -1,0 +1,19 @@
+.main-table {
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: none;
+  .ant-table-bordered {
+    .ant-table-content {
+      table {
+        border: 0;
+        border-top: 0 !important;
+      }
+    }
+  }
+  .units-number {
+    a {
+      text-decoration: underline;
+      color: #7e59d1;
+    }
+  }
+}

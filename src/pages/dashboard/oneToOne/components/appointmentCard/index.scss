@@ -1,0 +1,53 @@
+.appointment-card {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 6px #94949428;
+  border-radius: 4px;
+  padding: 21px 25px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  .appointment-card_details {
+    font-size: 13px;
+    width: 55.766%;
+    .status {
+      color: #7e59d1;
+    }
+    .done {
+      color: #2da381;
+    }
+    .expired {
+      color: #cc1915;
+    }
+    .title {
+      font-size: 15px;
+      font-family: 'Poppins-Medium';
+      color: #2a2a2a;
+      margin: 10px 0 4px;
+    }
+    .instructor-with {
+      font-size: 13px;
+      color: #6a6f73;
+
+      span {
+        color: #7e59d1;
+      }
+    }
+  }
+  .appointment-card_date-actions {
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    .date {
+      color: #2a2a2a;
+    }
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+
+      .update {
+        margin-left: 7px;
+      }
+    }
+  }
+}

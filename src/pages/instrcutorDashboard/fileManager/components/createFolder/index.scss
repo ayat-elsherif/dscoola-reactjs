@@ -1,0 +1,35 @@
+.create-folder-modal {
+  height: 259px;
+  .ant-modal-content {
+    border: 1px solid #707070;
+    border-radius: 8px;
+    box-shadow: none;
+    .ant-modal-close-x {
+      width: 20px;
+      position: absolute;
+      height: 20px;
+      top: 37px;
+      right: 37px;
+      line-height: 20px;
+    }
+    .ant-modal-body {
+      padding: 37px;
+
+      h3 {
+        color: #2a2a2a;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: 'Poppins-Medium';
+        margin: 0 0 14px;
+      }
+      p {
+        margin-bottom: 20px;
+        color: #2a2a2a;
+        font-size: 14px;
+      }
+    }
+    .btn-modal {
+      margin-top: 7px;
+    }
+  }
+}

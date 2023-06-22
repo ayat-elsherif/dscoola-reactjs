@@ -1,0 +1,87 @@
+// @import "../../sass/_var.scss";
+// @import "../../sass/_mixins";
+
+
+
+// .btn {
+//     background-color: $theme-color;
+//     color: #fff;
+//     border-color: $theme-color;
+//     text-transform: capitalize;
+//     padding: 8px 25px;
+
+//     &:hover,
+//     &:focus,
+//     :active {
+//         background-color: $theme-hover-color !important;
+//         outline: none !important;
+//         box-shadow: none !important;
+//         color: #fff;
+//         transition: all .25s ease-out;
+//         border: 1px solid $theme-hover-color !important;
+//     }
+
+//     &.mainButton {
+//         font-size: 15px;
+//         font-weight: 300;
+//         text-transform: capitalize;
+//         border-radius: 7px;
+//         padding: 0.65rem 1.35rem;
+
+//     }
+
+//     &.longButton {
+//         padding: .45rem 2.2rem !important;
+//         border-radius: 4px;
+//         font-size: 16px;
+//     }
+
+//     &.smallButton {
+//         font-size: 14px;
+//         font-weight: 300;
+//         text-transform: capitalize;
+//         padding: 0.35rem 1.1rem;
+//         border-radius: 0.5rem;
+
+//     }
+
+//     &.whiteBtn {
+//         background-color: #fff;
+//         color: $theme-color;
+
+//         svg {
+//             g {
+//                 path {
+//                     transition: all .15s ease-in;
+//                 }
+//             }
+//         }
+
+//         &:hover {
+//             background-color: lighten($color: $theme-color, $amount: 15%);
+//             border-color: lighten($color: $theme-color, $amount: 15%);
+//             color: #fff;
+
+
+//             svg {
+//                 g {
+//                     path {
+//                         fill: #fff;
+//                     }
+//                 }
+
+//             }
+//         }
+//     }
+
+//     &.greyButton {
+//         background-color: $grey-color;
+//         color: $theme-color;
+//         border: 1px solid #F3F3F4;
+
+//         &:Hover {
+//             background-color: $hover-color;
+//             color: #fff;
+//         }
+//     }
+// }

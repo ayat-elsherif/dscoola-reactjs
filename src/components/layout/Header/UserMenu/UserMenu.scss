@@ -1,0 +1,122 @@
+.user-menu-wrapper {
+  width: 26rem;
+  max-width: 100%;
+  max-height: 65vh;
+  overflow: auto;
+  padding: 0 !important;
+
+  li {
+    // background-color: unset !important;
+  }
+
+  .menu-item-head-wrapper {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 !important;
+    background: unset !important;
+
+    .menu-item-head {
+      display: flex;
+      gap: 1rem;
+      height: 6.5rem;
+      align-items: center;
+      padding: 0.5rem;
+
+      background-color: #eee;
+
+      // border-bottom: 1px solid #cecece;
+
+      .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        text-transform: capitalize;
+
+        .lead {
+          opacity: 0.7;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .menu-item {
+    display: flex;
+    // padding-bottom: .5rem;
+    // border-bottom: 1px solid #cecece;
+
+    .image-wrapper {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      margin-inline-end: 1rem;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .text-wrapper {
+      font-size: 1.4rem;
+      line-height: 2;
+      text-transform: capitalize;
+      color: #6a6f73;
+      font-weight: 500;
+    }
+  }
+
+  .menu-item-tail {
+    padding: 1rem 12px !important;
+    border-top: 1px solid #eee;
+
+    span {
+      font-size: 1.4rem;
+      line-height: 2;
+      text-transform: capitalize;
+      color: #6a6f73;
+      font-weight: 500;
+    }
+
+    svg {
+      transform: scale(1.2);
+      margin-inline-end: 1.5rem !important;
+    }
+  }
+}
+
+.dashboard-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #7e59d1;
+
+    .lead {
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.user-action {
+  button {
+    width: 9.7rem;
+
+    span {
+      font-size: 1.5rem;
+    }
+  }
+}

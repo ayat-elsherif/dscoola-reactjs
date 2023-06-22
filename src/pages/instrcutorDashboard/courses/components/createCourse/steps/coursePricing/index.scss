@@ -1,0 +1,103 @@
+.pricing-title {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+.pricing-info {
+  color: #6c757d;
+  font-size: 15px;
+  padding-bottom: 18px;
+}
+.pricing-plane-ques {
+  font-size: 15px;
+  padding-bottom: 18px;
+}
+.pricing-radio {
+  padding-bottom: 18px;
+}
+.pricing-100 {
+  color: #7e59d1;
+  font-size: 16px;
+}
+.pricing-points {
+  font-size: 13px;
+  color: #7e59d1;
+}
+.pricing-sorry-no-money {
+  padding: 14px;
+  width: 811px;
+  height: 47px;
+  background: #f2f2fb;
+  font-size: 13px;
+  margin-top: 18px;
+  margin-bottom: 26px;
+}
+.pricing-warning {
+  padding: 14px;
+  background-color: #fff1f4;
+  width: 811px;
+  height: 67px;
+  font-size: 13px;
+  color: #6c757d;
+  margin-bottom: 100px;
+}
+.pricing-warning-link {
+  cursor: pointer;
+  color: #7e59d1;
+}
+.pricing-warning-red {
+  color: #cc1915;
+}
+.amount-ques {
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+
+.usd {
+  //  padding-bottom: 46px;
+}
+// &:hover,
+
+.btn-step-next {
+  &:active {
+    background-color: #7e59d1;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: all 0.25s ease-out;
+  }
+  &:disabled {
+    background: #aeaec1 !important;
+    &:hover,
+    &:active {
+      color: #fff;
+    }
+  }
+}
+.is-featuerd-text {
+  font-size: 16px;
+  color: #382464;
+  line-height: 1.4;
+}
+.is-featuerd-text-row {
+  width: 574px;
+  padding-top: 20px;
+}
+.usd {
+  // padding-bottom: 46px;
+}
+input {
+  height: 32px;
+}
+.dolor-exchange {
+  width: 61px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  height: 36px;
+  padding-top: 10px;
+  background: #7e59d1;
+  border-radius: 2px;
+}
+.ant-steps-icon {
+  top: -2.5px;
+}

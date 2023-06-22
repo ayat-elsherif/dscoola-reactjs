@@ -1,0 +1,43 @@
+@import "../../../sass/var";
+@import "../../../sass/mixins";
+
+.nav-tabs {
+    .nav-item{
+        outline: none !important;
+      .nav-link{
+          font-size: 16px;
+          padding-left:0;
+          padding-right:0;
+          margin-right: 1.2rem;
+          border:none !important;
+         &:focus, &:hover{
+             border:none !important;
+             background-color: transparent !important;
+             color:$title-color;
+         }
+          text-transform: capitalize;
+          &.active{
+              color:$title-color;
+              background-color: transparent;
+              border-color: aliceblue;
+              border: none !important;
+              font-weight: 500;
+              border-bottom: 1px solid !important;
+          }
+          .nav-item.show .nav-link {
+              color:$title-color;
+              background-color: transparent;
+              border-color: aliceblue;
+              border: none !important;
+              font-weight: 500;
+              border-bottom: 1px solid !important;
+          }
+      }
+    }
+    .tab-content{
+        &>.active{
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+  }

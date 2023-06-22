@@ -1,0 +1,247 @@
+@import "../sass/var";
+@import "../sass/mixins";
+
+.innerPage {
+  // &.searchResult {
+  //   .breadcrumbs {
+  //     h2 {
+  //       text-transform: lowercase;
+  //     }
+  //   }
+  // }
+
+  h3.page-title {
+    // margin-left: 1.4rem;
+    font-size: 28px;
+    margin-top: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+
+  .course__list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .startingCourses {
+    margin: 1rem auto 0.25rem;
+  }
+
+  .instructorCards {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+      text-decoration: none;
+
+      .card {
+        .card-header {
+          border-bottom: none;
+          background-color: transparent;
+          padding: 1rem 0 0;
+
+          .bg-image {
+            width: 100%;
+            // height: 125px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 110px;
+              height: 110px;
+              object-fit: cover;
+              border-radius: 50%;
+              transition: all 0.25s ease-in;
+            }
+          }
+        }
+
+        .card-body {
+          .card-title {
+            font-size: 16px !important;
+          }
+
+          .card-text {
+            color: $title-color;
+            font-weight: 300;
+            font-size: 14px;
+          }
+        }
+
+        .card-footer {
+          background-color: transparent;
+          border-top: none;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 11px;
+
+          svg {
+            margin-right: 0.25rem;
+            fill: $desc-color;
+          }
+        }
+      }
+
+      &:hover {
+        .bg-image {
+          img {
+            transform: scale(1.05) translateY(-3px);
+          }
+        }
+      }
+    }
+  }
+
+  .retrieveCoursesPages {
+    margin: 2rem auto auto;
+    padding-bottom: 30px;
+    h4 {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 0;
+      // margin-left: 1.4rem;
+    }
+
+    .relatedTagged {
+      // width: 1100px;
+      margin: auto 0.5rem 3rem;
+
+      h4 {
+        margin-bottom: 1rem;
+      }
+
+      .swiper {
+        width: 100%;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+          width: 30px;
+          height: 30px;
+          top: 65%;
+        }
+      }
+
+      .swiper-slide {
+        background-color: $background-color;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-align: center;
+      }
+    }
+  }
+
+  .categoryCourses {
+    &__list {
+      list-style: none;
+    }
+  }
+}
+
+.singleWebinar {
+  .heroImgWebinar {
+    img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+
+  .webinarAbout {
+    margin-bottom: 3rem;
+    
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+
+  .hostedBy {
+    .course-container {
+      width: 100%;
+      margin-left: auto;
+    }
+
+    .your-instractor-headline {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 0px;
+    }
+  }
+
+  .cartsidebar-body {
+    padding-top: 10px;
+    box-shadow: 0px 1px 6px #00000029;
+    width: 90%;
+    margin-left: 10%;
+    margin-bottom: 5rem;
+    border-radius: 4px;
+
+    .cartsidebar-fees {
+      padding: 20px 0 0;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+
+      .sale_price {
+        color: $theme-color;
+        font-size: 22px;
+        font-weight: 600;
+      }
+
+      .preSale_price {
+        font-size: 16px;
+        // font-weight: 600;
+        color: $desc-color;
+        display: inline-block;
+        margin-left: 0.5rem;
+      }
+    }
+
+    .cartsidebar-course-includes {
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .outdated {
+      font-size: 0.84rem;
+      font-weight: 500;
+      color: $desc-color;
+      margin-top: 5px;
+    }
+  }
+
+  @include breakpoint(max-xl) {
+    .heroImgWebinar {
+      img {
+        height: 260px;
+      }
+    }
+
+    .cartsidebar-body {
+      width: 100%;
+      margin-left: 0;
+    }
+
+  }
+}
+
+.noSearchResult {
+  text-align: center;
+
+  margin: 12rem auto 17rem;
+
+  h4 {
+    margin-top: 1.5rem;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}

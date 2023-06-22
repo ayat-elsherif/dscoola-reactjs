@@ -1,0 +1,33 @@
+@import '/src//sass/var.scss';
+
+.writeReview {
+  h3 {
+    font-size: 20px;
+    font-size: 600;
+  }
+
+  .rating {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  textarea {
+    background-color: $background-color;
+    height: 180px;
+    resize: unset;
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    color: #7e7e7e;
+    border: 0;
+    font-family: 'Poppins-Regular';
+    border-radius: 8px;
+
+    &:focus {
+      background-color: $background-color;
+      border: 0;
+      box-shadow: none;
+    }
+  }
+}

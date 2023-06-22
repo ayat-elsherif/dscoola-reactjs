@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+  <defs>
+    <clipPath id="user_avatar">
+      <circle id="Ellipse_3240" data-name="Ellipse 3240" cx="13" cy="13" r="13" transform="translate(1306 24)" fill="#a5a2b4"/>
+    </clipPath>
+  </defs>
+  <g id="user_avatar" data-name="user avatar" transform="translate(-1302 -20)">
+    <circle id="Ellipse_3239" data-name="Ellipse 3239" cx="17" cy="17" r="17" transform="translate(1302 20)" fill="#efeff6"/>
+    <g id="Mask_Group_849" data-name="Mask Group 849" opacity="0.5" clip-path="url(#user_avatar)">
+      <g id="svgexport-6_-_2022-09-18T134021.714" data-name="svgexport-6 - 2022-09-18T134021.714" transform="translate(1306 24)">
+        <g id="Group_16097" data-name="Group 16097">
+          <g id="Group_16096" data-name="Group 16096">
+            <path id="Path_28292" data-name="Path 28292" d="M13,0a6.751,6.751,0,1,0,6.751,6.751A6.768,6.768,0,0,0,13,0Z" fill="#a5a2b4"/>
+          </g>
+        </g>
+        <g id="Group_16099" data-name="Group 16099">
+          <g id="Group_16098" data-name="Group 16098">
+            <path id="Path_28293" data-name="Path 28293" d="M24.587,18.9a6.293,6.293,0,0,0-.678-1.238A8.391,8.391,0,0,0,18.1,14a1.243,1.243,0,0,0-.855.206,7.2,7.2,0,0,1-8.49,0A1.106,1.106,0,0,0,7.9,14a8.33,8.33,0,0,0-5.807,3.655A7.256,7.256,0,0,0,1.417,18.9a.627.627,0,0,0,.029.56,11.761,11.761,0,0,0,.8,1.179A11.2,11.2,0,0,0,3.6,22.168a17.67,17.67,0,0,0,1.356,1.179,13.443,13.443,0,0,0,16.036,0,12.961,12.961,0,0,0,1.356-1.179A13.612,13.612,0,0,0,23.7,20.635a10.335,10.335,0,0,0,.8-1.179A.5.5,0,0,0,24.587,18.9Z" fill="#a5a2b4"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,89 @@
+.auth-forget-wrapper {
+  .container-fluid {
+    padding: 0 4vw;
+  }
+}
+.auth-forget-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+  .auth-form-holder {
+    width: 40vw;
+    padding: 0 5vw;
+    margin-bottom: 24px;
+    @media only screen and (min-width: 1440px) {
+      align-self: center;
+      padding: 0 6vw;
+    }
+
+    .auth-title {
+      font-size: 24px;
+      font-weight: 500;
+      color: #2a2a2a;
+      margin-bottom: 10px;
+    }
+    .auth-account-text {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      font-size: 13px;
+      color: #2a2a2a;
+      margin-bottom: 16px;
+      a {
+        color: #7e59d1;
+      }
+    }
+  }
+  .back-btn-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 14px;
+    a {
+      font-size: 14px;
+      color: #6a6f73;
+    }
+    img {
+      width: 16px;
+    }
+  }
+  form {
+    button[type='submit'] {
+      margin-top: 60px;
+    }
+  }
+}
+
+.pass-done-wrapper {
+  .pass-done-content {
+    width: 40%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 14px;
+    .auth-title {
+      font-size: 24px;
+      font-weight: 500;
+      color: #2a2a2a;
+      margin-top: 20px;
+    }
+    .auth-account-text {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #6a6f73;
+      margin-bottom: 16px;
+    }
+  }
+  .btns-group-holder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}

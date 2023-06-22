@@ -1,0 +1,52 @@
+.dscoolaFeatures{
+    margin-bottom: 3.5rem;
+    padding-top: 2rem;
+    box-shadow: 0px 3px 8px #44444424;
+    .featureContainer{      
+        margin-bottom: 1.5rem;
+        
+        .feature-item{
+            position: relative;
+            display: block;
+            overflow: hidden;
+            width: 64px;
+            height: 52px;
+            &.online-live{
+                img{
+                    position: absolute;
+                    left:-10px;
+                    top: -10px;
+                }
+            }
+            &.zoom-meetings{
+                img{
+                    position: absolute;
+                    left: -94px;
+                    top: -10px;
+                }
+            }
+            &.appointment{
+                img{
+                    position: absolute;
+                    left: -95px;
+                    top: -82px;
+                }
+            }
+            &.yalla-online{
+                img{
+                    position: absolute;
+                    left: -10px;
+                    top: -82px;
+                
+                }
+            }
+        }
+        h6{
+            margin-left: 1rem;
+            font-size: calc(.2vw + 13px);
+            font-weight: 600;
+            line-height: 1.5rem;
+        }
+    }
+    
+}

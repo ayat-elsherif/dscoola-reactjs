@@ -1,0 +1,46 @@
+.logout-modal {
+  height: 287px;
+  .ant-modal-content {
+    border: 1px solid #707070;
+    border-radius: 8px;
+    box-shadow: none;
+    .ant-modal-body {
+      padding: 36px 39px 44px;
+      text-align: center;
+      img {
+        width: 150px;
+        height: 115px;
+      }
+      h3 {
+        color: #2a2a2a;
+        font-size: 18px;
+        font-weight: normal;
+        font-family: 'Poppins-Medium';
+        margin: 20px 0 10px;
+      }
+      p {
+        margin-bottom: 33px;
+        color: #7e7e7e;
+        font-size: 13px;
+      }
+      .antd-main-btn {
+        width: 78px;
+        height: 40px;
+        background: #7e59d1 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Poppins-Medium';
+        box-shadow: none;
+        padding: 0;
+        touch-action: none;
+        -webkit-appearance: unset;
+        appearance: unset;
+        &:hover,
+        &:focus {
+          border: 0;
+        }
+      }
+    }
+  }
+}

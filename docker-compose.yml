@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+
+#   nginx:
+#     image: nginx:alpine
+#     container_name: dscoola-nginx
+#     restart: unless-stopped
+#     ports:
+#       - 80:80
+#       - 443:443
+#     volumes:
+# #      - ./nginx/:/var/www/html/
+#       - ./nginx:/etc/nginx/conf.d/
+
+  app:
+    container_name: app-dev
+    image: app-dev
+    build:
+      context: .
+#      target: development
+    volumes:
+      - ./src:/app/src
+    ports:
+      - 3000:3000

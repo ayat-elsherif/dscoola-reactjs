@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21" height="18" viewBox="0 0 21 18">
+  <defs>
+    <clipPath id="toggole">
+      <rect id="Rectangle_29374" data-name="Rectangle 29374" width="21" height="18" fill="#6c757d" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_706" data-name="Mask Group 706" clip-path="url(#toggole)">
+    <g id="svgexport-6_19_" data-name="svgexport-6 (19)" transform="translate(0 0.833)">
+      <g id="Menu">
+        <path id="Path" d="M24.5,12.833v2.333H3.5V12.833Z" transform="translate(-3.5 -5.833)" fill="#6c757d"/>
+        <path id="Path-Copy" d="M24.5,5.833V8.167H3.5V5.833Z" transform="translate(-3.5 -5.833)" fill="#6c757d"/>
+        <path id="Path-Copy-2" d="M24.5,19.833v2.333H3.5V19.833Z" transform="translate(-3.5 -5.833)" fill="#6c757d"/>
+      </g>
+    </g>
+  </g>
+</svg>

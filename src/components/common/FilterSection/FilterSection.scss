@@ -1,0 +1,86 @@
+@import "/src/sass/var";
+
+.side-wrapper{
+    width: 270px;
+    border-radius: 8px;
+    padding: 24px 20px;
+    background-color: #EFEFF6;
+    background-color: $background-color;
+    .unstyled-list{
+      margin-top: 8px;
+    }
+    .side-content {
+      
+        ul {
+          list-style: none;
+          margin-bottom: 0;
+          display: flex;
+          flex-direction: column;
+      
+          li {
+            margin-bottom: 0.75rem;
+            text-transform: capitalize;
+            .ant-checkbox-wrapper {
+              color: $desc-color;
+              font-size: 13px !important;
+            }
+      
+            .ant-checkbox-wrapper {
+              .ant-checkbox+span {
+                // overflow: hidden;
+                // white-space: nowrap;
+                // text-overflow: ellipsis;
+                // display: block;
+                // width: 175px;
+              }
+            }
+          }
+        }
+      
+        .ant-collapse {
+          background-color: transparent !important;
+          position: relative;   
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+      
+          .ant-collapse-item,
+          .ant-collapse-header,
+          .ant-collapse-content {
+            background-color: transparent !important;
+            margin-bottom: 0;
+            border: none;
+            // border-bottom: 2px solid #e0e1e2;
+          }
+      
+          .ant-collapse-header {
+            font-size: 17px;
+            padding: 0;
+      
+            &>div {
+              position: absolute;
+              right: 0;
+              top: 0;
+      
+              .ant-collapse-arrow {
+                background-color: transparent;
+                margin: 0;
+                svg {
+                  color: inherit;
+                }
+              }
+            }
+          }
+      
+          .ant-collapse-content {
+            .ant-collapse-content-box {
+              padding: 0;
+            }
+          }
+        }
+      }
+}
+
+.margin-top {
+  margin-top: 15px;
+}

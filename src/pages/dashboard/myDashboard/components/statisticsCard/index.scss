@@ -1,0 +1,29 @@
+.statistics-card {
+  height: 122px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px #0000000a;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .icon {
+    margin-right: 10px;
+  }
+  .data {
+    display: flex;
+    flex-direction: column;
+    span {
+      &:first-of-type {
+        font-size: 25px;
+        color: #4d4f5c;
+        font-family: 'Poppins-Medium';
+        line-height: 25px;
+      }
+      &:last-of-type {
+        font-size: 13px;
+        color: #4d4f5c;
+        font-family: 'Poppins-Regular';
+      }
+    }
+  }
+}

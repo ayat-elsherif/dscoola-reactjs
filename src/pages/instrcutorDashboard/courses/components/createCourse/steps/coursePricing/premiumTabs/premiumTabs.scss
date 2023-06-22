@@ -1,0 +1,158 @@
+@import '../../../../../../../../sass//mixins';
+.profile-data {
+  // width: 528px;
+  width: 47%;
+  min-height: 618px;
+  background: #ffffff;
+  padding: 32px;
+}
+.profile-pic-row {
+  padding-bottom: 18px;
+}
+.Profile-Picture {
+  font-size: 14px;
+  padding-bottom: 12px;
+}
+.cv {
+  width: 528px;
+  min-height: 300px;
+  background: #ffffff;
+  padding: 32px 45px 34px 34.5px;
+  h3 {
+    font-size: 15px;
+    padding-bottom: 12px;
+  }
+  .profile-upload-container {
+    width: 449px;
+    min-height: 157px;
+    border: 1px dashed #7e59d1;
+    background: #f8f8f8;
+    border-radius: 4px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    //   position: relative;
+    .profile-upload-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      //  text-align: center;
+    }
+    .drag {
+      font-size: 13px;
+      color: #6a6f73;
+      padding-top: 8px;
+      padding-bottom: 6px;
+    }
+    .browse-btn {
+      width: 128px;
+      height: 30px;
+      background: #7e59d1;
+      border-radius: 3px;
+      color: white;
+      margin-top: 8px;
+    }
+  }
+}
+.info-divider {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.ant-divider-horizontal {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+.save-and-continue {
+  width: 150px;
+  height: 40px;
+  background: #7e59d1;
+  border-radius: 3px;
+  color: white;
+  margin-top: 44px;
+  border: none;
+}
+.save-and-continue-finish {
+  width: 284px;
+  height: 40px;
+  background: #7e59d1;
+  border-radius: 3px;
+  color: white;
+  margin-top: 44px;
+  border: none;
+}
+.ant-upload-list {
+  width: 80%;
+  margin-left: 54px;
+}
+.instructor-terms-row {
+  padding-left: 211px;
+  padding-right: 211px;
+  text-align: center;
+  background: white;
+  padding-top: 42px;
+  font-size: 16px;
+  padding-bottom: 45px;
+}
+.Instructor-Terms-Icon {
+  padding-bottom: 24px;
+}
+.Instructor-Terms-Checkbox {
+  padding-top: 32px;
+}
+.payment-method-step {
+  background: white;
+  padding: 24px;
+}
+.payment-method-description {
+  font-size: 14px;
+  padding-bottom: 18px;
+}
+.payment-method-header {
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 12px;
+}
+.payment-method-item-container {
+  padding: 21px 30px;
+  border: 1px solid #e0e0f5;
+}
+.payment-method-btn {
+  width: 115px;
+  height: 40px;
+  background: #f0f0f0;
+  border-radius: 3px;
+}
+.profile-upload-cv-Row {
+  padding: 5px;
+  margin-top: 10px;
+}
+.delete-icon-cv {
+  cursor: pointer;
+}
+.profile-upload-name {
+  font-size: 13px;
+  padding-left: 9px;
+}
+.profile-photo {
+  margin-right: 18px;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+.dashboard-tabs {
+  .ant-tabs-tab {
+    cursor: default;
+  }
+}
+.profile-upload-dragger {
+  ant-upload-list-item ant-upload-list-item-uploading {
+    display: none;
+  }
+}

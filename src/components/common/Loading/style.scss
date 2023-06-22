@@ -1,0 +1,27 @@
+.loading-wrapper {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+
+  .loading-anim {
+    animation: rotate 600ms infinite linear;
+    border: 5px solid rgba(189, 189, 189, 0.25);
+    border-left-color: #7e59d1;
+    border-radius: 50%;
+    border-top-color: #7e59d1;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+  }
+
+  @keyframes rotate {
+    to {
+      transform: rotate(1turn);
+    }
+  }
+}

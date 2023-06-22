@@ -1,0 +1,62 @@
+.studentFeedback {
+  width: 348px;
+
+  background: #ffffff;
+  box-shadow: 0px 0px 6px #e5e5e584;
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    h4 {
+      font-size: 16px;
+      font-family: 'Poppins-Medium';
+      margin: 0;
+    }
+    a {
+      color: #7e59d1;
+      font-size: 14px;
+    }
+  }
+  .custom-divider {
+    background: #dbdfea;
+    height: 1px;
+    &:last-of-type {
+      display: none;
+    }
+  }
+  &_body {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    .main-details {
+      display: flex;
+      align-items: center;
+      .photo {
+        margin-right: 12px;
+        img {
+          width: 41px;
+          height: 41px;
+          border-radius: 50%;
+        }
+      }
+      .name {
+        div {
+          font-size: 14px;
+          color: #6a6f73;
+          &:last-of-type {
+            font-size: 11px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .more-details {
+      text-align: center;
+      a {
+        font-size: 11px;
+        font-family: 'Poppins-Medium';
+      }
+    }
+  }
+}

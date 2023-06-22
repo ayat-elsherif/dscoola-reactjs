@@ -1,0 +1,11 @@
+<svg id="Group_16089" data-name="Group 16089" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="652" height="286" viewBox="0 0 652 286">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.461" y1="0.112" x2="1.388" y2="1.778" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#7e59d1"/>
+      <stop offset="1" stop-color="#3f2d69"/>
+    </linearGradient>
+  </defs>
+  <path id="brooke-cagle-g1Kr4Ozfoac-unsplash" d="M0,0H652a0,0,0,0,1,0,0V286a0,0,0,0,1,0,0H215A215,215,0,0,1,0,71V0A0,0,0,0,1,0,0Z" fill="#7e59d1" opacity="0.56"/>
+  <path id="brooke-cagle-g1Kr4Ozfoac-unsplash-2" data-name="brooke-cagle-g1Kr4Ozfoac-unsplash" d="M0,0H634a0,0,0,0,1,0,0V286a0,0,0,0,1,0,0H215A215,215,0,0,1,0,71V0A0,0,0,0,1,0,0Z" transform="translate(18)" fill="#7e59d1" opacity="0.72"/>
+  <path id="brooke-cagle-g1Kr4Ozfoac-unsplash-3" data-name="brooke-cagle-g1Kr4Ozfoac-unsplash" d="M0,0H616a0,0,0,0,1,0,0V286a0,0,0,0,1,0,0H215A215,215,0,0,1,0,71V0A0,0,0,0,1,0,0Z" transform="translate(36)" opacity="0.93" fill="url(#linear-gradient)"/>
+</svg>

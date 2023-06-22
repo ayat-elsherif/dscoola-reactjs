@@ -1,0 +1,12 @@
+@import "../../sass/var";
+@import "../../sass/mixins";
+
+
+.viewAll{
+    background-color:$grey-color;
+    padding:.5rem 1rem;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 6px;
+}

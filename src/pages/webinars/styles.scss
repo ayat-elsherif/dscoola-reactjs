@@ -1,0 +1,71 @@
+@import '../../sass/var';
+
+.expired-webinar-p {
+  font-size: 14px;
+  font-weight: 400;
+  color: $hover-dangerous-color;
+  text-align: center;
+  padding: 18px 0 25px;
+  line-height: 1.4;
+}
+
+.webinar-search-view {
+  .ais-SearchBox {
+    display: block !important;
+
+    .ais-SearchBox-form {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+
+  .ais-Pagination {
+    margin-top: 20px;
+
+    .ais-Pagination-list {
+      display: flex;
+
+      .ais-Pagination-item {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 2px;
+        border-radius: 50%;
+
+        .ais-Pagination-link {
+          color: #000;
+        }
+
+        &.ais-Pagination-item--firstPage,
+        &.ais-Pagination-item--previousPage {
+          margin-right: 10px;
+        }
+
+        &.ais-Pagination-item--nextPage {
+          margin-left: 10px;
+        }
+
+        &.ais-Pagination-item--previousPage,
+        &.ais-Pagination-item--firstPage,
+        &.ais-Pagination-item--nextPage {
+          width: auto;
+          height: auto;
+        }
+
+        &.ais-Pagination-item--selected {
+          background-color: #7e59d1;
+
+          .ais-Pagination-link {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

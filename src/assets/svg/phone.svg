@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+  <defs>
+    <clipPath id="phone">
+      <rect id="Rectangle_29292" data-name="Rectangle 29292" width="16" height="16" transform="translate(288 391)" fill="#7e59d1" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_689" data-name="Mask Group 689" transform="translate(-288 -391)" clip-path="url(#phone)">
+    <g id="svgexport-6_-_2022-05-09T105620.050" data-name="svgexport-6 - 2022-05-09T105620.050" transform="translate(288 391)">
+      <g id="Group_11636" data-name="Group 11636">
+        <g id="Group_11635" data-name="Group 11635">
+          <path id="Path_11662" data-name="Path 11662" d="M15.565,11.742,13.332,9.51a1.485,1.485,0,0,0-2.472.558,1.52,1.52,0,0,1-1.754.957A6.885,6.885,0,0,1,4.958,6.878a1.445,1.445,0,0,1,.957-1.754,1.485,1.485,0,0,0,.558-2.472L4.241.419a1.593,1.593,0,0,0-2.153,0L.573,1.934C-.943,3.529.732,7.755,4.48,11.5s7.974,5.5,9.569,3.907L15.565,13.9A1.593,1.593,0,0,0,15.565,11.742Z" fill="#7e59d1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

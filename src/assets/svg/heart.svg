@@ -1,0 +1,16 @@
+<svg id="Component_11_1192" data-name="Component 11 – 1192" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 19 19">
+  <defs>
+    <clipPath id="heart">
+      <rect id="Rectangle_560" data-name="Rectangle 560" width="19" height="19" fill="#6a6f73"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_19" data-name="Mask Group 19" clip-path="url(#heart)">
+    <g id="svgexport-6_12_" data-name="svgexport-6 (12)" transform="translate(0 0.672)">
+      <g id="Group_1127" data-name="Group 1127" transform="translate(0 0)">
+        <g id="Group_1126" data-name="Group 1126">
+          <path id="Path_5334" data-name="Path 5334" d="M17.446,2.367a5.192,5.192,0,0,0-7.609,0L9.5,2.721l-.335-.354A5.2,5.2,0,0,0,1.824,2.1q-.14.13-.27.27a5.827,5.827,0,0,0,0,7.923l7.455,7.861a.679.679,0,0,0,.96.026l.026-.026,7.452-7.861A5.826,5.826,0,0,0,17.446,2.367Zm-.983,6.987h0L9.5,16.7,2.539,9.355a4.453,4.453,0,0,1,0-6.054,3.838,3.838,0,0,1,5.423-.218q.113.1.218.218l.828.873a.7.7,0,0,0,.986,0l.828-.873a3.838,3.838,0,0,1,5.423-.218q.113.1.218.218A4.412,4.412,0,0,1,16.464,9.355Z" transform="translate(0 -0.708)" fill="#6a6f73"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

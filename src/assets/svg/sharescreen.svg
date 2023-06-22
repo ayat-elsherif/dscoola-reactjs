@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="shareScreen">
+      <rect id="Rectangle_30262" data-name="Rectangle 30262" width="24" height="24" transform="translate(394 688)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <clipPath id="shareScreen-2">
+      <rect id="Rectangle_30274" data-name="Rectangle 30274" width="8" height="8" transform="translate(-0.478)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_859" data-name="Mask Group 859" transform="translate(-394 -688)" clip-path="url(#shareScreen)">
+    <g id="svgexport-6_-_2022-08-22T152617.550" data-name="svgexport-6 - 2022-08-22T152617.550" transform="translate(392.286 686.286)">
+      <path id="Path_47966" data-name="Path 47966" d="M7.714,20.571H4.286A2.571,2.571,0,0,1,1.714,18V6.857A2.572,2.572,0,0,1,4.286,4.286H23.143a2.571,2.571,0,0,1,2.571,2.571V18a2.571,2.571,0,0,1-2.571,2.571H19.714v.668a1.9,1.9,0,0,1-1.9,1.9H9.618a1.9,1.9,0,0,1-1.9-1.9Zm1.714,0v.668a.189.189,0,0,0,.189.189h8.193A.189.189,0,0,0,18,21.239v-.668ZM12.857,11.5l-.961.961a.857.857,0,0,1-1.212-1.212l2.424-2.424a.857.857,0,0,1,1.212,0l2.424,2.424a.857.857,0,1,1-1.212,1.212l-.961-.961v3.931a.857.857,0,1,1-1.714,0Z" fill="#382464"/>
+    </g>
+    <g id="Mask_Group_860" data-name="Mask Group 860" transform="translate(402.478 694)" clip-path="url(#shareScreen-2)">
+      <g id="svgexport-6_-_2022-08-22T152721.824" data-name="svgexport-6 - 2022-08-22T152721.824" transform="translate(0.657)">
+        <g id="Group_85921" data-name="Group 85921">
+          <g id="Group_85920" data-name="Group 85920">
+            <path id="Path_47967" data-name="Path 47967" d="M1,3.242a.233.233,0,0,0,.168.071H2.4a.174.174,0,0,1,.174.174V7.342a.233.233,0,0,0,.233.233h2.4a.233.233,0,0,0,.233-.233V3.486a.174.174,0,0,1,.174-.174H6.855a.233.233,0,0,0,.167-.4L4.18.07a.231.231,0,0,0-.331,0L1.007,2.912A.233.233,0,0,0,1,3.242Z" transform="translate(-0.937 0)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
