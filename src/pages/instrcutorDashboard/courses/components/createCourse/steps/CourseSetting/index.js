@@ -123,7 +123,7 @@ const CourseSetting = () => {
         console.log(res, 'csseve');
         form.setFieldsValue({
           allow_comments: res?.data?.allow_comments,
-          // allow_notification: res?.data?.allow_notification,
+          allow_notification: res?.data?.allow_notification,
           approve_ono: res?.data?.approve_ono ? 1 : 0,
           ono_plan: res?.data?.ono_plan == 'free' ? 0 : 1,
           ono_price: res?.data?.ono_price,
@@ -253,6 +253,7 @@ const CourseSetting = () => {
             <Form.Item
               label="Course Notification"
               name="allow_notification"
+              valuePropName="checked"
               style={{ marginBottom: '5px' }}
             >
               <Checkbox
@@ -266,10 +267,10 @@ const CourseSetting = () => {
               </Checkbox>
             </Form.Item>
 
-            <Form.Item name="allow_comments">
+            <Form.Item valuePropName="checked" name="allow_comments">
               <Checkbox
                 className="check-padd2"
-                // defaultChecked={true}
+                
                 onChange={(e) => {
                   setAllow_notification(e.target.checked ? 1 : 0);
                 }}
