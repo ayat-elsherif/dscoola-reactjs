@@ -1,0 +1,63 @@
+@import '../../sass/var';
+@import '../../sass/mixins';
+
+.categories-slider {
+  // padding-left: 15px;
+  @media screen and (max-width: 767px) {
+    max-width: 700px;
+    width: 100%;
+  }
+  @media screen and (max-width: 550px) {
+    max-width: 500px;
+    width: 100%;
+  }
+  @media screen and (max-width: 450px) {
+    max-width: 400px;
+    width: 100%;
+  }
+  @media screen and (max-width: 375px) {
+    max-width: 370px;
+    width: 100%;
+  }
+  .slick-list {
+    overflow: hidden !important;
+  }
+  .slick-slide {
+    margin: 0;
+    height: 90px;
+    text-align: center;
+    margin-right: 10px;
+    width: 100px;
+    border-radius: 5px;
+
+    &:nth-child(odd) {
+      background-color: $cat1-color;
+    }
+
+    &:nth-child(even) {
+      background-color: $cat2-color;
+    }
+
+    img {
+      width: 45px;
+      height: auto;
+    }
+
+    > div {
+      height: 100%;
+    }
+  }
+}
+
+.multi-slider {
+  overflow: hidden;
+  max-height: 250px;
+  padding: 0 15px;
+
+  .slick-slide {
+    width: 165px;
+    border-radius: 5px;
+    min-height: 250px;
+    margin-right: 14px;
+  }
+}

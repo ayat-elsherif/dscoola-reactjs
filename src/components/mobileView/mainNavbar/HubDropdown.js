@@ -4,7 +4,7 @@ import OneOnOneMenuIcon from '../../../assets/svg/OneOnOneMenuIcon';
 import ScoolaTalksMenuIcon from '../../../assets/svg/ScoolaTalksMenuIcon';
 // import YallaOnlineHome from '../../../assets/svg/YallaonlineHome';
 import YallaOnlineMenuIcon from '../../../assets/svg/YallaOnlineMenuIcon';
-// import styles from "./mainNavbar.Module.scss";
+import './mainNavbar.scss';
 export default function HubDropdown({ isMenuClicked }) {
   if (isMenuClicked) {
     return (

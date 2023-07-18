@@ -32,14 +32,10 @@ export default function MainNavbar() {
     <div className={'main_navbar'}>
       <div className={'container'}>
         <Link to="/" className={'navbar_item'}>
-          <div>
-            <HomeIcon /> <span>Home</span>
-          </div>
+          <HomeIcon /> <span>Home</span>
         </Link>
         <Link to="/mycourses" className={'navbar_item'}>
-          <div>
-            <CourseMutedIcon /> <span>course</span>
-          </div>
+          <CourseMutedIcon /> <span>course</span>
         </Link>
         <div className={`navbar_logo navbar_item`}>
           <div className={'hub_container'} onClick={toggleDropdown}>
@@ -48,14 +44,10 @@ export default function MainNavbar() {
           <HubDropdown isMenuClicked={isMenu} />
         </div>
         <Link to="/cart" className={'navbar_item'}>
-          <div>
-            <CartHomeIcon /> <span>cart</span>
-          </div>
+          <CartHomeIcon /> <span>cart</span>
         </Link>
         <Link to="/account" className={'navbar_item'}>
-          <div>
-            <AccountHomeIcon /> <span>account</span>
-          </div>
+          <AccountHomeIcon /> <span>account</span>
         </Link>
       </div>
     </div>
