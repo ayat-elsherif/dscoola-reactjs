@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.category_item {
+.category-item {
   margin: auto;
   display: flex !important;
   flex-direction: column;
@@ -14,12 +14,12 @@
   justify-content: center;
   height: 100%;
   padding: 10px;
-  .category_img {
+  .category-img {
     height: 42px;
     width: 47px;
     position: relative;
   }
-  .category_name {
+  .category-name {
     color: $desc-color;
     margin: 0;
     margin-top: 10px;
@@ -57,12 +57,12 @@
       border: 1px solid #f6d691;
     }
 
-    .category_img {
+    .category-img {
       height: 42px;
       width: 50px;
       position: relative;
     }
-    .category_name {
+    .category-name {
       color: $desc-color;
       margin: 0;
       margin-top: 10px;

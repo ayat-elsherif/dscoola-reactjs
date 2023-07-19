@@ -1,7 +1,7 @@
 @import '../../../sass/var';
 @import '../../../sass/mixins';
 
-.main_navbar {
+.main-navbar {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,25 +15,25 @@
   font-size: 11px;
   z-index: 99;
 
-  .navbar_item {
-    margin: 18px 10px;
-    color: $muted-color;
-    text-transform: capitalize;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    > svg {
-      margin-bottom: 1rem;
-    }
-  }
-  .container {
+  .main-navbar-container {
     display: flex;
     justify-content: space-around;
-    // align-items: baseline;
     align-items: center;
     height: 100%;
 
-    .navbar_logo {
+    .navbar-item {
+      margin: 18px 10px;
+      color: $muted-color;
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      > svg {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .navbar-logo {
       background-color: #fff;
       border-radius: 50%;
       margin-top: 0;
@@ -45,45 +45,47 @@
       position: relative;
       top: -16px;
 
-      .hub_container {
+      .hub-container {
         cursor: pointer;
         svg {
           margin-bottom: 10px;
         }
       }
+    }
+  }
+}
 
-      .hub-menu {
-        position: absolute;
-        bottom: 52px;
-        left: calc(-75px + 33px);
-        background-color: $theme-color;
-        padding: 22px 16px;
-        width: 150px;
-        height: 150px;
-        z-index: -1;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        // -webkit-mask: radial-gradient(circle closest-side, #0000 calc(100% - 30px), #fff calc(100% - 32px));
-        -webkit-mask: radial-gradient(
-          circle at 50% 110%,
-          transparent 20%,
-          #000 12%
-        );
-        mask: radial-gradient(circle at 50% 110%, transparent 20%, #000 12%);
-
-        .menu-item {
-          display: flex;
-          align-items: center;
-          font-size: 12px;
-          margin-bottom: 20px;
-          color: #fff;
-
-          svg {
-            margin-right: 10px;
-          }
-        }
+.hub-menu {
+  // position: absolute;
+  bottom: 50px;
+  top: unset !important;
+  // left: calc(-75px + 33px);
+  background-color: $theme-color;
+  padding: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  -webkit-mask: radial-gradient(circle at 50% 110%, transparent 20%, #000 12%);
+  mask: radial-gradient(circle at 50% 110%, transparent 20%, #000 12%);
+  .ant-dropdown-menu {
+    box-shadow: none !important;
+    background-color: transparent !important;
+    .ant-dropdown-menu-item {
+      &:hover {
+        background-color: transparent;
+        opacity: 0.8;
       }
+    }
+  }
+  .menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #fff;
+
+    svg {
+      margin-right: 10px;
     }
   }
 }

@@ -27,7 +27,7 @@ function Categories({ data, loading }) {
         ) : data?.length > 0 ? (
           <CategoriesSlider items={data} />
         ) : (
-          <div className={'main_header'}>
+          <div className={'main-header'}>
             <small>no categories found</small>{' '}
           </div>
         )}
