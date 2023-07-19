@@ -63,7 +63,7 @@ function CourseCard({ course, callback }) {
                   <Col>
                   
                     <Link
-                      to={`/instructors/${course?.author.id}`}
+                      to={`/instructors/${course?.author?.id}`}
                       className="author-name"
                     >
                       {course?.author?.name || course?.author_name || 'Unknown'}
