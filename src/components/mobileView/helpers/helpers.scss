@@ -1,0 +1,16 @@
+@use '../../../sass/var' as var;
+@use '../../../sass/mixins' as mixin;
+
+.sale-price {
+  text-decoration: line-through;
+  margin-left: 5px;
+  font-size: 10px;
+  font-weight: 400;
+  color: var.$grey-color;
+}
+
+.current-price {
+  color: var.$primary-color;
+  font-size: 14px;
+  font-weight: 500;
+}

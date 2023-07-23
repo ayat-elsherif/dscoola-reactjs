@@ -1,0 +1,51 @@
+@import '../../../../sass/var';
+.enrolled-course {
+  background-color: #fff;
+  padding: 12px 12px 0 12px;
+  display: flex;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  figure {
+    width: 100px;
+    height: 86px;
+    position: relative;
+    margin-right: 0.75rem;
+    img {
+      height: 86px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+  }
+  .course-details {
+    width: 65%;
+    h4 {
+      font-size: 12px;
+      line-height: 18px;
+      color: $title-color;
+      font-weight: 700;
+      letter-spacing: 0.25px;
+    }
+
+    span {
+      color: $dashboard-title;
+      font-size: 11px;
+      display: block;
+      &.total-lessons {
+        font-weight: 500;
+      }
+      &.progress-info {
+        font-weight: 400;
+        line-height: 4px;
+      }
+    }
+    .ant-progress-line {
+      margin-bottom: 5px;
+      padding-bottom: 0;
+      line-height: 0;
+      .ant-progress-bg {
+        background-color: $theme-color;
+        height: 8px !important;
+      }
+    }
+  }
+}

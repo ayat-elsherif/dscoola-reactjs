@@ -63,8 +63,9 @@ import PaymentSuccessed from 'pages/PaymentSuccessed/PaymentSuccessed';
 import MeetingDetails from 'pages/MeetingDetails/MeetingDetails';
 import Coupons from 'pages/instrcutorDashboard/Coupons/Coupons';
 import OwnScrollToTop from 'components/own/OwnScrollToTop';
-
-export default function apRoutesWrapper() {
+import useScreens from 'Hooks/ui/useScreens';
+import Courses from 'components/mobileView/myCourses/Courses';
+export default function AppRoutesWrapper() {
   const Dashboard = React.lazy(() =>
     import('./components/containers/views/layouts/dashboard/Dashboard'),
   );
@@ -243,7 +244,7 @@ export default function apRoutesWrapper() {
       './pages/instrcutorDashboard/courses/components/createCourse/steps/coursePricing/PremiumInstructor'
     ),
   );
-
+  const { isLg } = useScreens();
   return (
     <Router>
       <Routes exact>
@@ -354,6 +355,7 @@ export default function apRoutesWrapper() {
           <Route path="*" element={<NotFoundPage />} />
 
           <Route path="/429" element={<TooManyRequests />} />
+          {!isLg && <Route path="/myCourses" element={<Courses />} />}
         </Route>
 
         {/* START */}

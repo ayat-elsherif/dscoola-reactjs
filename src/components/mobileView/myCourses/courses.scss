@@ -1,0 +1,26 @@
+@use '../../../sass//var' as var;
+.my-courses {
+  padding-bottom: 7rem;
+  background-color: var.$page-bg-color;
+  .my-courses-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .ant-tabs-nav {
+    background-color: #fff;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+
+    &:before {
+      border-bottom: none;
+    }
+    .ant-tabs-nav-list {
+      justify-content: space-around;
+      width: 100%;
+      font-weight: 400;
+      .ant-tabs-tab-btn {
+        font-size: 15px !important;
+      }
+    }
+  }
+}
