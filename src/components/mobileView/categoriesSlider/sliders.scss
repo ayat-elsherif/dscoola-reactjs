@@ -2,23 +2,25 @@
 @import '../../../sass/mixins';
 
 .categories-slider {
-  // padding-left: 15px;
-  @media screen and (max-width: 767px) {
-    max-width: 700px;
-    width: 100%;
-  }
-  @media screen and (max-width: 550px) {
-    max-width: 500px;
-    width: 100%;
-  }
-  @media screen and (max-width: 450px) {
-    max-width: 400px;
-    width: 100%;
-  }
-  @media screen and (max-width: 375px) {
-    max-width: 370px;
-    width: 100%;
-  }
+  width: 100vw;
+
+  // // padding-left: 15px;
+  // @media screen and (max-width: 767px) {
+  //   max-width: 700px;
+  //   width: 100%;
+  // }
+  // @media screen and (max-width: 550px) {
+  //   max-width: 500px;
+  //   width: 100%;
+  // }
+  // @media screen and (max-width: 450px) {
+  //   max-width: 400px;
+  //   width: 100%;
+  // }
+  // @media screen and (max-width: 375px) {
+  //   max-width: 370px;
+  //   width: 100%;
+  // }
   .slick-list {
     overflow: hidden !important;
   }

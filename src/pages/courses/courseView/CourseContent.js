@@ -112,7 +112,7 @@ const Coursecontent = ({ showProgress }) => {
 
   const handleLecturesList = (myCourse, sectionLecture, section) => {
     const lectureType = sectionLecture?.type;
-
+ 
     switch (lectureType) {
       case 'livesession':
         const startTime = Date.parse(

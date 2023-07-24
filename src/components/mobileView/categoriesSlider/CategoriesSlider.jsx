@@ -11,6 +11,8 @@ export default function CategoriesSlider({ items }) {
     slidesToScroll: 2,
     speed: 500,
     dots: false,
+    autoplay: true,
+    autoplayspeed: 1500,
     variableWidth: true,
     responsive: [
       {

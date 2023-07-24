@@ -33,7 +33,7 @@ function Home() {
   return (
     <div className={HomeStyles}>
       <HeroSection topCoursesEl={topCoursesRef.current} /> {/* static data */}
-      <div className="container over-visible">
+      <div className="container">
         {/* <Features data={homeData?.featured_courses} loading={homeDataLod} /> */}
         {currentUser && currentUser?.role_id === 3 && <LetsStartLearning />}
         {isLg ? (
