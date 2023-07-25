@@ -6,9 +6,9 @@ import SectionHeader from '../SectionHeader';
 const TopCourses = React.forwardRef(({ data, loading }, ref) => {
   const TopCoursesStyles = css`
     margin: 6rem 0;
-    @media (max-width: 992px) {
-      width: 100vw;
-    }
+    // @media (max-width: 992px) {
+    //   width: 100vw;
+    // }
   `;
 
   return (
