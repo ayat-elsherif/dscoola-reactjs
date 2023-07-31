@@ -30,10 +30,9 @@
     background-color: #fff;
     .dashboard-section-link {
       display: block;
-      &:last-child {
-        .dashboard-section-item {
-          border-bottom: none;
-        }
+
+      .dashboard-section-item {
+        border-bottom: none;
       }
     }
     .dashboard-section-item {
@@ -46,9 +45,12 @@
         display: flex;
         svg {
           margin-right: 0.75rem;
+          path {
+            fill: var.$dashboard-title;
+          }
         }
         h5 {
-          font-size: 17px;
+          font-size: 16px;
           color: var.$profile-color;
           // font-family: 'pop-medium';
           font-weight: 500;
@@ -60,6 +62,54 @@
           height: 11px;
           path {
             fill: var.$muted-color;
+          }
+        }
+      }
+    }
+
+    .ant-menu.ant-menu-root {
+      border: none !important;
+      > li {
+        border-bottom: 1px solid rgba(var.$muted-color, 20%);
+        border-radius: 0;
+        margin-right: 8px;
+      }
+      .ant-menu-item {
+        padding-bottom: 5px;
+      }
+      .ant-menu-item,
+      .ant-menu-submenu-title {
+        padding-left: 0 !important;
+        margin: 4px 0;
+        &:hover,
+        &:active {
+          background-color: transparent;
+        }
+        svg {
+          margin-right: 0.75rem !important;
+          margin-top: 5px;
+          path {
+            fill: var.$dashboard-title;
+          }
+        }
+        .ant-menu-title-content {
+          margin: 0;
+          font-size: 16px;
+          color: #25426e;
+          font-weight: 500;
+        }
+        .ant-menu-submenu-arrow {
+          inset-inline-end: 0px;
+        }
+      }
+      .ant-menu-submenu {
+        .ant-menu-sub {
+          .ant-menu-item {
+            margin: 0;
+          }
+          .ant-menu-title-content {
+            font-size: 14px;
+            padding-left: 22px;
           }
         }
       }

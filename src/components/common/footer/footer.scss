@@ -3,7 +3,6 @@
 
 footer {
   // background: url("../../../../public/assets/images/footer-bg.png") center center no-repeat;
-  background-color: #382464;
   background-color: #2a0972;
   background-size: cover;
   padding: 2.3rem 0 0;
@@ -92,16 +91,8 @@ footer {
   .copyright {
     border-top: 1px solid #ffffff88;
     padding: 1rem 0;
-
-    .container {
-      font-weight: 300;
-      text-align: center;
-      @media screen and (min-width: 576px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-    }
+    font-weight: 300;
+    text-align: center;
 
     .langDropdown {
       .btn {

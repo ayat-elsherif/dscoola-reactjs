@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Button, Drawer } from 'antd';
 import HomeIcon from '../../../assets/svg/HomeIcon';
 import AccountHomeIcon from '../../../assets/svg/AccountHomeIcon';
@@ -9,7 +9,11 @@ import CourseMutedIcon from '../../../assets/svg/CourseMutedIcon';
 import HubDropdown from './HubDropdown';
 import './mainNavbar.scss';
 import AccountHome from '../account/AccountHome';
+import { useSelector } from 'react-redux';
 export default function MainNavbar() {
+  const { currentUser } = useSelector((state) => state?.user);
+  const navigate = useNavigate();
+  console.log(currentUser, 'currentUser');
   const [open, setOpen] = useState(false);
   const showDrawer = () => {
     setOpen(true);
@@ -32,11 +36,18 @@ export default function MainNavbar() {
           <Link to="/cart" className={'navbar-item'}>
             <CartHomeIcon /> <span>cart</span>
           </Link>
-          <Link to="/" className={'navbar-item'} onClick={showDrawer}>
-            <AccountHomeIcon /> <span>account</span>
-          </Link>
+          {currentUser ? (
+            <Link to="/" className={'navbar-item'} onClick={showDrawer}>
+              <AccountHomeIcon /> <span>account</span>
+            </Link>
+          ) : (
+            <Link to="/sign-in" className={'navbar-item'}>
+              <AccountHomeIcon /> <span>account</span>
+            </Link>
+          )}
         </div>
       </div>
+
       <Drawer
         // title="Basic Drawer"
         placement="right"

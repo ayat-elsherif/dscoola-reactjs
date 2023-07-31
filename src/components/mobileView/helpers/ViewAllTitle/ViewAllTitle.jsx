@@ -20,7 +20,7 @@ export default function ViewAllTitle({
   return (
     <>
       <div
-        className={`allTitle-container container ${
+        className={`all-title-container container ${
           isSearchResult && 'search-result'
         }`}
       >
