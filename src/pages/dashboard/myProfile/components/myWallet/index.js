@@ -12,7 +12,7 @@ export const Mywallet = () => {
   return (
     <div className="wallet-wrapper">
       <div className="wallet-header flex-center">
-        <div>
+        <div className="wallet-header-text">
           <h2>My Wallet</h2>
           <p>Here you can check your balance</p>
         </div>

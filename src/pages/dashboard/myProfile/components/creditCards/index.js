@@ -49,7 +49,7 @@ const CreditCards = () => {
         <h4>Update your Payment Methods</h4>
         <div className="form-section-title">Cards</div>
       </div>
-      {data?.data.length ? (
+      {data?.data?.length ? (
         data?.data?.map((card) => {
           return <CreditCard key={card.key} data={card} />;
         })
@@ -76,9 +76,9 @@ const CreditCards = () => {
             loading={loading}
             className="payment-method-btn"
             onClick={handleAddPaymentMethod}
-            disabled={profileInfo.data.stripe_account_id}
+            disabled={profileInfo?.data?.stripe_account_id}
           >
-            {profileInfo.data.stripe_account_id ? 'Connected' : 'Connect'}
+            {profileInfo?.data?.stripe_account_id ? 'Connected' : 'Connect'}
           </Button>
         </div>
       </div>

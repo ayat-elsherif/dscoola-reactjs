@@ -1,3 +1,4 @@
+@import '../../../../../../sass/mixins';
 .login-activity-table {
   margin-top: 20px;
   .ant-table-bordered {
@@ -41,5 +42,23 @@
     font-size: 13px;
     padding: 0;
     box-shadow: none;
+  }
+  @include breakpoint(max-lg) {
+    .ant-table {
+      width: 100%;
+      overflow-x: scroll;
+      .ant-table-content {
+        .ant-table-row {
+          .ant-table-cell {
+            &:first-child {
+              min-width: 270px;
+            }
+          }
+        }
+      }
+    }
+    .ant-pagination {
+      justify-content: center;
+    }
   }
 }

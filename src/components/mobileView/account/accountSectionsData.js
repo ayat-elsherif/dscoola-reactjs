@@ -41,7 +41,10 @@ export const accountItems = [
     3,
   ),
   getItem(
-    <Link to="/student-dashboard/my-profile"> My profile</Link>,
+    <Link to="/student-dashboard/my-profile/personal-information">
+      {' '}
+      My profile
+    </Link>,
     '2',
     <ProfileOutlineIcon />,
     '',
@@ -89,19 +92,19 @@ export const accountItems = [
     <MeetingSettingsIcon />,
     [
       getItem(
-        <Link to="student-dashboard/zoom-settings">Zoom Settings</Link>,
+        <Link to="/student-dashboard/zoom-settings">Zoom Settings</Link>,
         'g1',
         null,
       ),
       getItem(
-        <Link to="student-dashboard/bigblue-button-settings">
+        <Link to="/student-dashboard/bigblue-button-settings">
           Bigblue Button Settings
         </Link>,
         'g2',
         null,
       ),
       getItem(
-        <Link to="student-dashboard/jitsi-settings">Jitsi Settings</Link>,
+        <Link to="/student-dashboard/jitsi-settings">Jitsi Settings</Link>,
         'g3',
         null,
       ),
@@ -123,7 +126,10 @@ export const accountItems = [
     2,
   ),
   getItem(
-    <Link to="/instructor-dashboard/my-profile"> My profile</Link>,
+    <Link to="/instructor-dashboard/my-profile/personal-information">
+      {' '}
+      My profile
+    </Link>,
     '9',
     <ProfileOutlineIcon />,
     '',

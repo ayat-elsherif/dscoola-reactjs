@@ -3,6 +3,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 911px) {
+    text-align: center;
+    p {
+      line-height: 28px;
+    }
+  }
   img {
     width: 355px;
     height: 274px;
@@ -15,7 +21,7 @@
   }
   // color: #2a2a2a;
   a {
-    width: 167px;
+    // width: 167px;
     height: 40px;
     text-align: center;
     background: #7e59d1 0% 0% no-repeat padding-box;
@@ -23,7 +29,7 @@
     display: block;
     color: #fff;
     font-size: 16px;
-    padding: 0;
+    padding: 0 18px;
     line-height: 40px;
     font-family: 'Poppins-Medium';
     margin-top: 40px;

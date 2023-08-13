@@ -21,6 +21,9 @@ export default function MainNavbar() {
   const onClose = () => {
     setOpen(false);
   };
+  const handleCollapsed = () => {
+    setOpen(false);
+  };
   return (
     <>
       <div className={'main-navbar'}>
@@ -37,7 +40,7 @@ export default function MainNavbar() {
             <CartHomeIcon /> <span>cart</span>
           </Link>
           {currentUser ? (
-            <Link to="/" className={'navbar-item'} onClick={showDrawer}>
+            <Link to="#" className={'navbar-item'} onClick={showDrawer}>
               <AccountHomeIcon /> <span>account</span>
             </Link>
           ) : (
@@ -56,7 +59,7 @@ export default function MainNavbar() {
         open={open}
         rootClassName="account-drawer"
       >
-        <AccountHome />
+        <AccountHome handleCollapsed={handleCollapsed} />
       </Drawer>
     </>
   );

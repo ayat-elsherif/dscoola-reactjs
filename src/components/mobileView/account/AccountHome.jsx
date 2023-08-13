@@ -11,7 +11,7 @@ import { useState } from 'react';
 import { Modal, Drawer, Radio, Button, Menu } from 'antd';
 import { useDispatch, useSelector } from 'react-redux';
 import SignOutOutlineIcon from 'assets/svg/dashboard/SignOutOutlineIcon';
-export default function AccountHome() {
+export default function AccountHome({ handleCollapsed }) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [value, setValue] = useState(1);
@@ -59,7 +59,7 @@ export default function AccountHome() {
   const tryingAccountItems = accountItems?.filter(
     (item) => item.role === currentUser.role_id,
   );
-  console.log(tryingAccountItems, 'tryingAccountItems');
+  // console.log(tryingAccountItems, 'tryingAccountItems');
 
   return (
     <>
@@ -75,7 +75,11 @@ export default function AccountHome() {
           </div>
         </header>
         <main className="dashboard-body">
-          <Menu onClick={onClick} mode="inline" items={tryingAccountItems} />
+          <Menu
+            onClick={handleCollapsed}
+            mode="inline"
+            items={tryingAccountItems}
+          />
           <Link
             to={`#`}
             key={accountItems.length + 1}

@@ -138,7 +138,7 @@ const Index = () => {
                       {' '}
                       <Col span={24} className="">
                         <Row className="work-experiences-item">
-                          <Col span={5}>
+                          <Col xxl={5} md={8} xs={23}>
                             <img
                               className="work-experiences-image"
                               src={
@@ -148,7 +148,7 @@ const Index = () => {
                               alt="wed"
                             />
                           </Col>
-                          <Col span={18}>
+                          <Col xxl={18} md={15} xs={24}>
                             <Row gutter={[16, 16]} className="mt-3">
                               <Col span={24} className="cert-title">
                                 {i.certificate_name}
@@ -213,7 +213,7 @@ const Index = () => {
                     <>
                       <Col key={index} span={24}>
                         <Row className="work-experiences-item">
-                          <Col span={5}>
+                          <Col xxl={5} md={8} xs={23}>
                             <img
                               className="work-experiences-image"
                               src={
@@ -223,7 +223,7 @@ const Index = () => {
                               alt="wed"
                             />
                           </Col>
-                          <Col span={18}>
+                          <Col xxl={18} md={15} xs={24}>
                             <Row gutter={[16, 16]} className="mt-3">
                               <Col span={24} className="cert-title">
                                 {i.job_title}
