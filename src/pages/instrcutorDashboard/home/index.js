@@ -28,13 +28,13 @@ function index() {
         </Col>
       </Row>
       <Row gutter={20}>
-        <Col xs={24} md={8}>
+        <Col xs={24} md={10} lg={8}>
           <MyCourses />
         </Col>
-        <Col xs={24} md={8}>
+        <Col xs={24} md={7} lg={8}>
           <RatingFeedback />
         </Col>
-        <Col xs={24} md={8}>
+        <Col xs={24} md={7} lg={8}>
           <OneOnOneRequest />
         </Col>
       </Row>

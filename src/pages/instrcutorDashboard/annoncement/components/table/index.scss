@@ -1,3 +1,4 @@
+@import '../../../../../sass/mixins';
 .annoncement-table {
   .ant-table-bordered {
     .ant-table-content {
@@ -35,6 +36,20 @@
             &:nth-of-type(2) {
               padding-left: 0 !important;
             }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(max-md) {
+    .ant-table {
+      width: 100%;
+      overflow-x: auto;
+      .ant-table-thead {
+        .ant-table-cell {
+          &:nth-child(2),
+          &:nth-child(3) {
+            min-width: 130px;
           }
         }
       }

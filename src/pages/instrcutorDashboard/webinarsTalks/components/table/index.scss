@@ -32,4 +32,18 @@
   .status-filter {
     margin-left: 12px;
   }
+
+  .ant-table-wrapper {
+    .ant-table-content {
+      .ant-table-thead {
+        & > tr {
+          & > th {
+            &:nth-child(2) {
+              min-width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
 }

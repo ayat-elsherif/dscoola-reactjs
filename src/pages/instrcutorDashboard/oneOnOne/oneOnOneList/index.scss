@@ -1,3 +1,4 @@
+@import '../../../../sass/mixins';
 .one-on-one-list {
   .dashboard-page-header-container {
     h3 {
@@ -6,5 +7,20 @@
   }
   .status-filter {
     margin-left: 12px;
+  }
+  .student-request-table {
+    .ant-table-container {
+      .ant-table-thead {
+        .ant-table-cell {
+          &:nth-child(1) {
+            min-width: 30px;
+          }
+          &:nth-child(2),
+          &:nth-child(3) {
+            min-width: 130px;
+          }
+        }
+      }
+    }
   }
 }
