@@ -480,7 +480,7 @@ const CourseDetails = () => {
                   </Select>
                 </Form.Item>
               </Col>
-              <Col xs={24} md={8}>
+              {/* <Col xs={24} md={8}>
                 <Form.Item
                   name="type"
                   label="Type"
@@ -501,7 +501,7 @@ const CourseDetails = () => {
                     <Option value="liveClass">Live</Option>
                   </Select>
                 </Form.Item>
-              </Col>
+              </Col> */}
             </Row>
 
             {!currentUser.is_zoom_setting_done && isLiveOnChange && (

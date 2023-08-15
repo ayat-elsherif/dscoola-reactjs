@@ -76,7 +76,6 @@ const Coursecontent = ({ showProgress }) => {
     let lecturesSNum = _.sum(lectures);
     return lecturesSNum;
   });
-
   const onLectureChange = (sectionLecture) => {
     if (sectionLecture?.type === 'video') {
       dispatch(loadedLecInfo(sectionLecture?.items?.video));
@@ -109,7 +108,7 @@ const Coursecontent = ({ showProgress }) => {
         return <img src="/assets/images/icons/Group 3402 (1).svg" alt="" />;
     }
   };
-
+ 
   const handleLecturesList = (myCourse, sectionLecture, section) => {
     const lectureType = sectionLecture?.type;
  
@@ -121,7 +120,9 @@ const Coursecontent = ({ showProgress }) => {
         const endTime = Date.parse(
           sectionLecture?.items?.zoomMeeting?.end_time,
         );
+         
         const topic = sectionLecture?.items?.zoomMeeting?.topic;
+        
         const now = new Date();
         if (!endTime || !startTime) {
           <Link
@@ -132,6 +133,8 @@ const Coursecontent = ({ showProgress }) => {
             className="course-content-list-item-expand-span-enrolled"
           >
             {sectionLecture?.title}
+
+          
           </Link>;
         }
 
@@ -142,6 +145,7 @@ const Coursecontent = ({ showProgress }) => {
               className="course-content-list-item-expand-span-enrolled"
             >
               {topic}
+               
               <span className="meeting-status now">
                 <strong className="ms-2">Now</strong>
               </span>
@@ -288,6 +292,7 @@ const Coursecontent = ({ showProgress }) => {
                   }}
                 >
                   {item?.lectures?.map((sectionLecture, index) => {
+                      
                     return (
                       <Panel
                         className={`course-content-list-item-expand-li course-content-lectures ${
@@ -304,10 +309,7 @@ const Coursecontent = ({ showProgress }) => {
                               : emptyCircleIcon}
                             {handleGetLEcType(sectionLecture?.type)}
                             <div className="course-content-list-item-container">
-                              {console.log(
-                                'adkshbdkjas',
-                                myCourse?.course?.isEnrolled.is_enrolled,
-                              )}
+                              
                               {myCourse?.course?.isEnrolled.is_enrolled ? (
                                 <>
                                   {handleLecturesList(

@@ -14,7 +14,7 @@ OneToOneServices.getList = function (pagination, search, filter) {
         )
       : ``;
   return fetch({
-    url: `api/oneonone/booking?count=10&${query}`,
+    url: `api/appointment/list?count=10&${query}`,
     method: 'get',
     headers: {
       'public-request': 'true',
@@ -33,7 +33,7 @@ OneToOneServices.getHappeningList = function (pagination, search) {
         )
       : ``;
   return fetch({
-    url: `api/oneonone/booking?count=10&${query}`,
+    url: `api/appointment/list?count=10&${query}`,
     method: 'get',
     headers: {
       'public-request': 'true',
@@ -43,6 +43,7 @@ OneToOneServices.getHappeningList = function (pagination, search) {
 OneToOneServices.deleteAppointment = function (id) {
   return fetch({
     url: `api/oneonone/booking/${id}`,
+    // url: `api/appointment/list/${id}`,
     method: 'delete',
     headers: {
       'public-request': 'true',

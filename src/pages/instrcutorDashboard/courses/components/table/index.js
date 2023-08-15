@@ -8,7 +8,7 @@ import StatusFilter from '../../../../../components/common/dashboard/components/
 import { PlusIcon } from '../../../../../assets/svg';
 import { useGetCourses } from './hooks/useGetCourses';
 import fetch from '../../../../../auth/AuthInterceptor';
-import { message, Modal } from 'antd';
+import { Col, message, Modal, Row } from 'antd';
 import AddInitCoursForm from './tableView/addInitCoursForm';
 import { useReactToPrint } from 'react-to-print';
 import { Excel } from 'antd-table-saveas-excel';
@@ -68,11 +68,13 @@ function CoursesTable() {
         title: 'Category',
         dataIndex: 'category_name',
         key: 'category_name',
+        
       },
       {
         title: 'Type',
         dataIndex: 'type',
         key: 'type',
+       
       },
       {
         title: 'Student',

@@ -50,7 +50,7 @@ const StepHeader = ({ data }) => {
             {' '}
             <h4>{data?.title}</h4>
           </Col>
-          {isLocateInCourseContent && isLive ? (
+          {/* {isLocateInCourseContent && isLive ? (
             <>
               {' '}
               <Col>
@@ -79,7 +79,7 @@ const StepHeader = ({ data }) => {
                 </Tooltip>
               </Col>
             </>
-          ) : null}
+          ) : null} */}
         </Row>
       </Col>
 
