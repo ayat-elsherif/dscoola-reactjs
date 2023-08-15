@@ -76,7 +76,7 @@ export default function ZoomMeetingCard({ course, sliderToggle }) {
             {course?.zoom_meetings?.[0]?.start_time
               ? dayjs(course?.zoom_meetings?.[0]?.start_time).format('MMM')
               : ''}
-          </span>{' '}
+          </span>
         </div>
       }
       courseLevel={false}

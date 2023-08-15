@@ -5,7 +5,11 @@ import CourseCard from 'helpers/cards/courseCard/courseCard';
 import { crtArray } from 'utils';
 
 function CoursesSliderWrapper({ courseList, loading }) {
-  const CoursesSliderWrapperStyles = css``;
+  const CoursesSliderWrapperStyles = css`
+    @media (max-width: 992px) {
+      width: 100vw;
+    }
+  `;
   const setting = {
     slidesToShow: 4,
     slidesToScroll: 3,

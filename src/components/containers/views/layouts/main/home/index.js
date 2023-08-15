@@ -13,12 +13,15 @@ import TopCourses from './topCourses/TopCourses';
 import TopViewed from './topViewed/TopViewed';
 import YallaOnlineFull from './YallaOnlineSection/YallaOnlineFull';
 import ZoomMeetingHome from './zoomMeetingHome/zoomMeetingHome';
+import Categories from 'components/mobileView/categories/Categories';
+import useScreens from 'Hooks/ui/useScreens';
 
 function Home() {
   const HomeStyles = css``;
   const topCoursesRef = useRef(null);
   const { homeData, homeDataLod } = useHomeData();
   const { currentUser } = useSelector((state) => state?.user);
+  const { isLg } = useScreens();
 
   const topViewedData = {
     mostPopular: homeData?.popular_courses,
@@ -30,10 +33,17 @@ function Home() {
   return (
     <div className={HomeStyles}>
       <HeroSection topCoursesEl={topCoursesRef.current} /> {/* static data */}
-      <div className="container over-visible">
+      <div className="container">
         {/* <Features data={homeData?.featured_courses} loading={homeDataLod} /> */}
         {currentUser && currentUser?.role_id === 3 && <LetsStartLearning />}
-        <TopCategories data={homeData?.root_categories} loading={homeDataLod} />
+        {isLg ? (
+          <TopCategories
+            data={homeData?.root_categories}
+            loading={homeDataLod}
+          />
+        ) : (
+          <Categories data={homeData?.root_categories} loading={homeDataLod} />
+        )}
         <TopCourses
           ref={topCoursesRef}
           data={homeData?.top_rated_courses}

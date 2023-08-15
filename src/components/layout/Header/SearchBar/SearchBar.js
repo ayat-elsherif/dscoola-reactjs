@@ -11,6 +11,12 @@ function SearchBar() {
   const location = useLocation();
   const SearchBarStyles = css`
     max-width: 39.4rem;
+    @media (max-width: 991px) {
+      max-width: 100%;
+      form {
+        max-width: 100%;
+      }
+    }
   `;
   const paramTitle = useParams();
   const searchBy = useQParam('search-by');
