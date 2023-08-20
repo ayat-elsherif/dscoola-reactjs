@@ -1,3 +1,4 @@
+@import '../../../sass/var';
 @import '../../../sass/mixins';
 .file-manager {
   .create-file-btn {
@@ -21,8 +22,8 @@
     margin-top: 11px;
     display: flex;
     border-radius: 3px;
-    height: 611px;
     .file-Manager-menu {
+      height: 611px;
       width: 187px;
       border-right: 1px solid #dbdfea;
       // @include breakpoint(xxl) {
@@ -115,6 +116,67 @@
     .card-content {
       width: calc(100% - 187px);
       padding: 36px 24px;
+      .files-home {
+        .folder-card {
+          padding: 0 15px;
+        }
+        .files {
+          .file-card {
+            .date-size {
+              margin-top: 3px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(max-lg) {
+    .file-manager-card {
+      flex-direction: column;
+      .file-Manager-menu {
+        // flex-direction: row;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid $bg-hover-color;
+        width: 100%;
+        .ant-tabs {
+          // padding: 0 10px;
+          .ant-tabs-nav {
+            .ant-tabs-tab {
+              margin-left: 10px;
+            }
+          }
+        }
+        .menu-footer {
+          width: 180px;
+          padding: 10px 45px 25px 12px;
+          .ant-progress {
+            &.ant-progress-line {
+              margin-bottom: 0;
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+      .card-content {
+        width: 100%;
+        .files-home {
+          .folder-card {
+            .content {
+              h3 {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+        .files {
+          .ant-col {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+      }
     }
   }
 }
