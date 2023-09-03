@@ -1,3 +1,4 @@
+@import '../../../../../sass/mixins';
 .recovery {
   h3 {
     font-size: 18px;
@@ -11,9 +12,57 @@
     .dashboard-form {
       width: 189px;
       margin-right: 24px;
+      .ant-form-item:last-of-type {
+        margin-bottom: 12px !important;
+      }
+      .reset-filter {
+        text-align: start;
+        margin-right: 0 !important;
+        display: block;
+        width: 100%;
+        padding: 0;
+      }
     }
     .recovery-table {
       width: calc(100% - 189px);
+      overflow-x: auto;
+      .ant-table-content {
+        .ant-table-cell {
+          &:nth-child(1) {
+            min-width: 220px;
+          }
+          &:nth-child(3) {
+            min-width: 200px;
+          }
+        }
+        .ant-table-tbody {
+          tr {
+            &:last-of-type {
+              margin-bottom: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include breakpoint(max-lg) {
+    .recovery-content {
+      flex-direction: column;
+      .dashboard-form {
+        width: 50%;
+        margin-bottom: 2.75rem;
+      }
+      .recovery-table {
+        width: 100%;
+      }
+    }
+  }
+  @include breakpoint(max-md) {
+    .recovery-content {
+      .dashboard-form {
+        width: 100%;
+      }
     }
   }
 }

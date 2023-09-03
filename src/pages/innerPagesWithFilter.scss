@@ -1,5 +1,5 @@
-@import "../sass/var";
-@import "../sass/mixins";
+@import '../sass/var';
+@import '../sass/mixins';
 
 .innerPage {
   // &.searchResult {
@@ -150,7 +150,7 @@
 
   .webinarAbout {
     margin-bottom: 3rem;
-    
+
     h4 {
       font-size: 20px;
       font-weight: 600;
@@ -187,7 +187,7 @@
     .cartsidebar-fees {
       padding: 20px 0 0;
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       align-items: center;
 
       .sale_price {
@@ -230,7 +230,6 @@
       width: 100%;
       margin-left: 0;
     }
-
   }
 }
 

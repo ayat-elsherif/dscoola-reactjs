@@ -1,3 +1,5 @@
+@import '../../../../../../../sass/mixins';
+
 .course-structure {
   &_body {
     padding: 25px;
@@ -21,7 +23,8 @@
       .message {
         color: #2a2a2a;
         h4 {
-          margin: 0 0 18px;
+          margin: 0 0 12px;
+          line-height: 26px;
         }
         p {
           margin: 0;
@@ -69,6 +72,27 @@
           margin: 0 0 0 16px;
           font-size: 14px;
           color: #2a2a2a;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(max-xxl) {
+    &_body {
+      width: 100%;
+      .instructor-message {
+        height: auto !important;
+        flex-direction: column;
+        .message {
+          order: 2;
+          p {
+            width: auto;
+          }
+        }
+        .message-flag {
+          order: 1;
+          margin-bottom: 3rem;
         }
       }
     }

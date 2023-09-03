@@ -52,7 +52,7 @@ const CourseStructure = () => {
   };
   return (
     <div className="course-structure">
-      <StepHeader data={{ title: 'Film&Edit' }} />
+      <StepHeader data={{ title: 'Film & Edit' }} />
       <div className="course-structure_body">
         <div className="instructor-message">
           <div className="message">

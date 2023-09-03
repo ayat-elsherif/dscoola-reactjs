@@ -8,7 +8,7 @@ function RecoveryTable() {
       title: 'Name',
       dataIndex: 'name',
       render: (_, elm) => (
-        <div className='name-container'>
+        <div className="name-container">
           <FolderIcon />
           <span>{elm.name}</span>
         </div>
@@ -23,12 +23,12 @@ function RecoveryTable() {
       dataIndex: 'recovery_on',
     },
     {
-      title: '',
+      title: ' ',
       dataIndex: 'action',
       key: 'x',
       width: 50,
       render: (_, elm) => (
-        <div className='text-center'>
+        <div className="text-center">
           <EllipsIcon />
         </div>
       ),
@@ -57,7 +57,7 @@ function RecoveryTable() {
     },
   ];
   return (
-    <div className='recovery-table'>
+    <div className="recovery-table">
       <Table pagination={false} columns={columns} dataSource={data} bordered />
     </div>
   );
