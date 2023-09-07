@@ -1,6 +1,6 @@
 .dashboard-form {
   .ant-form-item {
-    margin-bottom: 18px;
+    margin-bottom: 18px !important;
     .ant-form-item-label {
       margin: 0;
       & > label {
@@ -128,17 +128,17 @@
       }
     }
 
-    .react-tel-input  {
+    .react-tel-input {
       input {
         width: 100% !important;
         border: 1px solid #e0e0f5;
       }
 
-      .react-tel-input .flag-dropdown { 
-        background-color: #F9FAFC;
-        border: 1px solid #e0e0f5; 
+      .react-tel-input .flag-dropdown {
+        background-color: #f9fafc;
+        border: 1px solid #e0e0f5;
         border-right: 0;
-    }
+      }
     }
   }
   .ant-form-item-has-error {

@@ -32,7 +32,7 @@ const dashBoardNavTree = [
   },
   {
     key: 'myprofile',
-    path: `/student-dashboard/my-profile`,
+    path: `/student-dashboard/my-profile/personal-information`,
     title: 'My Profile',
     icon: MyProfileIcon,
     breadcrumb: false,
@@ -151,7 +151,7 @@ const dashBoardNavTree = [
   },
   {
     key: 'myprofile',
-    path: `/instructor-dashboard/my-profile`,
+    path: `/instructor-dashboard/my-profile/personal-information`,
     title: 'My Profile',
     icon: MyProfileIcon,
     breadcrumb: false,
@@ -243,7 +243,7 @@ const dashBoardNavTree = [
   {
     key: 'webinars-talks',
     path: `/instructor-dashboard/webinars-talks`,
-    title: 'Webinars&Talks',
+    title: 'Webinars & Talks',
     icon: WebinarsIcon,
     breadcrumb: false,
     submenu: [],

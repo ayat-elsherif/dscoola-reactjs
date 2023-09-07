@@ -8,7 +8,7 @@
   width: 100%;
   background-color: #fff;
   height: 8rem;
-  border-radius: 35px 35px 0 0;
+  // border-radius: 35px 35px 0 0;
   box-shadow: 0px 0px 6px 1px #0000001a;
   text-align: center;
   padding: 0 15px;
@@ -86,6 +86,29 @@
 
     svg {
       margin-right: 10px;
+    }
+  }
+}
+
+.account-drawer {
+  &.ant-drawer {
+    .ant-drawer-wrapper-body {
+      position: relative;
+      .ant-drawer-header {
+        .ant-drawer-close {
+          z-index: 100;
+          color: #fff;
+          font-weight: 500;
+          top: 20px;
+        }
+      }
+      .ant-drawer-body {
+        padding: 0;
+        position: absolute;
+        top: 0;
+        // z-index: -1;
+        width: 100%;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+@import '../../../../../../sass//mixins';
 .point-earn-card {
   height: 206px;
   background: #ffffff 0% 0% no-repeat padding-box;
@@ -24,6 +25,22 @@
       width: 202px;
       margin-top: 22px;
       height: 40px;
+    }
+  }
+  @include breakpoint(max-md) {
+    flex-direction: column-reverse;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    padding: 0 0 34px;
+    .point-earn-details {
+      width: 100%;
+    }
+    svg {
+      width: 150px;
+      text-align: center;
+      height: 90px;
+      margin-top: 30px;
     }
   }
 }

@@ -3,7 +3,7 @@ import { css } from '@emotion/css';
 import './categories.scss';
 import { crtArray } from 'utils';
 
-import CategoriesSlider from 'components/categoriesSlider/CategoriesSlider';
+import CategoriesSlider from 'components/mobileView/categoriesSlider/CategoriesSlider';
 import { Col, Row, Skeleton } from 'antd';
 import SectionHeader from 'components/containers/views/layouts/main/home/SectionHeader';
 function Categories({ data, loading }) {

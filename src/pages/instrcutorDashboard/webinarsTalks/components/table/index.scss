@@ -1,3 +1,5 @@
+@import '../../../../../sass/mixins';
+
 .webinars-talks {
   .dashboard-page-header-container {
     h3 {
@@ -31,5 +33,50 @@
   }
   .status-filter {
     margin-left: 12px;
+  }
+
+  .ant-table-wrapper {
+    .ant-table-content {
+      .ant-table-thead {
+        & > tr {
+          & > th {
+            &:nth-child(2) {
+              min-width: 150px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(max-lg) {
+    .dashboard-page-header-container {
+      .page-header-right {
+        .status-filter {
+          margin-left: 0;
+          .ant-select {
+            .ant-select-selector {
+              width: 220px;
+            }
+          }
+        }
+        a {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  @include breakpoint(max-md) {
+    .dashboard-page-header-container {
+      .page-header-right {
+        .status-filter {
+          margin-left: 0;
+          .ant-select {
+            .ant-select-selector {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
   }
 }

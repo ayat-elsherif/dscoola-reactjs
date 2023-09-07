@@ -1,0 +1,165 @@
+@use '../../../../sass/var' as var;
+@use '../../../../sass/mixins' as mixin;
+
+.card-container {
+  background-color: white;
+  border-radius: 4px;
+  padding: 13px 10px 5px 10px;
+  margin-bottom: 18px;
+  border-radius: 4px;
+  .card {
+    display: flex;
+    padding: 0 0 0.75rem;
+    flex-direction: row;
+    box-shadow: none;
+    margin-bottom: 5px;
+    .image {
+      position: relative;
+      width: 100px;
+      height: 85px;
+      // margin-right: 16px;
+      //   margin-top: 4px;
+      img {
+        border-radius: 4px;
+        border: 1px solid #fefefe;
+        height: 86px;
+        object-fit: cover;
+      }
+    }
+
+    .instractor-desc {
+      // font-family: 'poppins-medium';
+      font-weight: 600;
+      width: 75%;
+      line-height: 14px;
+      padding-left: 12px;
+
+      .name {
+        color: var.$theme-color;
+        font-size: 11px;
+        line-height: 16px;
+      }
+
+      .course-name {
+        color: var.$title-color;
+        font-weight: 700;
+        font-size: 12px;
+        // padding-top: 4px;
+        line-height: 18px;
+      }
+
+      .date-time {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h6 {
+          display: flex;
+          align-items: center;
+          padding-top: 7px;
+          font-size: 10px;
+          // font-family: 'poppins-regular';
+          font-weight: 400;
+          color: var.$primary-color;
+        }
+        span {
+          padding-right: 4px;
+        }
+      }
+      .cart-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 8px;
+        .icon {
+          display: flex;
+          align-items: center;
+          h6 {
+            // font-family: 'poppins-regular';
+            font-weight: 400;
+            color: var.$grey-color;
+            padding-left: 5px;
+          }
+        }
+      }
+      .rate {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        h6 {
+          font-size: 11px;
+          font-weight: 400;
+          color: var.$star-color;
+          margin-top: 5px;
+          margin-right: 4px;
+          &.num-students {
+            color: var.$desc-color;
+          }
+        }
+        .ant-rate {
+          line-height: 10px;
+          .ant-rate-star {
+            margin-inline-end: 3px;
+            .anticon-star {
+              svg {
+                height: 10px !important;
+                width: 10px !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    .card-price {
+      display: flex;
+      align-items: flex-end;
+      line-height: 15px;
+      margin-top: 3px;
+      .current-price {
+        color: var.$dashboard-title;
+      }
+    }
+    .card-liveCourse,
+    .card-booking {
+      position: absolute;
+    }
+
+    .card-liveCourse {
+      left: 2px;
+      background-color: var.$live-color;
+      color: #fff;
+      font-size: 7.5px;
+      padding: 3px 6px 3px 5px;
+      border-radius: 20px;
+      top: 5px;
+
+      svg {
+        margin-right: 2px;
+      }
+    }
+
+    .card-booking {
+      right: 0;
+      bottom: 0;
+      background-color: var.$background-color2;
+      font-size: 8px;
+      color: var.$theme-color;
+      padding: 3px 8px;
+      font-weight: 500;
+
+      &.full-booked {
+        color: var.$live-color;
+      }
+    }
+    .card-duration {
+      color: var.$primary-color;
+      font-size: 10px;
+      display: flex;
+      align-items: center;
+      margin: 7px auto;
+
+      svg {
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}

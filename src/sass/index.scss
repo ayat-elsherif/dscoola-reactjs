@@ -472,6 +472,9 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  @media screen and (max-width: 992px) {
+    padding-bottom: 60px;
+  }
   .website-main-holder {
     flex: 1;
   }

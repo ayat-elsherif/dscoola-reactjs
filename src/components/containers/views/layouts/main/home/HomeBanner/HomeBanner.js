@@ -8,17 +8,55 @@ function HomeBanner({ image, title, desc, learnMoreLink, invert }) {
     min-height: 28.6rem;
     margin: 4rem 0;
     background: transparent url(${image}) 0% 0% no-repeat padding-box;
-    background-size: contain;
+    background-size: cover;
     border-radius: 0 0.8rem 0.8rem 0;
 
     .content-wrapper {
       position: relative;
       display: flex;
-
+      svg {
+        width: 707px;
+        height: 311px;
+        @media screen and (max-width: 1599px) {
+          width: 652;
+          height: 286;
+        }
+        @media screen and (max-width: 1199px) {
+          width: 534px;
+          height: 234px;
+          width: 624px;
+          height: 275px;
+        }
+        @media screen and (max-width: 991px) {
+          width: 521px;
+          height: 229px;
+          width: 593px;
+          height: 261px;
+        }
+        @media screen and (max-width: 545px) {
+          width: 100%;
+          height: 100%;
+        }
+      }
       .text-wrapper {
         position: absolute;
         padding: 5rem;
         max-inline-size: 94ch;
+        // @media screen and (max-width: 1199px) {
+        //   padding: 4rem;
+        //   max-inline-size: 80ch;
+        // }
+        @media screen and (max-width: 545px) {
+          // padding: 2.5rem;
+          padding: 3rem 2rem;
+
+          max-inline-size: 74ch;
+        }
+        .learn-more-btn {
+          @media screen and (max-width: 545px) {
+            height: 30px;
+          }
+        }
         .title {
           font-size: 2.4rem;
           line-height: 2.7rem;
@@ -33,6 +71,10 @@ function HomeBanner({ image, title, desc, learnMoreLink, invert }) {
           letter-spacing: 0px;
           color: #f9f2f2;
           margin-bottom: 2rem;
+          @media screen and (max-width: 545px) {
+            font-size: 1.2rem;
+            line-height: 2rem;
+          }
         }
         .learn-more-btn {
           min-height: 4rem;
@@ -58,6 +100,17 @@ function HomeBanner({ image, title, desc, learnMoreLink, invert }) {
 
       .content-wrapper {
         justify-content: flex-end;
+        .text-wrapper {
+          padding: 4rem 3rem 5rem 10rem;
+          // @media screen and (max-width: 1199px) {
+          //   padding: 2rem 2rem 5rem 1rem;
+          //   max-inline-size: 67ch;
+          // }
+          @media screen and (max-width: 545px) {
+            padding: 3rem 2rem;
+            max-inline-size: 67ch;
+          }
+        }
       }
     }
   `;

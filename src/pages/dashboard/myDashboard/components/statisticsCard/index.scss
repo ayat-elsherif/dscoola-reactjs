@@ -1,3 +1,5 @@
+@import '../../../../../sass//mixins';
+
 .statistics-card {
   height: 122px;
   background: #ffffff;
@@ -25,5 +27,9 @@
         font-family: 'Poppins-Regular';
       }
     }
+  }
+  @include breakpoint(max-md) {
+    justify-content: start;
+    padding-left: 3rem;
   }
 }

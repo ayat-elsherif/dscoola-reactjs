@@ -1,10 +1,12 @@
 .point-histroy-table {
-  margin-top: 20px;
+  margin-top: 10px;
   .ant-table-bordered {
     .ant-table-container {
       border-left: 0;
     }
     .ant-table-content {
+      overflow-x: auto;
+      width: 100%;
       table {
         box-shadow: 0px 0px 6px #d1cdcd82;
         border-radius: 3px;

@@ -1,3 +1,4 @@
+@import '../../../../../sass/mixins';
 .reviews-table {
   margin-top: 18px;
   background: #ffffff;
@@ -7,6 +8,8 @@
       border-left: 0;
     }
     .ant-table-content {
+      overflow-x: auto;
+      width: 100%;
       table {
         border: 0;
         border-top: 0 !important;
@@ -19,6 +22,12 @@
             color: #2a2a2a;
             font-size: 14px;
             font-family: 'Poppins-Medium';
+            &:nth-child(n + 1):nth-child(-n + 3) {
+              min-width: 150px;
+            }
+            &:nth-child(4) {
+              min-width: 250px;
+            }
           }
         }
       }
@@ -44,6 +53,14 @@
       .ant-table-tbody {
         tr {
         }
+      }
+    }
+  }
+  @include breakpoint(max-md) {
+    .main-table_footer {
+      flex-direction: column;
+      .ant-pagination {
+        margin-top: 1rem;
       }
     }
   }

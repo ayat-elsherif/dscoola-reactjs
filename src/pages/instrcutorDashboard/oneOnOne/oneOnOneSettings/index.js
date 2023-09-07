@@ -16,7 +16,9 @@ const OneOnOneSettings = () => {
       </div>
       <Tabs defaultActiveKey="1" className="dashboard-tabs">
         <TabPane tab="General requests" key="1">
-          <GeneralRequests />
+          <div className="course-requests-form">
+            <GeneralRequests />
+          </div>
         </TabPane>
         <TabPane tab="Courses request" key="2">
           <CourseRequests />
