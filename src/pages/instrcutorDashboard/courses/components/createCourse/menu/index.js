@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import { Button, message } from 'antd';
+import { Button, message, Drawer } from 'antd';
 import { NavLink, useNavigate } from 'react-router-dom';
-
+import { Toggolecon } from '../../../../../../assets/svg/index';
 import {
   CompletedStepIcon,
   CompleteIcon,
@@ -15,13 +15,14 @@ import { newNenuJson } from '../steps/newdata';
 import { useState } from 'react';
 import useApi from 'network/useApi';
 import SweetAlert from 'components/common/dashboard/components/sweetAlert.js';
-
+import useScreens from 'Hooks/ui/useScreens';
 const CreateCourseMenu = () => {
   const [loading, setLoading] = useState(false);
+  const [open, setOpen] = useState(false);
   const api = useApi();
   const course_id = localStorage.getItem('live-course-id');
   const navigate = useNavigate();
-
+  const { isLg } = useScreens();
   const courseAddPipline = useSelector(
     (state) => state.courseAddPipline.courseAddPipline,
   );
@@ -60,12 +61,19 @@ const CreateCourseMenu = () => {
       });
   };
 
-  return (
+  const showDrawer = () => {
+    setOpen(true);
+  };
+  const onClose = () => {
+    setOpen(false);
+  };
+
+  const allSteps = (
     <div className="create-course-menu">
       <div className="menu-section">
         <h5> Plan your course</h5>
 
-        <NavLink to="course-structure" key={1}>
+        <NavLink to="course-structure" key={1} onClick={isLg ? null : onClose}>
           <Icon
             type={
               courseAddPipline?.plan?.course_structure?.completed
@@ -76,7 +84,7 @@ const CreateCourseMenu = () => {
           <span>Course structure</span>
         </NavLink>
 
-        <NavLink to="setup" key={2}>
+        <NavLink to="setup" key={2} onClick={isLg ? null : onClose}>
           <Icon
             type={
               courseAddPipline?.plan?.setup?.completed
@@ -86,7 +94,7 @@ const CreateCourseMenu = () => {
           />
           <span>Course Details</span>
         </NavLink>
-        <NavLink to="goals" key={3}>
+        <NavLink to="goals" key={3} onClick={isLg ? null : onClose}>
           <Icon
             type={
               courseAddPipline?.plan?.goals?.completed
@@ -100,7 +108,7 @@ const CreateCourseMenu = () => {
       <div className="menu-section">
         <h5> Create your content</h5>
 
-        <NavLink to="film" key={4}>
+        <NavLink to="film" key={4} onClick={isLg ? null : onClose}>
           <Icon
             type={
               courseAddPipline?.create?.film?.completed
@@ -110,7 +118,7 @@ const CreateCourseMenu = () => {
           />
           <span>Film & edit</span>
         </NavLink>
-        <NavLink to="course-content" key={5}>
+        <NavLink to="course-content" key={5} onClick={isLg ? null : onClose}>
           <Icon
             type={
               courseAddPipline?.create?.course_content?.completed
@@ -121,29 +129,29 @@ const CreateCourseMenu = () => {
           <span>Course Content</span>
         </NavLink>
         {/* <NavLink to="Subtitles" key={6}>
-               <Icon
-                  type={
-                     courseAddPipline?.plan?.goals?.completed
-                        ? CompleteIcon
-                        : NoneCompletedStepIcon
-                  }
-               />
-               <span>Subtitles</span>
-            </NavLink>
-            <NavLink to="drip-content" key={7}>
-               <Icon
-                  type={
-                     courseAddPipline?.plan?.goals?.completed
-                        ? CompleteIcon
-                        : NoneCompletedStepIcon
-                  }
-               />
-               <span>Drip Content</span>
-            </NavLink> */}
+<Icon
+type={
+   courseAddPipline?.plan?.goals?.completed
+      ? CompleteIcon
+      : NoneCompletedStepIcon
+}
+/>
+<span>Subtitles</span>
+</NavLink>
+<NavLink to="drip-content" key={7}>
+<Icon
+type={
+   courseAddPipline?.plan?.goals?.completed
+      ? CompleteIcon
+      : NoneCompletedStepIcon
+}
+/>
+<span>Drip Content</span>
+</NavLink> */}
       </div>
       <div className="menu-section">
         <h5>Publish your course</h5>
-        <NavLink to="course-pricing" key={8}>
+        <NavLink to="course-pricing" key={8} onClick={isLg ? null : onClose}>
           <Icon
             type={
               courseAddPipline?.publish?.course_pricing?.completed
@@ -153,7 +161,7 @@ const CreateCourseMenu = () => {
           />
           <span>Course Pricing</span>
         </NavLink>
-        <NavLink to="course-setting" key={10}>
+        <NavLink to="course-setting" key={10} onClick={isLg ? null : onClose}>
           <Icon
             type={
               courseAddPipline?.publish?.course_setting?.completed
@@ -164,16 +172,37 @@ const CreateCourseMenu = () => {
           <span>Course Settings</span>
         </NavLink>
       </div>
-
-      <Button
-        className="btn-course-submit"
-        onClick={onSubmit}
-        disabled={!allStepsCompleted}
-        loading={loading}
-      >
-        Submit For Review
-      </Button>
     </div>
+  );
+  return (
+    <>
+      {!isLg && (
+        <div className="create-course-menu-small">
+          <Toggolecon onClick={showDrawer} />
+          {/* <Button type="primary" >
+            Open
+          </Button> */}
+          <Button
+            className="btn-course-submit"
+            onClick={onSubmit}
+            disabled={!allStepsCompleted}
+            loading={loading}
+          >
+            Submit For Review
+          </Button>
+          <Drawer
+            // title="Basic Drawer"
+            placement="left"
+            onClose={onClose}
+            open={open}
+            rootClassName="course-steps-drawer"
+          >
+            {allSteps}
+          </Drawer>
+        </div>
+      )}
+      {isLg && allSteps}
+    </>
   );
 };
 

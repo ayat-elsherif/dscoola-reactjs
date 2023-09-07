@@ -2,11 +2,18 @@
   &_body {
     padding: 25px;
     width: 811px;
-  }
-  .header {
-    font-size: 16px;
-    font-weight: 500;
-    padding-bottom: 15px;
+    .approve-oneonone {
+      margin-bottom: 1.5rem;
+      align-items: center;
+      .header {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+      .ant-form-item {
+        margin-bottom: 5px;
+      }
+    }
   }
   .pricing-radio {
     padding-bottom: 15px;
@@ -15,17 +22,28 @@
     font-size: 15px;
     padding-bottom: 15px;
   }
-  // .ant-select-selection-item {
-  //   // margin-top: 8px;
-  // }
-  .usd {
-    // padding-bottom: 46px;
+  .ant-form-item {
+    .ant-input-number {
+      width: 100%;
+    }
+  }
+  .ant-input-group {
+    .ant-select {
+      width: 100%;
+      .ant-select-selector {
+        height: 38px;
+      }
+    }
+  }
+  .price-amount {
+    margin-bottom: 5px;
   }
   .check-padd {
     padding-bottom: 13px;
   }
   .check-padd2 {
-    padding-bottom: 46px;
+    // padding-bottom: 46px;
+    padding-bottom: 16px;
   }
   .check-container {
     width: 811px;
@@ -63,6 +81,11 @@
   .check-col1 {
     color: #6a6f73;
     font-size: 14px;
+  }
+  @media screen and (max-width: 1470px) {
+    &_body {
+      width: 100%;
+    }
   }
 }
 // .ant-select-selection-placeholder {

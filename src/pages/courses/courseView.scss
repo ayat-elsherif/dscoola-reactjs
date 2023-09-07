@@ -574,7 +574,7 @@ li {
 .course-content-list-item-expand-li-leftside {
   width: 64%;
   display: flex;
-  align-items: start;
+  align-items: flex-start;
 
   @include breakpoint(max-xl) {
     width: 45%;

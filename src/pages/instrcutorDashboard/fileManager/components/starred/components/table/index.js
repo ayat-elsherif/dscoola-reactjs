@@ -13,7 +13,7 @@ function StarredTable() {
       title: 'Name',
       dataIndex: 'name',
       render: (_, elm) => (
-        <div className='name-container'>
+        <div className="name-container">
           <PDFIcon />
           <span>{elm.name}</span>
         </div>
@@ -29,12 +29,12 @@ function StarredTable() {
       render: (_, elm) => <ItemMember members={elm.members} />,
     },
     {
-      title: '',
+      title: ' ',
       dataIndex: 'action',
       key: 'x',
       width: 50,
       render: (_, elm) => (
-        <div className='text-center'>
+        <div className="text-center">
           <EllipsIcon />
         </div>
       ),
@@ -179,7 +179,7 @@ function StarredTable() {
   };
 
   return (
-    <div className='starred-table'>
+    <div className="starred-table">
       <Table
         rowSelection={rowSelection}
         pagination={false}

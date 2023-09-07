@@ -195,7 +195,7 @@ const CourseSetting = () => {
           <Loading />
         ) : (
           <div className="course-settings_body">
-            <Row justify="space-between">
+            <Row justify="space-between" className="approve-oneonone">
               <Col className="header">Approve One On One Request</Col>
               <Col>
                 <Form.Item>
@@ -210,7 +210,7 @@ const CourseSetting = () => {
                 </Form.Item>
               </Col>
             </Row>
-            <Form.Item name="ono_plan">
+            <Form.Item name="ono_plan" className="price-amount">
               <Radio.Group
                 className="pricing-radio"
                 onChange={onPricePlaneChange}
@@ -229,23 +229,11 @@ const CourseSetting = () => {
                   name="ono_price"
                   label=" What is the full amount you'd like to provide per hour ?"
                 >
-                  <InputNumber
-                    size="large"
-                    placeholder="Enter Price"
-                    style={{
-                      width: '50%',
-                    }}
-                  />
+                  <InputNumber size="large" placeholder="Enter Price" />
                 </Form.Item>
 
                 <Form.Item name="ono_sale_price" label=" Sale Price ?">
-                  <InputNumber
-                    size="large"
-                    placeholder="Enter Sale Price"
-                    style={{
-                      width: '50%',
-                    }}
-                  />
+                  <InputNumber size="large" placeholder="Enter Sale Price" />
                 </Form.Item>
               </>
             ) : null}
@@ -270,7 +258,6 @@ const CourseSetting = () => {
             <Form.Item valuePropName="checked" name="allow_comments">
               <Checkbox
                 className="check-padd2"
-                
                 onChange={(e) => {
                   setAllow_notification(e.target.checked ? 1 : 0);
                 }}
@@ -404,7 +391,6 @@ const CourseSetting = () => {
                     .includes(input.toLowerCase())
                 }
                 style={{
-                  width: 'calc(100% - 100px)',
                   marginBottom: '80px',
                 }}
                 loading={instractorListLod}

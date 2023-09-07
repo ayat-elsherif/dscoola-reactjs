@@ -546,7 +546,7 @@ const CourseDetails = () => {
               />
             )}
 
-            <Row gutter={10} align="middle">
+            <Row gutter={24} align="middle" className="upload-photo">
               <Col xs={24} md={10}>
                 <div className="photo-container">
                   <h4>Course Image</h4>
@@ -598,7 +598,7 @@ const CourseDetails = () => {
                 )}
               </Col>
             </Row>
-            <Row gutter={10} align="middle">
+            <Row gutter={24} align="middle" className="upload-video">
               <Col xs={24} md={10}>
                 <div className="vedio-container">
                   <h4>Course Intro Video</h4>

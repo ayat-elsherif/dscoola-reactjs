@@ -1,7 +1,7 @@
 .course-structure {
   &_body {
     padding: 25px;
-    width: 811px;
+    // width: 811px;
     h4 {
       font-size: 18px;
       font-family: 'Poppins-Medium';
@@ -26,7 +26,7 @@
         p {
           margin: 0;
           font-size: 15px;
-          width: 395px;
+          // width: 395px;
           line-height: 1.4;
         }
       }
@@ -42,11 +42,13 @@
         }
         svg {
           margin-right: 6px;
+          margin-top: 4px;
         }
         & > div {
           h4 {
             margin: 0 0 9px;
             font-size: 16px;
+            line-height: 3rem;
           }
           p {
             font-size: 14px;
