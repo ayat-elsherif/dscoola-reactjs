@@ -8,7 +8,7 @@ footer {
   padding: 2.3rem 0 0;
   color: #ececec;
   z-index: 99;
-  @media screen and (max-width: 922px) {
+  @media screen and (max-width: 991px) {
     padding-bottom: 60px;
   }
   .footer-logo {
@@ -18,6 +18,8 @@ footer {
   .footer-brief {
     font-weight: 300;
     line-height: 24px;
+    margin-bottom: 1rem;
+    font-size: 12px;
   }
 
   .footer-social {

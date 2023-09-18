@@ -5,10 +5,10 @@ import Footer from '../../../../common/footer';
 import Header from 'components/layout/Header/Header';
 import MainNavbar from 'components/mobileView/mainNavbar/MainNavbar';
 import useScreens from 'Hooks/ui/useScreens';
-
+import { useLocation } from 'react-router-dom';
 function Main() {
   const { isLg } = useScreens(); // < 992
-  console.log(isLg, 'isLg');
+  const location = useLocation().pathname;
   return (
     <div className="website-wrapper">
       <Header />
@@ -17,7 +17,7 @@ function Main() {
       </div>
 
       <Footer />
-      {!isLg && <MainNavbar />}
+      {!isLg && !location.includes('/course-view') && <MainNavbar />}
     </div>
   );
 }

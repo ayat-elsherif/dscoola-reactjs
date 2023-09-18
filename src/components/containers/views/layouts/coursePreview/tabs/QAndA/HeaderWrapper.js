@@ -36,7 +36,29 @@ function HeaderWrapper({ question }) {
       width: 21.5rem;
       height: 4rem;
     }
+    .filter-set {
+      @media screen and (max-width: 575px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+        .ant-col {
+          // margin-bottom: 3rem;
+          flex: 1 1 auto !important;
+          width: 100%;
+          .input.select {
+            margin-bottom: 3rem;
 
+            .ant-select-selector {
+              height: 5rem;
+            }
+          }
+          .input.search {
+            height: 5rem;
+            margin-bottom: 2.5rem;
+          }
+        }
+      }
+    }
     .input {
       height: 4rem;
       background-color: #f3f3f4;
@@ -179,6 +201,7 @@ function HeaderWrapper({ question }) {
                 align="middle"
                 justify="space-between"
                 wrap={false}
+                className="filter-set"
               >
                 <Col flex="27.1rem">
                   <Input

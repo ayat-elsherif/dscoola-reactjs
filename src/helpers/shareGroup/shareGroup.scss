@@ -1,73 +1,72 @@
-@import "/src/sass/var";
-@import "/src//sass//mixins";
-
-
+@import '/src/sass/var';
+@import '/src//sass//mixins';
 
 .shareGroup {
-    .shareGroup-toggle {
-        color: $theme-color;
-        cursor: pointer;
-    }
+  .shareGroup-toggle {
+    color: $theme-color;
+    cursor: pointer;
+    font-size: 12px;
+  }
 }
 
 .ShareGroupModal {
-    .modal-dialog {
-        @include breakpoint(lg) {
-            max-width: 615px;
-        }
-
-        h5 {
-            margin-bottom: 1.25rem;
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        .modal-body {
-            padding-bottom: 1.5rem;
-        }
-
-        .ant-form-item-control-input-content {
-            display: flex;
-            align-items: center;
-            margin-bottom: 1.25rem;
-
-            input {
-                width: 78%;
-                border-top-right-radius: 0;
-                border-bottom-right-radius: 0;
-
-                &[disabled] {
-                    background-color: $background-color;
-                    color: $desc-color;
-                    border-color: lighten($color: $border-color, $amount: 10%);
-                    height: 45px;
-
-                    &::placeholder {
-                        color: $desc-color;
-                    }
-                }
-            }
-
-            button.copyLink {
-                width: 22%;
-                border-top-left-radius: 0;
-                border-bottom-left-radius: 0;
-                padding: 0;
-                height: 45px;
-            }
-        }
-
-        .shareToSocialMedia {
-            text-align: center;
-
-            button {
-                margin: auto .65rem;
-
-                svg {
-                    width: 35px;
-                    height: 35px;
-                }
-            }
-        }
+  .modal-dialog {
+    @include breakpoint(lg) {
+      max-width: 615px;
     }
+
+    h5 {
+      margin-bottom: 1.25rem;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .modal-body {
+      padding-bottom: 1.5rem;
+    }
+
+    .ant-form-item-control-input-content {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.25rem;
+
+      input {
+        width: 78%;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        &[disabled] {
+          background-color: $background-color;
+          color: $desc-color;
+          border-color: lighten($color: $border-color, $amount: 10%);
+          height: 45px;
+
+          &::placeholder {
+            color: $desc-color;
+          }
+        }
+      }
+
+      button.copyLink {
+        width: 22%;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 0;
+        height: 45px;
+      }
+    }
+
+    .shareToSocialMedia {
+      text-align: center;
+
+      button {
+        margin: auto 0.65rem;
+
+        svg {
+          width: 35px;
+          height: 35px;
+        }
+      }
+    }
+  }
 }

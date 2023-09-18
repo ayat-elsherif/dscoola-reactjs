@@ -32,6 +32,13 @@ function PreviewHeader({ title }) {
 
         &.brand-wrapper {
           padding-right: 3rem;
+          @media screen and (max-width: 575px) {
+            padding-right: 0rem;
+            img {
+              width: 90px;
+              display: none;
+            }
+          }
         }
       }
     }

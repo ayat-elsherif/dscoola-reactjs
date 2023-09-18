@@ -876,7 +876,7 @@
 .userCard-body-details-title {
   font-size: 18px;
   font-weight: 600;
-
+  margin-top: 1rem;
   a {
     color: black !important;
   }
@@ -886,6 +886,10 @@
   display: flex;
   padding-bottom: 50px;
   align-items: center;
+  @include breakpoint(max-lg) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .userCard-body-image {
@@ -896,7 +900,7 @@
     border-radius: 8px;
     // border: 1px solid #eee;
     border: 0;
-    width: 200px !important;
+    width: 200px;
     height: 200px;
     object-fit: contain;
   }
@@ -904,8 +908,8 @@
   @include breakpoint(max-xl) {
     svg,
     img {
-      width: 100px;
-      height: 100px;
+      width: 180px;
+      height: 180px;
     }
   }
 }
@@ -922,6 +926,27 @@
   padding-top: 11px;
   padding-bottom: 15px;
   line-height: 1.4;
+}
+.usercard-stats {
+  display: flex;
+  .usercard-stats-item {
+    font-size: 13px;
+    margin-right: 15px;
+  }
+  @include breakpoint(max-xl) {
+    flex-wrap: wrap;
+    .usercard-stats-item {
+      font-size: 12px;
+      margin-bottom: 1rem;
+    }
+  }
+  @include breakpoint(max-md) {
+    flex-direction: column;
+    .usercard-stats-item {
+      font-size: 12px;
+      // width: 100%;
+    }
+  }
 }
 
 .userCard-body-details-rating {

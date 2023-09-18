@@ -38,6 +38,9 @@ function OwnResult({
         font-size: 5rem;
       }
     }
+    @media screen and (max-width: 767px) {
+      width: 42ch;
+    }
   `;
   return (
     <Result

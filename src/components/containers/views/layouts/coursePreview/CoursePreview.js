@@ -34,12 +34,16 @@ const CoursePreview = ({ tab }) => {
           } */
 
           color: #6a6f73;
+          width: 100vw;
           .ant-tabs-tab {
             font-weight: 500;
             font-size: 1.5rem;
             line-height: 2.4rem;
             text-transform: capitalize;
-
+            @media screen and (max-width: 767px) {
+              font-size: 2rem;
+              margin-left: 7px;
+            }
             &.ant-tabs-tab-active {
               .ant-tabs-tab-btn {
                 color: #7e59d1;

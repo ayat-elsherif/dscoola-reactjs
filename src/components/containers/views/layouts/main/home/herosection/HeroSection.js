@@ -36,14 +36,14 @@ function HeroSection({ topCoursesEl }) {
             letter-spacing: 0px;
             color: #ebebeb;
           }
-          @media screen and (max-width: 545px) {
+          @media screen and (max-width: 575px) {
             text-align: center;
           }
         }
         .btns-wrapper {
           margin-top: 5rem;
           .ant-row {
-            @media screen and (max-width: 545px) {
+            @media screen and (max-width: 575px) {
               justify-content: space-around;
             }
           }

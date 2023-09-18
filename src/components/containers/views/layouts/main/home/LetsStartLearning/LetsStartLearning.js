@@ -14,6 +14,11 @@ function LetsStartLearning() {
 
   const LetsStartLearningStyles = css`
     margin: 6rem 0;
+    @media screen and (max-width: 991px) {
+      .slick-slider {
+        width: 100vw;
+      }
+    }
   `;
   const setting = {
     slidesToShow: 2,
