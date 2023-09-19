@@ -1156,6 +1156,7 @@
 }
 
 .popularCard {
+  position: relative;
   .popularCard-img {
     img {
       width: 100%;
@@ -1171,6 +1172,7 @@
     background-color: rgba($color: $background-color, $alpha: 0.92);
     padding: 12px 15px;
     margin-right: 13px;
+    width: 100%;
 
     a {
       text-decoration: none;
@@ -1207,6 +1209,15 @@
       }
     }
   }
+  @include breakpoint(max-lg) {
+    .popularCard-details {
+      h6 {
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 1px;
+      }
+    }
+  }
 }
 
 .recentCard {
@@ -1214,7 +1225,12 @@
   box-shadow: 0px 3px 6px #00000029;
   border-radius: 8px;
   overflow: hidden;
-
+  @include breakpoint(max-md) {
+    margin-bottom: 5rem;
+  }
+  a {
+    width: 100%;
+  }
   .recentCard-img {
     img {
       border-radius: 8px 8px 0 0;

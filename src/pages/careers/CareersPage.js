@@ -1,6 +1,6 @@
-import { Col, Row } from "antd";
-import React from "react";
-import BreadCrumbsMultiple from "../../helpers/breadCrumbs/BreadCrumbsMultiple";
+import { Col, Row } from 'antd';
+import React from 'react';
+import BreadCrumbsMultiple from '../../helpers/breadCrumbs/BreadCrumbsMultiple';
 import {
   alwaysLearningIcon,
   benefitsCheckedIcon,
@@ -12,14 +12,14 @@ import {
   individuallyHumbleIcon,
   missionIcon,
   writeThemeColorIcon,
-} from "../../SVGs";
+} from '../../SVGs';
 function CareersPage() {
   window.scroll(0, 0);
 
   return (
     <div className="careersPage">
       <BreadCrumbsMultiple
-        params={[{ label: "Careers" }]}
+        params={[{ label: 'Careers' }]}
         title="Let's Shape The Future Of Learning"
         txt={`Help people around the world empower themselves through knowledge.`}
         heroImg={
@@ -35,27 +35,27 @@ function CareersPage() {
           <h3>Learn The Secrets To Life Success</h3>
           <p>The Ultimate Planning Solution To Reach Their Personal Goals</p>
           <Row gutter={30}>
-            <Col xl={6} lg={8}>
+            <Col xl={6} lg={8} md={12} xs={24}>
               <div className="planningSolutions-item">
                 {writeThemeColorIcon}
                 <h4>We Are Learners</h4>
                 <p>Enjoy a yearly learning stipend, office wide learning</p>
               </div>
             </Col>
-            <Col xl={6} lg={8}>
+            <Col xl={6} lg={8} md={12} xs={24}>
               <div className="planningSolutions-item">
                 {compassThemeColorIcon}
                 <h4>We Are Navigators</h4>
                 <p>When people feel supported We want our employees</p>
               </div>
             </Col>
-            <Col xl={6} lg={8}>
+            <Col xl={6} lg={8} md={12} xs={24}>
               <div className="planningSolutions-item">
                 {careThemeColorIcon} <h4>We Make An Impact</h4>
                 <p>our employees regularly help local food banks </p>
               </div>
             </Col>
-            <Col xl={6} lg={0}>
+            <Col xl={6} lg={0} md={12} xs={24}>
               <div className="planningSolutions-item">
                 {globeThemeColorIcon}
                 <h4>We Are Global</h4>
@@ -70,19 +70,19 @@ function CareersPage() {
             <h3>Our Core Values</h3>
           </div>
           <Row gutter={30} className="coreValues-body">
-            <Col xl={6} lg={12}>
+            <Col xl={6} md={12} xs={24}>
               <div className="coreValues-item">
                 <div className="coreValues-firstBG">{missionIcon}</div>
                 <h2>Mission Inspired Results Obsessed</h2>
               </div>
             </Col>
-            <Col xl={6} lg={12}>
+            <Col xl={6} md={12} xs={24}>
               <div className="coreValues-item">
                 <div className="coreValues-firstBG">{alwaysLearningIcon}</div>
                 <h2>Always Learning</h2>
               </div>
             </Col>
-            <Col xl={6} lg={12}>
+            <Col xl={6} md={12} xs={24}>
               <div className="coreValues-item">
                 <div className="coreValues-firstBG">
                   {individuallyHumbleIcon}
@@ -90,7 +90,7 @@ function CareersPage() {
                 <h2>Individually Humble Collectively Proud</h2>
               </div>
             </Col>
-            <Col xl={6} lg={12}>
+            <Col xl={6} md={12} xs={24}>
               <div className="coreValues-item">
                 <div className="coreValues-firstBG">
                   {earnestlyAuthenticIcon}
@@ -103,7 +103,7 @@ function CareersPage() {
         <div className="perksBenefits">
           <h3>Perks and Benefits</h3>
           <Row gutter={30}>
-            <Col span={12}>
+            <Col md={12}>
               <div className="benefits-item">
                 {benefitsCheckedIcon}
                 <div>
@@ -116,7 +116,7 @@ function CareersPage() {
                 </div>
               </div>
             </Col>
-            <Col span={12}>
+            <Col md={12}>
               <div className="benefits-item">
                 {benefitsCheckedIcon}
                 <div>
@@ -129,7 +129,7 @@ function CareersPage() {
                 </div>
               </div>
             </Col>
-            <Col span={12}>
+            <Col md={12}>
               <div className="benefits-item">
                 {benefitsCheckedIcon}
                 <div>
@@ -141,7 +141,7 @@ function CareersPage() {
                 </div>
               </div>
             </Col>
-            <Col span={12}>
+            <Col md={12}>
               <div className="benefits-item">
                 {benefitsCheckedIcon}
                 <div>
