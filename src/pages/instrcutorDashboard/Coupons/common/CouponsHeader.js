@@ -21,17 +21,36 @@ function CouponsHeader({
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
+    @media (max-width: 991px) {
+      flex-direction: column;
+      align-items: flex-start;
+      .col-end {
+        flex-direction: column;
+        .coupons-head {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .ant-space-item {
+            width: 220px !important;
+            .ant-btn {
+              padding: 0 2rem;
+              height: 28px;
+            }
+          }
+        }
+      }
+    }
     .col-start {
       .title {
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 18px;
         line-height: 3rem;
         text-transform: capitalize;
         color: #2a2a2a;
       }
       .sub-title {
         font-weight: 400;
-        font-size: 1.3rem;
+        font-size: 13px;
         line-height: 2rem;
         color: #6a6f73;
       }
@@ -96,16 +115,16 @@ function CouponsHeader({
   const [searchValue, setSearchValue] = useState('');
   const searchValueDebounce = useDebounce(searchValue, 500);
 
-  useEffect(() => {
-    const newQueryObj = {
-      ...searchQueryObj,
-      page: 1,
-      q: searchValueDebounce,
-    };
+  // useEffect(() => {
+  //   const newQueryObj = {
+  //     ...searchQueryObj,
+  //     page: 1,
+  //     q: searchValueDebounce,
+  //   };
 
-    if (!newQueryObj?.q) delete newQueryObj?.q;
-    setSearchQuery(newQueryObj);
-  }, [searchValueDebounce, setSearchQuery, searchQueryObj]);
+  //   if (!newQueryObj?.q) delete newQueryObj?.q;
+  //   setSearchQuery(newQueryObj);
+  // }, [searchValueDebounce, setSearchQuery, searchQueryObj]);
 
   const onFilter = (value) => {
     console.log('onFilter  value', value);
@@ -135,7 +154,7 @@ function CouponsHeader({
           </div>
         </div>
         <div className="col-end">
-          <Space>
+          <Space className="coupons-head">
             <Input
               suffix={<Searchcon />}
               // defaultValue={searchQueryObj.title?.replaceAll('*', '')}

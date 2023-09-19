@@ -1,3 +1,4 @@
+@import '../../../../../sass/mixins';
 .courses {
   .page-header-right {
     a {
@@ -27,6 +28,55 @@
       &:nth-last-of-type(2) {
         margin: 0 16px;
       }
+    }
+  }
+  @include breakpoint(max-lg) {
+    .page-header-right {
+      width: 100%;
+      width: 220px;
+      a {
+        margin-left: 0;
+      }
+      .status-filter {
+        margin-bottom: 1.5rem !important;
+        width: 100%;
+        &:nth-last-of-type(2) {
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .ant-select {
+          width: 100%;
+          .ant-select-selector {
+            width: 100%;
+          }
+        }
+        &:last-of-type {
+          margin-bottom: 3rem !important;
+        }
+      }
+    }
+  }
+  @include breakpoint(max-md) {
+    .page-header-right {
+      width: 100%;
+      a {
+        margin-left: 0;
+        width: 140px;
+      }
+      // .status-filter {
+      //   margin-bottom: 1.5rem !important;
+      //   width: 100%;
+      //   &:nth-last-of-type(2) {
+      //     margin-left: 0;
+      //     margin-right: 0;
+      //   }
+      //   .ant-select {
+      //     width: 100%;
+      //   }
+      //   &:last-of-type {
+      //     margin-bottom: 3rem !important;
+      //   }
+      // }
     }
   }
 }

@@ -222,7 +222,7 @@ const PersonalInfoForm = ({ data, premium }) => {
               >
                 <PhoneInput
                   value={phoneNumber}
-                  countryCode={'EG'}
+                  countryCode={'eg'}
                   onChange={(val) => setPhoneNumber(val)}
                 />
               </Form.Item>
@@ -322,6 +322,7 @@ const PersonalInfoForm = ({ data, premium }) => {
                 <div key={item.key}>
                   <div className="social-container">
                     <Form.Item
+                      className="social-form-input"
                       name={item?.key}
                       rules={[
                         {

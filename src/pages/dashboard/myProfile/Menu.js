@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu } from 'antd';
+import { Menu, Tabs } from 'antd';
 import {
   Link,
   NavLink,
@@ -21,54 +21,57 @@ import {
 import Icon from '../../../components/common/dashboard/components/Icon';
 import ProfileAvatar from '../../../components/common/dashboard/components/profileAvatar';
 import { useSelector } from 'react-redux';
+import useScreens from 'Hooks/ui/useScreens';
 
 const ProfileMenu = () => {
   const menuList = [
     {
-      name: 'Personal Information',
+      label: 'Personal Information',
       path: 'personal-information',
-      key: 'PersonalInformation',
+      key: 'personal-information',
       icon: ProfileIcon,
     },
 
     {
-      name: 'My Wallet',
+      label: 'My Wallet',
       path: 'my-wallet',
-      key: 'myWallet',
+      key: 'my-wallet',
       icon: PaymentsMethodsIcon,
     },
     {
-      name: 'Payment Methods',
+      label: 'Payment Methods',
       path: 'credit-cards',
-      key: 'CreditCards',
+      key: 'credit-cards',
       icon: PaymentsMethodsIcon,
     },
     {
-      name: 'Notification Settings',
+      label: 'Notification Settings',
       path: 'notification-settings',
-      key: 'NotificationSettings',
+      key: 'notification-settings',
       icon: BillIcon,
     },
     {
-      name: 'Security Settings',
+      label: 'Security Settings',
       path: 'security-settings',
-      key: 'SecuritySettings',
+      key: 'security-settings',
       icon: SecurityIcon,
     },
     {
-      name: 'Login Activity',
+      label: 'Login Activity',
       path: 'login-activity',
-      key: 'LoginActivity',
+      key: 'login-activity',
       icon: SecurityIcon,
     },
     {
-      name: 'Deactivate Account',
+      label: 'Deactivate Account',
       path: 'deactivate-account',
-      key: 'DeactivateAccount',
+      key: 'deactivate-account',
       icon: DeactivateAccountIcon,
     },
   ];
 
+  const { isLg } = useScreens();
+  const navigate = useNavigate();
   function insertAt(array, index, ...elementsArray) {
     array.splice(index, 0, ...elementsArray);
   }
@@ -76,9 +79,9 @@ const ProfileMenu = () => {
   console.log(currentUser, 'asfwefgwef');
   if (currentUser?.role_id === 2) {
     insertAt(menuList, 1, {
-      name: 'Work Experiences',
+      label: 'Work Experiences',
       path: 'Work-Experiences',
-      key: 'workExperiences',
+      key: 'Work-Experiences',
       icon: ProfileIcon,
     });
   }
@@ -90,19 +93,37 @@ const ProfileMenu = () => {
       </div>
       <div className="custom-divider"></div>
       <div className="myprofile-nav">
-        {menuList.map((elm, index) => {
-          return (
-            <NavLink to={elm.path} key={index}>
-              <span>
-                <Icon type={elm.icon} />
-                <span>{elm.name}</span>
-              </span>
-              <span>
-                <ArrowIcon />
-              </span>
-            </NavLink>
-          );
-        })}
+        {isLg ? (
+          menuList.map((elm, index) => {
+            return (
+              <NavLink to={elm.path} key={index}>
+                <span>
+                  <Icon type={elm.icon} />
+                  <span>{elm.label}</span>
+                </span>
+                <span>
+                  <ArrowIcon />
+                </span>
+              </NavLink>
+            );
+          })
+        ) : (
+          <Tabs
+            defaultActiveKey="1"
+            items={menuList.map((elm, index) => {
+              return {
+                label: (
+                  <NavLink to={elm.path} key={index}>
+                    {/* <Icon type={elm.icon} /> */}
+                    {elm.label}
+                  </NavLink>
+                ),
+                key: elm.key,
+              };
+            })}
+            onChange={(key) => navigate(key)}
+          ></Tabs>
+        )}
       </div>
     </div>
   );

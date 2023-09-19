@@ -39,10 +39,10 @@ function AllAppointments({ search, status }) {
         </Row>
       ) : (
         <>
-          {oneToOneList?.data?.length > 0 ? (
+          {oneToOneList?.data?.list?.length > 0 ? (
             <>
               <Row gutter={!isxxlap ? 25 : 55}>
-                {oneToOneList?.data?.map((appointment) => {
+                {oneToOneList?.data?.list?.map((appointment) => {
                   return (
                     <Col xs={24} sm={24} md={24} xl={12}>
                       <AppointmentCard data={appointment} happening={false} />
@@ -52,9 +52,9 @@ function AllAppointments({ search, status }) {
               </Row>{' '}
               <OwnPagination
                 pagination={{
-                  total: oneToOneList.meta?.total,
-                  currentPage: oneToOneList.meta?.current_page,
-                  perPage: oneToOneList.meta?.per_page,
+                  total: oneToOneList.data?.total_count,
+                  currentPage: oneToOneList.data?.current_page,
+                  perPage: oneToOneList.data?.per_page,
                 }}
                 onChange={handleChange}
               />

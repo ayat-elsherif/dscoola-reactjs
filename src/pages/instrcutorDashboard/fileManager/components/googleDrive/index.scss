@@ -1,8 +1,27 @@
+@import '../../../../../sass/mixins';
 .google-drive {
   h3 {
     font-size: 18px;
     font-family: 'Poppins-Medium';
     color: #2a2a2a;
     margin: 0 0 24px;
+  }
+  .file-manager-table {
+    .ant-table-content {
+      overflow-x: auto;
+      width: 100%;
+      table {
+        th {
+          &.ant-table-cell {
+            &:nth-child(1) {
+              min-width: 230px;
+            }
+            &:nth-child(3) {
+              min-width: 200px;
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -44,12 +44,12 @@ const Index = () => {
   );
 
   return (
-    <div className='file-manager'>
-      <div className='dashboard-page-header-container'>
-        <div className='page-header-left'>
-          <h3 className='dashboard-page-title'>Webinars&Talks</h3>
+    <div className="file-manager">
+      <div className="dashboard-page-header-container">
+        <div className="page-header-left">
+          <h3 className="dashboard-page-title">Webinars & Talks</h3>
         </div>
-        <div className='page-header-right'>
+        <div className="page-header-right">
           <SearchInput
             callback={(searchValue) => {
               setFilters((s) => ({ ...s, search: searchValue }));
@@ -57,19 +57,19 @@ const Index = () => {
           />
           <Dropdown
             overlay={dropDownmenu}
-            overlayClassName='create-file'
+            overlayClassName="create-file"
             trigger={['click']}
           >
-            <div className='create-file-btn'>
+            <div className="create-file-btn">
               <PlusIcon />
               <span>Create New</span>
             </div>
           </Dropdown>
         </div>
       </div>
-      <div className='file-manager-card'>
+      <div className="file-manager-card">
         <FileManagerMenu />
-        <div className='card-content'>
+        <div className="card-content">
           <Outlet />
         </div>
       </div>

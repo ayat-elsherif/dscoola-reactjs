@@ -47,10 +47,10 @@ const ReviewsTable = () => {
         }
       }}
     >
-      <Menu.Item key='1'>
+      <Menu.Item key="1">
         <span>Edit</span>
       </Menu.Item>
-      <Menu.Item key='2'>
+      <Menu.Item key="2">
         <span>Delete</span>
       </Menu.Item>
     </Menu>
@@ -78,35 +78,36 @@ const ReviewsTable = () => {
       width: 400,
       render: (_, elem) => {
         return (
-          <div className='reviews-rating'>
+          <div className="reviews-rating">
             <CustomRating
               readOnly={true}
               ratingNumber={elem?.reviewsRating?.rateNum}
             />
-            <div className='review'>{elem?.reviewsRating?.review}</div>
+            <div className="review">{elem?.reviewsRating?.review}</div>
           </div>
         );
       },
     },
+
     {
-      title: '',
+      title: ' ',
       dataIndex: 'action',
       key: 'x',
       width: 50,
       render: (_, elm) => (
         <div
-          className='text-center'
+          className="text-center"
           onClick={(event) => event.stopPropagation()}
           style={{ cursor: 'pointer' }}
         >
           <Dropdown
             overlay={actionMenu}
             trigger={['click']}
-            placement='bottomRight'
+            placement="bottomRight"
             arrow={{
               pointAtCenter: true,
             }}
-            overlayClassName='table-actions-menu'
+            overlayClassName="table-actions-menu"
           >
             <EllipsIcon />
           </Dropdown>
@@ -167,15 +168,15 @@ const ReviewsTable = () => {
     },
   ];
   return (
-    <div className='reviews-table'>
+    <div className="reviews-table">
       <Table pagination={false} columns={columns} dataSource={data} bordered />
-      <div className='main-table_footer'>
-        <div className='change-page'>
+      <div className="main-table_footer">
+        <div className="change-page">
           <span>Go to page :</span>{' '}
           <InputNumber min={1} defaultValue={1} onChange={onPageNumberChange} />{' '}
         </div>
         <Pagination
-          size='small'
+          size="small"
           total={100}
           defaultPageSize={10}
           current={page}

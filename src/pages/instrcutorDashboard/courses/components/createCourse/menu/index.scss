@@ -1,3 +1,5 @@
+@import '../../../../../../sass/var';
+@import '../../../../../../sass/mixins';
 .create-course-menu {
   width: 223px;
   height: fit-content;
@@ -78,6 +80,35 @@
       &:active {
         color: #fff;
       }
+    }
+  }
+  @include breakpoint(max-lg) {
+    position: unset;
+    width: 100%;
+    border-right: none;
+  }
+}
+
+.create-course-menu-small {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  padding: 25px;
+  align-items: center;
+
+  svg {
+    cursor: pointer;
+    path {
+      fill: $theme-color;
+    }
+  }
+}
+
+.course-steps-drawer {
+  .ant-drawer-header {
+    .ant-drawer-header-title {
+      justify-content: end;
     }
   }
 }

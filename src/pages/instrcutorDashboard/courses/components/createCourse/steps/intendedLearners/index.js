@@ -145,13 +145,7 @@ const IntendedLearners = () => {
                         ]}
                         noStyle
                       >
-                        <Input
-                          placeholder="EX: You will be able to start earning money from your Illustrator Skills."
-                          style={{
-                            width: '90%',
-                            marginBottom: '10px',
-                          }}
-                        />
+                        <Input placeholder="EX: You will be able to start earning money from your Illustrator Skills." />
                       </Form.Item>
                       {fields.length > 1 ? (
                         <MinusCircleOutlined
@@ -184,9 +178,6 @@ const IntendedLearners = () => {
               What are the requirements or prerequisites for taking your course?
             </h4>
             <TextArea
-              style={{
-                width: '90%',
-              }}
               placeholder="EX: This course is designed to be an introduction to the topic and no prior knowledge nor experience is required. Nevertheless, an understanding of the basic principles that govern business organizations will let you grasp the concepts I present here quicker."
               value={requirement || ''}
               onChange={(e) => setRequirement(e.target.value)}
@@ -229,13 +220,7 @@ const IntendedLearners = () => {
                         ]}
                         noStyle
                       >
-                        <Input
-                          placeholder="EX: Beginner UI/UX designer with adobe xd"
-                          style={{
-                            width: '90%',
-                            marginBottom: '10px',
-                          }}
-                        />
+                        <Input placeholder="EX: Beginner UI/UX designer with adobe xd" />
                       </Form.Item>
                       {fields.length > 1 ? (
                         <MinusCircleOutlined

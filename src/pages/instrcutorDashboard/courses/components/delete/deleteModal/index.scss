@@ -20,7 +20,7 @@
             .ant-form-item-control-input {
               .ant-form-item-control-input-content {
                 .ant-input {
-                  height: 85px !important;
+                  height: 45px !important;
                   padding: 16px !important;
                 }
               }
@@ -28,11 +28,15 @@
           }
         }
       }
-
       .delete-actions {
         margin-top: 7px;
         display: flex;
         justify-content: flex-end;
+      }
+      .ant-btn {
+        &.ant-btn-primary {
+          font-size: 15px;
+        }
       }
     }
   }

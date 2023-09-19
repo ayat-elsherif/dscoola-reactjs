@@ -17,6 +17,23 @@ function Coupons() {
     background-color: #fff;
 
     .table-wrapper {
+      .ant-table-content {
+        overflow-x: auto;
+        width: 100%;
+        th.ant-table-cell {
+          font-size: 14px;
+          font-family: 'Poppins-Medium';
+          &:nth-child(n + 1) {
+            min-width: 140px;
+            &:before {
+              display: none;
+            }
+          }
+          &:last-of-type {
+            min-width: 50px;
+          }
+        }
+      }
       .ant-table-thead {
         .ant-table-cell {
           background-color: #fff;
@@ -108,7 +125,7 @@ function Coupons() {
       ),
     },
     {
-      title: '',
+      title: ' ',
       dataIndex: 'actions',
       key: 'actions',
       render: (_, record) => {

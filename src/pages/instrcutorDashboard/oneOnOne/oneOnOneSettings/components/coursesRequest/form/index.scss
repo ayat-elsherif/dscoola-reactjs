@@ -1,7 +1,8 @@
+@import '../../../../../../../sass/mixins';
 .course-requests-form {
   background: #fff;
   border-radius: 3px;
-  padding: 24px 35px 32px 15px;
+  padding: 24px 25px 32px;
   .ant-form-item {
     margin-bottom: 24px;
     .ant-form-item-label {

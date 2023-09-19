@@ -1,3 +1,4 @@
+@import '../../../sass/var';
 @import '../../../sass/mixins';
 .my-profile {
   .profile-card {
@@ -40,7 +41,7 @@
             color: #7e59d1;
             svg {
               path {
-                fill: #7e59d1;
+                fill: $theme-color;
               }
             }
           }
@@ -55,10 +56,10 @@
           }
         }
         a.active {
-          color: #7e59d1;
+          color: $theme-color;
           svg {
             path {
-              fill: #7e59d1;
+              fill: $theme-color;
             }
           }
         }
@@ -77,13 +78,15 @@
           color: #2a2a2a;
           font-size: 18px;
           font-family: 'Poppins-Medium';
+          margin-bottom: 10px;
         }
         h4 {
-          margin: 6px 0 0;
+          margin: 6px 0 22px;
           font-size: 14px;
           color: #6a6f73;
           font-weight: normal;
           font-family: 'Poppins-Regular';
+          line-height: 22px;
         }
       }
 
@@ -170,6 +173,9 @@
                 }
               }
             }
+            &.social-form-input {
+              margin-right: 2rem;
+            }
           }
         }
         .custom-divider {
@@ -180,6 +186,84 @@
         }
         .form-actions {
           margin-top: 42px;
+        }
+      }
+    }
+    @include breakpoint(max-lg) {
+      flex-direction: column;
+      .my-info,
+      .myprofile-menu {
+        border: none;
+        width: 100%;
+        .basic-info {
+          .inner-form-container {
+            width: 100%;
+          }
+          .profil-photo-conrainer {
+            .photo {
+              width: 37px;
+              height: 37px;
+            }
+          }
+          .ant-form-item-control-input-content {
+            .ant-input-affix-wrapper {
+              width: 100% !important;
+            }
+          }
+          .ant-btn {
+            &.ant-btn-primary {
+              font-size: 16px;
+            }
+          }
+        }
+        .profile-avatar {
+          .profile-info {
+            .name {
+              max-width: 100%;
+            }
+          }
+        }
+      }
+      .myprofile-menu {
+        .custom-divider {
+          background: transparent;
+        }
+        .myprofile-nav {
+          margin-top: 0;
+          a {
+            padding: 14px 0;
+            margin: auto 20px;
+            &.active {
+              position: relative;
+
+              &::after {
+                transition: all 0.35s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+                content: '';
+                bottom: 0;
+                left: 10%;
+                position: absolute;
+                width: 80%;
+                height: 2px;
+                background-color: $theme-color;
+              }
+            }
+          }
+          .ant-tabs {
+            .ant-tabs-tab {
+              padding: 0;
+              margin-left: 0 !important;
+              svg {
+                margin-right: 0.75rem;
+              }
+            }
+            .ant-tabs-ink-bar-animated {
+              display: none;
+            }
+            .ant-tabs-nav-operations {
+              display: none;
+            }
+          }
         }
       }
     }
@@ -220,10 +304,31 @@
 }
 .work-experiences-item {
   padding: 28px;
+  @include breakpoint(max-md) {
+    > .ant-col {
+      &:nth-child(1) {
+        order: 1;
+        text-align: center;
+        margin-top: 30px;
+        img {
+          border-radius: 4px;
+        }
+      }
+      &:nth-child(2) {
+        order: 3;
+        margin-top: 1.5rem;
+        text-align: center;
+      }
+      &:nth-child(3) {
+        order: 2;
+      }
+    }
+  }
 }
 .work-experiences-image {
   width: 116px !important;
   height: 94px !important;
+  object-fit: cover;
 }
 .cert-title {
   font-size: 15px;

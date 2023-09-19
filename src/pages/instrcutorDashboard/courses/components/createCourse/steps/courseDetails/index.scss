@@ -1,7 +1,8 @@
+@import '../../../../../../../sass/mixins';
 .course-details {
   &_body {
     padding: 25px;
-    width: 811px;
+    width: 800px;
     .dashboard-form {
       .ant-form-item {
         .ant-form-item-label {
@@ -26,9 +27,11 @@
           }
         }
       }
-      .photo-container {
-        h4 {
-          margin-top: 25px;
+      .upload-photo {
+        .photo-container {
+          h4 {
+            margin-top: 25px;
+          }
         }
       }
       .vedio-container {
@@ -63,6 +66,30 @@
     }
     ul {
       list-style: none;
+    }
+  }
+  @include breakpoint(max-xxl) {
+    &_body {
+      width: 100%;
+    }
+    .upload-photo {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 2rem;
+      .photo-container {
+        margin-bottom: 1rem;
+      }
+    }
+    .upload-video {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 5rem;
+      .vedio-container {
+        margin-bottom: 1rem;
+      }
+    }
+    .course-upload-image {
+      width: 100% !important;
     }
   }
 }

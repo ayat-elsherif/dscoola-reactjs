@@ -1,6 +1,6 @@
 @use '../../../../sass/var' as var;
 
-.allTitle-container {
+.all-title-container {
   position: sticky;
   top: 0;
   z-index: 10;
@@ -13,7 +13,7 @@
   &.search-result {
     display: flex;
     align-items: center;
-    .viewAll-section {
+    .view-all-section {
       margin-bottom: 0;
       span {
         display: flex;
@@ -24,7 +24,7 @@
       margin-left: 1rem;
     }
   }
-  .viewAll-section {
+  .view-all-section {
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,3 +1,4 @@
+@import ' ../../../../../../sass/mixins';
 .revenueby-location {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 6px #b1b0b05e;
@@ -26,5 +27,8 @@
         color: #707070;
       }
     }
+  }
+  @include breakpoint(max-md) {
+    margin-bottom: 25px;
   }
 }

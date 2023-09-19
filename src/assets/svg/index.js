@@ -178,4 +178,5 @@ export { ReactComponent as CloseRoundedIcon } from './close-rounded-b.svg';
 export { ReactComponent as InfoIcon } from './info-icon.svg';
 export { ReactComponent as VideoPlaceholder } from './video-lec-placeholder.svg';
 export { ReactComponent as ArticlePlaceholder } from './article-placeholder.svg';
+export { ReactComponent as CopyIcon } from './copy-icon.svg';
 export { ReactComponent as LiveSessionPlaceholder } from './liveSession-placeholder.svg';

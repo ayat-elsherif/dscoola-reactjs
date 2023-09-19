@@ -10,6 +10,7 @@ import { useDeleteAppointment } from "../../hooks/useOneToOne";
 import "./index.scss";
 
 const AppointmentCard = ({ data }) => {
+  console.log(data,"a;sdc")
   const queryClient = useQueryClient();
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -32,11 +33,17 @@ const AppointmentCard = ({ data }) => {
   const handalDelete = (id) => {
     deleteAppointment(id);
   };
+  const meetingStatus =(status)=>{
+if(status===1)return "Upcomming appointment"
+if(status===2)return "Appointment Done"
+if(status===3)return "Expired Appointment"
+if(status===4)return "Happening now appointment"
+  }
   return (
     <div className="appointment-card">
       <div className="appointment-card_details">
         <div className={`status ${data?.meeting_status}`}>
-          {capitalize(data?.meeting_status)} Appointment
+          {meetingStatus(data?.meeting_status)} Appointment
         </div>
         <div className="title">Discussions: {data?.title}</div>
         <div className="instructor-with">
@@ -44,7 +51,7 @@ const AppointmentCard = ({ data }) => {
         </div>
       </div>
       <div className="appointment-card_date-actions">
-        <div className="date">{dayjs(data?.date).format("llll")}</div>
+        <div className="date">{dayjs(data?.date).format("MMMM d, YYYY • hh:mm a ")}</div>
         <div className="actions">
           {data.meeting_status !== "happening" ? (
             <DashboardButton

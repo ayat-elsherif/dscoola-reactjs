@@ -1,3 +1,4 @@
+@import '../../../../../../sass/mixins';
 .course-list-table {
   .ant-table-bordered {
     .ant-table-container {
@@ -58,6 +59,19 @@
       top: 50%;
 
       transform: translateY(-50%);
+    }
+  }
+  @include breakpoint(max-md) {
+    .ant-table {
+      width: 100%;
+      overflow-x: auto;
+    }
+    .ant-table-content {
+      .ant-table-cell {
+        &:nth-child(2) {
+          min-width: 130px;
+        }
+      }
     }
   }
 }

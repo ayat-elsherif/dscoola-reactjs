@@ -89,3 +89,26 @@
     }
   }
 }
+
+.account-drawer {
+  &.ant-drawer {
+    .ant-drawer-wrapper-body {
+      position: relative;
+      .ant-drawer-header {
+        .ant-drawer-close {
+          z-index: 100;
+          color: #fff;
+          font-weight: 500;
+          top: 20px;
+        }
+      }
+      .ant-drawer-body {
+        padding: 0;
+        position: absolute;
+        top: 0;
+        // z-index: -1;
+        width: 100%;
+      }
+    }
+  }
+}

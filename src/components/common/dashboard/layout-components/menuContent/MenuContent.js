@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Menu, Grid } from 'antd';
 import Icon from '../../components/Icon';
 import navigationConfig from '../../configs/NavigationConfig';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NAV_TYPE_SIDE } from '../../constants/ThemeConstant';
 import utils from '../../../../../utils';
 import { onMobileNavToggle } from '../../../../../features/theme/ThemeSlice';
@@ -11,6 +11,10 @@ import './index.scss';
 import checkRole from '../../../../../Hooks/checkRole';
 import { LogoutIcon } from 'assets/svg';
 import LogoutModal from '../../components/logoutModal';
+import useScreens from 'Hooks/ui/useScreens';
+import { useQueryClient } from '@tanstack/react-query';
+import { queryKeys } from 'services/react-query/queryKeys';
+import { setCurrentUser } from 'features/user/user';
 
 const { SubMenu } = Menu;
 const { useBreakpoint } = Grid;
@@ -31,13 +35,27 @@ const setDefaultOpen = (key) => {
 
 const SideNavContent = (props) => {
   const { routeInfo, hideGroupTitle } = props;
+  const { isXl } = useScreens();
   const [isModLogoutVis, setIsModLogoutVis] = useState(false);
   const dispatch = useDispatch();
   const isMobile = !utils.getBreakPoint(useBreakpoint()).includes('lg');
+  const queryClient = useQueryClient();
+  const navigate = useNavigate();
   const closeMobileNav = () => {
     if (isMobile) {
       dispatch(onMobileNavToggle(false));
     }
+  };
+  const onHandleCollapse = () => {
+    props.handleCollapsed();
+  };
+  const handleLogout = () => {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('user');
+    queryClient.removeQueries([queryKeys.cartInfo]);
+    queryClient.removeQueries([queryKeys.notifList]);
+    dispatch(setCurrentUser(null));
+    navigate('/sign-in');
   };
 
   return (
@@ -74,7 +92,7 @@ const SideNavContent = (props) => {
                           ) : null}
                           <span>{subMenuSecond.title}</span>
                           <Link
-                            onClick={() => closeMobileNav()}
+                            onClick={isXl ? closeMobileNav : onHandleCollapse}
                             to={subMenuSecond.path}
                           />
                         </Menu.Item>
@@ -106,7 +124,10 @@ const SideNavContent = (props) => {
               ) : null}
               <span>{menu?.title}</span>
               {menu.path ? (
-                <Link onClick={() => closeMobileNav()} to={menu.path} />
+                <Link
+                  onClick={isXl ? closeMobileNav : onHandleCollapse}
+                  to={menu.path}
+                />
               ) : null}
             </Menu.Item>
           ) : null,
@@ -121,6 +142,7 @@ const SideNavContent = (props) => {
       <LogoutModal
         isOpen={isModLogoutVis}
         cancel={() => setIsModLogoutVis(false)}
+        onsubmit={handleLogout}
       />
     </>
   );

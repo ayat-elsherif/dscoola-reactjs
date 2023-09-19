@@ -1,3 +1,4 @@
+@import '../../../../sass/mixins';
 .jitsi-settings {
   .dashboard-page-title {
     margin-bottom: 27px;
@@ -5,7 +6,7 @@
   .jitsi-card {
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 4px;
-    padding: 28px 66px 28px 28px;
+    padding: 28px 66px;
     .dashboard-form {
       .ant-form-item {
         .ant-form-item-label {
@@ -25,5 +26,15 @@
   .form-actions {
     justify-content: center;
     margin-top: 42px;
+  }
+  @include breakpoint(max-lg) {
+    .jitsi-card {
+      padding: 28px;
+    }
+    .form-actions {
+      .ant-btn-primary {
+        font-size: 16px;
+      }
+    }
   }
 }

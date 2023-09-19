@@ -88,8 +88,8 @@ export default function CoursePricing() {
     const data = {
       price_plan:
         premiumInstructor || getData?.price_plan === 'paid' ? 'paid' : 'free',
-      price: price,
-      sale_price: salePrice,
+      price: price?price:0,
+      sale_price: salePrice?salePrice:0,
       is_featured: getData.is_featured
         ? true
         : localStorageFeatuerd

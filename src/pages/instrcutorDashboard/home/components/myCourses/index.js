@@ -28,7 +28,7 @@ const MyCourses = () => {
                 </div>
               </div>
               <div className="more-details">
-                <div>$ {item?.total_price}</div>
+                <div>${item?.total_price}</div>
                 <div>{item?.sold_number} Sold</div>
               </div>
             </div>

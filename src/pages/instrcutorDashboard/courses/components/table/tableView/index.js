@@ -1,6 +1,15 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { Dropdown, InputNumber, Menu, Pagination, Table } from 'antd';
+import {
+  Col,
+  Dropdown,
+  InputNumber,
+  Menu,
+  Modal,
+  Pagination,
+  Row,
+  Table,
+} from 'antd';
 import React, { useState } from 'react';
 import { ceil } from 'lodash';
 import {
@@ -11,9 +20,11 @@ import {
 import DeleteConfirm from '../../delete/DeleteConfirm';
 import { useGetCourses } from '../hooks/useGetCourses';
 import './index.scss';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import EllipsisDropdown from 'helpers/EllipsisDropdown';
 import dayjs from 'dayjs';
+import AddInitCoursForm from './addInitCoursForm';
+import LiveDetailes from './liveDetailes';
 
 const renderStatusColor = (status) => {
   switch (status) {
@@ -31,6 +42,7 @@ const OnGoTable = ({ filters }) => {
   const navigate = useNavigate();
   const [page, setPage] = useState(1);
   const [courseId, setCourseId] = useState('');
+  const [openLiveDetailes, setOpenLiveDetailes] = useState(false);
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const onPageNumberChange = (value) => {
     setPage(value);
@@ -118,6 +130,26 @@ const OnGoTable = ({ filters }) => {
       title: 'Type',
       dataIndex: 'type',
       key: 'type',
+      render: (_, elm) => {
+        return (
+          <Row>
+            <Col span={24}>
+              {elm.type === 'liveClass' ? 'Live' : 'Recorded'}
+            </Col>
+            <Col
+              onClick={() => setOpenLiveDetailes(elm)}
+              span={24}
+              style={{
+                textDecoration: 'underline',
+                color: '#7e59d1',
+                fontSize: '13px',
+              }}
+            >
+              View Details
+            </Col>
+          </Row>
+        );
+      },
     },
     {
       title: 'Student',
@@ -214,6 +246,18 @@ const OnGoTable = ({ filters }) => {
         cancel={() => setShowDeleteModal(false)}
         id={courseId}
       />
+      <Modal
+        className="init-course-modal"
+        centered
+        title="View Details"
+        open={openLiveDetailes}
+        // onOk={handleOk}
+        onCancel={() => setOpenLiveDetailes(false)}
+        width="484px"
+        footer={null}
+      >
+        <LiveDetailes data={openLiveDetailes} onClose={() => setOpenLiveDetailes(false)}/>
+      </Modal>
     </div>
   );
 };

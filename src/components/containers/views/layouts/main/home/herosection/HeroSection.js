@@ -36,9 +36,17 @@ function HeroSection({ topCoursesEl }) {
             letter-spacing: 0px;
             color: #ebebeb;
           }
+          @media screen and (max-width: 545px) {
+            text-align: center;
+          }
         }
         .btns-wrapper {
           margin-top: 5rem;
+          .ant-row {
+            @media screen and (max-width: 545px) {
+              justify-content: space-around;
+            }
+          }
         }
       }
       .image-wrapper {

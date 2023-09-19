@@ -1,3 +1,4 @@
+@import '../../../sass/mixins';
 .reports {
   .page-header-right {
     a {
@@ -24,6 +25,47 @@
     .status-filter {
       &:nth-last-of-type(2) {
         margin: 0 16px;
+      }
+    }
+  }
+  .ant-table-content {
+    .ant-table-cell {
+      text-align: center;
+      &:nth-child(1) {
+        min-width: 220px;
+        text-align: start;
+      }
+
+      &:nth-child(3),
+      &:nth-child(5) {
+        min-width: 130px;
+      }
+    }
+  }
+  @include breakpoint(max-lg) {
+    .page-header-right {
+      .status-filter {
+        width: 220px;
+        margin-left: 0 !important;
+        margin-bottom: 1rem !important;
+        .ant-select {
+          width: 100%;
+          .ant-select-selector {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .main-table_footer {
+    flex-direction: column;
+    .change-page {
+      margin-bottom: 1rem;
+      > span {
+        margin-bottom: 0;
+      }
+      .ant-input-number {
+        height: 30px;
       }
     }
   }

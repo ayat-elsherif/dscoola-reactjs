@@ -5,10 +5,11 @@ import PersonalInfoForm from './Form';
 import { useGetProfileInfo } from './hooks/usePersonalInfo';
 import fetch from '../../../../../auth/AuthInterceptor';
 import { Loading } from '../../../../../components/common/Loading';
+import useScreens from 'Hooks/ui/useScreens';
 
 function PersonalInformation() {
   const [photo, setPhoto] = useState([]);
-
+  const { isLg } = useScreens();
   const { data, isLoading, refetch } = useGetProfileInfo();
 
   const onPhotoChange = ({ file }) => {
@@ -60,7 +61,9 @@ function PersonalInformation() {
             )}
           </div>
           <Upload {...uploadProps}>
-            <button className="main-btn-dashboard">Upload new photo</button>
+            <button className="main-btn-dashboard">
+              Upload{isLg && ' new '} photo
+            </button>
           </Upload>
           <Button
             type="primary"

@@ -480,7 +480,7 @@ const CourseDetails = () => {
                   </Select>
                 </Form.Item>
               </Col>
-              <Col xs={24} md={8}>
+              {/* <Col xs={24} md={8}>
                 <Form.Item
                   name="type"
                   label="Type"
@@ -501,7 +501,7 @@ const CourseDetails = () => {
                     <Option value="liveClass">Live</Option>
                   </Select>
                 </Form.Item>
-              </Col>
+              </Col> */}
             </Row>
 
             {!currentUser.is_zoom_setting_done && isLiveOnChange && (
@@ -546,7 +546,7 @@ const CourseDetails = () => {
               />
             )}
 
-            <Row gutter={10} align="middle">
+            <Row gutter={24} align="middle" className="upload-photo">
               <Col xs={24} md={10}>
                 <div className="photo-container">
                   <h4>Course Image</h4>
@@ -598,7 +598,7 @@ const CourseDetails = () => {
                 )}
               </Col>
             </Row>
-            <Row gutter={10} align="middle">
+            <Row gutter={24} align="middle" className="upload-video">
               <Col xs={24} md={10}>
                 <div className="vedio-container">
                   <h4>Course Intro Video</h4>

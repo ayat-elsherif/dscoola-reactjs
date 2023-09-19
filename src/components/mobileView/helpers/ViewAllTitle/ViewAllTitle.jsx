@@ -20,11 +20,11 @@ export default function ViewAllTitle({
   return (
     <>
       <div
-        className={`allTitle-container container ${
+        className={`all-title-container container ${
           isSearchResult && 'search-result'
         }`}
       >
-        <div className="viewAll-section">
+        <div className="view-all-section">
           {url ? (
             <Link href={url}>{isCloseButton ? <Close /> : <LeftArrow />}</Link>
           ) : (

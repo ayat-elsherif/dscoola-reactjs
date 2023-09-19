@@ -195,7 +195,7 @@ const WebinarsTalksTabel = () => {
     <>
       <div className="dashboard-page-header-container">
         <div className="page-header-left">
-          <h3 className="dashboard-page-title">Webinars&Talks</h3>
+          <h3 className="dashboard-page-title">Webinars & Talks</h3>
         </div>
         <div className="page-header-right">
           <SearchInput

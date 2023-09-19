@@ -1,14 +1,37 @@
+@import '../../../../../../sass/mixins';
+
 .general-requests {
   background: #ffffff;
   border-radius: 2px;
   padding: 28px;
+  @include breakpoint(max-md) {
+    padding: 28px 0;
+
+    .approve-one-on-one {
+      .ant-radio-group {
+        .ant-radio-button-wrapper {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .time-slots {
+      button.ant-btn {
+        padding: 0;
+      }
+    }
+    .dashboard-form {
+      .approve-one-on-one {
+        margin-bottom: 10px;
+      }
+    }
+  }
 }
 
 .days-container {
   display: flex;
   margin: 20px 0;
   max-width: 100%;
-  padding-bottom: 8px;
+  padding-bottom: 20px;
   overflow-x: auto;
 
   &::-webkit-scrollbar {
@@ -127,6 +150,12 @@
 
     &:first-of-type {
       margin-left: 0;
+    }
+  }
+  @include breakpoint(max-md) {
+    margin: 3rem auto 2rem;
+    .time-slots-card {
+      margin: 6px 0;
     }
   }
 }

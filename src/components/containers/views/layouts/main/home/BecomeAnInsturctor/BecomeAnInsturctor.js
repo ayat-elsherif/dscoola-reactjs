@@ -13,8 +13,16 @@ function BecomeAnInsturctor() {
     }
     .image {
       width: 22.2rem;
+      @media screen and (max-width: 545px) {
+        width: 17.2rem !important;
+      }
     }
 
+    .first-img {
+      @media screen and (max-width: 767px) {
+        display: none !important;
+      }
+    }
     .text-wrapper {
       max-inline-size: 75ch;
       text-align: center;
@@ -23,7 +31,10 @@ function BecomeAnInsturctor() {
         font-weight: 500;
         font-size: 2.8rem;
         line-height: 2.7rem;
-        margin-bottom: 1.3rem;
+
+        @media screen and (max-width: 545px) {
+          display: none;
+        }
       }
       .desc {
         font-size: 1.6rem;
@@ -41,12 +52,25 @@ function BecomeAnInsturctor() {
         }
       }
     }
+    .small-title {
+      font-weight: 500;
+      font-size: 2.8rem;
+      line-height: 2.7rem;
+      margin-bottom: 1.6rem;
+      text-align: center;
+      color: #2a2a2a;
+      @media screen and (min-width: 546px) {
+        display: none;
+      }
+    }
   `;
 
   return (
     <div className={BecomeAnInsturctorStyles}>
       <div className="container">
         <div className="inner">
+          <div className="small-title">Become an instructor today</div>
+
           <Row
             style={{ height: '100%' }}
             gutter={30}
@@ -54,7 +78,7 @@ function BecomeAnInsturctor() {
             justify="space-between"
             wrap={false}
           >
-            <Col>
+            <Col className="first-img">
               <Image
                 preview={false}
                 src="/assets/images/instractor-left-image.png"

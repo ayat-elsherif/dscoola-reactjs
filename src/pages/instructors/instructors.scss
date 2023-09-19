@@ -196,6 +196,11 @@
 .no-courses-container {
   text-align: center;
   padding-top: 10px;
+  @include breakpoint(max-lg) {
+    svg {
+      width: 80px;
+    }
+  }
 }
 
 .Certifications-container {
