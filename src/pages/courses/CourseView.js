@@ -20,6 +20,8 @@ import WhatWillLearnSection from './courseView/WhatWillLearnSection';
 import './style.scss';
 import { RatingFeedback } from 'helpers/RatingFeedback';
 import OneOnOneSection from './courseView/OneOnOneSection';
+import VideoSidebar from './courseView/VideoSidebar';
+import useScreens from 'Hooks/ui/useScreens';
 
 export const CourseView = () => {
   const { state } = useLocation();
@@ -30,6 +32,7 @@ export const CourseView = () => {
   const { course_id } = useParams();
   const dispatch = useDispatch();
 
+  const { isLg } = useScreens();
   const myCourse = useSelector((state) => state.singleCourse?.singleCourse);
 
   const handleFetchCourseDetails = () => {
@@ -73,12 +76,30 @@ export const CourseView = () => {
         <BreadCrumbsMultiple
           params={[{ label: myCourse?.course?.slug }]}
         ></BreadCrumbsMultiple>
-        <Courseheadersection myCourse={myCourse} isLoading={loading} />
-      </div>
 
+        {!isLg && (
+          <div className="container">
+            <VideoSidebar myCourse={myCourse} isLoading={loading} />
+          </div>
+        )}
+
+        {isLg && (
+          <Courseheadersection myCourse={myCourse} isLoading={loading} />
+        )}
+      </div>
+      {!isLg && <Courseheadersection myCourse={myCourse} isLoading={loading} />}
       <div className="container over-visible">
         <div className="course-sections">
           <div className="course-sections-details">
+            {!isLg && (
+              <Cartsidebar
+                isPreview={state?.isPreview}
+                isAuth={currentUser}
+                isLoading={loading}
+                myCourse={myCourse}
+                liveCourse={myCourse?.course?.type === 'liveClass'}
+              />
+            )}
             {myCourse?.course?.isOneOnOne ||
             myCourse?.course?.approve_ono === 1 ? (
               <OneOnOneSection myCourse={myCourse} />
@@ -126,15 +147,23 @@ export const CourseView = () => {
             />
           </div>
 
-          <div className="course-sections-card">
-            <Cartsidebar
-              isPreview={state?.isPreview}
-              isAuth={currentUser}
-              isLoading={loading}
-              myCourse={myCourse}
-              liveCourse={myCourse?.course?.type === 'liveClass'}
-            />
-          </div>
+          {isLg && (
+            <div className="course-sections-card">
+              <div
+                className={`cartsidebar ${loading ? 'card-in-loading' : ''}`}
+              >
+                <VideoSidebar myCourse={myCourse} isLoading={loading} />
+
+                <Cartsidebar
+                  isPreview={state?.isPreview}
+                  isAuth={currentUser}
+                  isLoading={loading}
+                  myCourse={myCourse}
+                  liveCourse={myCourse?.course?.type === 'liveClass'}
+                />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

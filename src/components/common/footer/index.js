@@ -13,7 +13,7 @@ function Footer() {
   return (
     <footer>
       <div className="container">
-        <div className="row">
+        <div className="row  ms-lg-0 ms-3">
           <div className="footer-logo">
             <Link
               to="/"
@@ -68,7 +68,6 @@ function Footer() {
                 </svg>
               </a>
               <a href="https://www.twitter.com" target="_blank">
-                {' '}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="26"

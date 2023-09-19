@@ -11,14 +11,14 @@ import useSearchQuery from 'Hooks/utils/useSearchQuery';
 
 function QAndA() {
   const QAndAStyles = css``;
-  const { searchQueryObj } = useSearchQuery();
+  const { searchQueryObj, searchQueryStr } = useSearchQuery();
 
   const { QAndAList, QAndAListLod, QAndAPagination } = useQAndAList();
   // console.log('QAndA  QAndAList', QAndAList);
 
   const activeQues =
     searchQueryObj.id && QAndAList?.find((c) => c?.id === +searchQueryObj.id);
-
+  console.log(searchQueryStr, 'searchQueryStr');
   return (
     <div className={QAndAStyles}>
       <div className="tab-wrapper">

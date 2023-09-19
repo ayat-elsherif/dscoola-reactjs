@@ -37,7 +37,7 @@ const UserCard = ({
               </Link>
             </div> */}
             <div className="userCard-body-details-title">
-              <p
+              {/* <p
                 className="instructor-name"
                 style={{
                   color: '#6a6f73',
@@ -47,7 +47,7 @@ const UserCard = ({
                 }}
               >
                 Instructor
-              </p>
+              </p> */}
               <Link to={`/instructors/${creatorInfo?.id}`}>
                 {creatorInfo?.name}
               </Link>
@@ -55,43 +55,49 @@ const UserCard = ({
             <div className="userCard-body-details-extra">
               {creatorInfo?.about_me}
             </div>
-            <div>
-              <img
-                src="/assets/images/icons/studentIcon.svg"
-                alt=""
-                className="icon1"
-              />
-              <span className="span1">
-                {creatorInfo?.totalStudent} Students
-              </span>
-              <img
-                src="/assets/images/icons/Group759.png"
-                alt=""
-                className="icon1"
-              />
-              <span className="span1">
-                {creatorInfo?.courses
-                  ? creatorInfo?.courses
-                  : authorCourses
-                  ? authorCourses
-                  : 0}{' '}
-                Courses
-              </span>
-              <img
-                src="/assets/images/icons/MaskGroup81.png"
-                alt=""
-                className="icon1"
-              />
-              <span className="span1">
-                {creatorInfo?.reviews?.length ||
-                  creatorInfo?.getRating?.rating_count}{' '}
-                Reviews
-              </span>
-              {SolidClock}
-              <span className="span1">
-                {creatorInfo?.webinars ? creatorInfo?.webinars : 25} Webinars
-                Mins
-              </span>
+            <div className="usercard-stats">
+              <div className="usercard-stats-item">
+                <img
+                  src="/assets/images/icons/studentIcon.svg"
+                  alt=""
+                  className="icon1"
+                />
+                <span>{creatorInfo?.totalStudent} Students</span>
+              </div>
+              <div className="usercard-stats-item">
+                <img
+                  src="/assets/images/icons/Group759.png"
+                  alt=""
+                  className="icon1"
+                />
+                <span>
+                  {creatorInfo?.courses
+                    ? creatorInfo?.courses
+                    : authorCourses
+                    ? authorCourses
+                    : 0}{' '}
+                  Courses
+                </span>
+              </div>
+              <div className="usercard-stats-item">
+                <img
+                  src="/assets/images/icons/MaskGroup81.png"
+                  alt=""
+                  className="icon1"
+                />
+                <span>
+                  {creatorInfo?.reviews?.length ||
+                    creatorInfo?.getRating?.rating_count}{' '}
+                  Reviews
+                </span>
+              </div>
+              <div className="usercard-stats-item">
+                {SolidClock}
+                <span>
+                  {creatorInfo?.webinars ? creatorInfo?.webinars : 25} Webinars
+                  Mins
+                </span>
+              </div>
             </div>
             <div className="userCard-body-details-rating d-flex align-items-center">
               <span className="userCard-body-details-rating-number">

@@ -12,8 +12,10 @@ import {
 } from 'SVGs';
 import FormContactUs from './FormContactUs';
 import birdImage from 'assets/images/freepik--Bird--inject-1.png';
+import useScreens from 'Hooks/ui/useScreens';
 
 function ContactUsPage() {
+  const { isLg } = useScreens();
   const ContactUsPageStyles = css`
     .page-header-wrapper {
       height: 15.1rem;
@@ -28,13 +30,27 @@ function ContactUsPage() {
         text-transform: capitalize;
       }
     }
+    .padding30 {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .page-inner {
+      .page-inner-row {
+        @media screen and (max-width: 991px) {
+          flex-direction: column;
+          // align-items: center;
+        }
+      }
+    }
 
     .contact-info-wrapper {
       padding: 3.5rem 0;
       background-image: url(${birdImage});
       background-repeat: no-repeat;
       background-position: 80% 80%;
-
+      @media screen and (max-width: 575px) {
+        background-image: none;
+      }
       .title {
         font-weight: 500;
         font-size: 2.4rem;
@@ -67,14 +83,14 @@ function ContactUsPage() {
   return (
     <div className={ContactUsPageStyles}>
       <div className="page-header-wrapper">
-        <div className="container over-visible">
+        <div className="container over-visible padding30">
           <OwnBreadcrumb current="contact us" />
           <div className="title">Contact us</div>
         </div>
       </div>
-      <div className="container over-visible">
+      <div className="container over-visible padding30">
         <div className="page-inner">
-          <Row wrap={false} gutter={60}>
+          <Row wrap={false} gutter={60} className="page-inner-row">
             <Col flex="auto">
               <div className="contact-info-wrapper">
                 <div className="head">
@@ -106,12 +122,16 @@ function ContactUsPage() {
               </div>
             </Col>
             <Col>
-              <Affix
-                offsetTop={10}
-                style={{ marginTop: -100, marginBottom: 100 }}
-              >
+              {isLg ? (
+                <Affix
+                  offsetTop={10}
+                  style={{ marginTop: -100, marginBottom: 100 }}
+                >
+                  <FormContactUs />
+                </Affix>
+              ) : (
                 <FormContactUs />
-              </Affix>
+              )}
             </Col>
           </Row>
         </div>

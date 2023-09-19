@@ -66,9 +66,28 @@ function ModalMeeting({ open, setOpen, editMeeting }) {
           }
         }
       }
-
+      .upload-image-row {
+        flex-wrap: nowrap;
+        .image-name {
+          width: 100%;
+        }
+        .upload-photo {
+          @media screen and (max-width: 575px) {
+            font-size: 1.6rem;
+            padding: 0 10px;
+          }
+        }
+      }
       .btn-publish {
         margin-left: auto;
+      }
+      .ant-radio-wrapper {
+        span.ant-radio + * {
+          @media screen and (max-width: 575px) {
+            padding-inline-start: 4px;
+            padding-inline-end: 4px;
+          }
+        }
       }
     }
   `;
@@ -207,7 +226,7 @@ function ModalMeeting({ open, setOpen, editMeeting }) {
             <Input placeholder="Please Enter Your Title" />
           </Form.Item>
           <Row gutter={20}>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Form.Item
                 name="start_date"
                 label="start date"
@@ -227,7 +246,7 @@ function ModalMeeting({ open, setOpen, editMeeting }) {
                 />
               </Form.Item>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Form.Item
                 name="time"
                 label="Time"
@@ -265,7 +284,7 @@ function ModalMeeting({ open, setOpen, editMeeting }) {
           </Row>
 
           <Row gutter={20}>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Form.Item
                 name="duration"
                 label="Duration"
@@ -274,32 +293,32 @@ function ModalMeeting({ open, setOpen, editMeeting }) {
                 <InputNumber type="number" placeholder="Duration in minutes" />
               </Form.Item>
             </Col>
-            <Col span={12}>
+            <Col sm={12} xs={24}>
               <Form.Item
-            name="time-zone"
-            label="Time Zone"
-            rules={[
-              {
-                required: true,
-                message: 'Plesae Enter Time Zone',
-              },
-            ]}
-          >
-            <Select
-              size="large"
-              placeholder="Search to Select"
-              showSearch
-              onSearch={(searchInput) => setSearchWord(searchInput)}
-              filterOption={(input, option) =>
-                (option?.label ?? '')
-                  .toLowerCase()
-                  .includes(input.toLowerCase())
-              }
-              optionFilterProp="children"
-              loading={timeZoneLoading}
-              options={timeZoneArr}
-            />
-          </Form.Item>
+                name="time-zone"
+                label="Time Zone"
+                rules={[
+                  {
+                    required: true,
+                    message: 'Plesae Enter Time Zone',
+                  },
+                ]}
+              >
+                <Select
+                  size="large"
+                  placeholder="Search to Select"
+                  showSearch
+                  onSearch={(searchInput) => setSearchWord(searchInput)}
+                  filterOption={(input, option) =>
+                    (option?.label ?? '')
+                      .toLowerCase()
+                      .includes(input.toLowerCase())
+                  }
+                  optionFilterProp="children"
+                  loading={timeZoneLoading}
+                  options={timeZoneArr}
+                />
+              </Form.Item>
             </Col>
           </Row>
           <Form.Item
@@ -348,13 +367,13 @@ function ModalMeeting({ open, setOpen, editMeeting }) {
           )} */}
 
           <Form.Item label="Upload Image" className="upload_image_row">
-            <Row>
-              <Col span={18}>
+            <Row className="upload-image-row">
+              <Col className="image-name">
                 <Form.Item name="photo_alt" rules={[{ required: true }]}>
                   <Input placeholder="Image name" disabled />
                 </Form.Item>
               </Col>
-              <Col span={6}>
+              <Col>
                 <Form.Item name="photo_url" rules={[{ required: false }]}>
                   {(uploadProgress === 100 || uploadProgress === -1) && (
                     <Upload
@@ -378,7 +397,12 @@ function ModalMeeting({ open, setOpen, editMeeting }) {
                         uploadSampleFile(file.file);
                       }}
                     >
-                      <Button type="primary" block style={{ height: 45 }}>
+                      <Button
+                        className="upload-photo"
+                        type="primary"
+                        block
+                        style={{ height: 45 }}
+                      >
                         Upload Photo
                       </Button>
                     </Upload>

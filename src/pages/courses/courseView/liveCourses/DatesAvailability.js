@@ -118,36 +118,35 @@ export default function DatesAvailability({
                 : 'availability-item'
             }
           >
-            <Row className="row align-items-center">
-              <div className="col-lg-8 col-16">
-                <div className="d-flex align-items-center">
-                  <span>{dayjs(item.start_date).format('MMM DD')}</span>
-                  <span className="separator">|</span>
-                  <span>
-                    {item.type === 1 &&
-                      `Every ${item.repeat_interval} Days until the end of the course`}
-                    {item.type === 2 &&
-                      `${item.weekly_days.split(',').map((day) => {
-                        return RecurringWeekdays(+day) + ' ';
-                      })}`}
-                    {item.type === 3 &&
-                      ` ${
-                        item.monthly_day
-                          ? `Every mounth on the ${item.monthly_day}`
-                          : ` Every ${RecurringWeekdays(
-                              item.monthly_week_day,
-                            )} of the ${RecurringType(item.monthly_week)} week`
-                      } of the month`}
-                  </span>
+            <div className=" availability-item-row">
+              <div className="availability-item-date">
+                <span>{dayjs(item.start_date).format('MMM DD')}</span>
+                <span className="separator">|</span>
+                <span>
+                  {item.type === 1 &&
+                    `Every ${item.repeat_interval} Days until the end of the course`}
+                  {item.type === 2 &&
+                    `${item.weekly_days.split(',').map((day) => {
+                      return RecurringWeekdays(+day) + ' ';
+                    })}`}
+                  {item.type === 3 &&
+                    ` ${
+                      item.monthly_day
+                        ? `Every mounth on the ${item.monthly_day}`
+                        : ` Every ${RecurringWeekdays(
+                            item.monthly_week_day,
+                          )} of the ${RecurringType(item.monthly_week)} week`
+                    } of the month`}
+                </span>
+                <span className="separator">|</span>
+                <div>
+                  Time - {item.start_time.slice(0, -3)} to{' '}
+                  {item.end_time.slice(0, -3)}
                 </div>
               </div>
-              <div className="col-lg-4 col-8 text-end">
-                Time - {item.start_time.slice(0, -3)} to{' '}
-                {item.end_time.slice(0, -3)}
-              </div>
-            </Row>
+            </div>
           </div>
-          <div className="divider-bundles"></div>
+          {/* <div className="divider-bundles"></div> */}
         </div>
       );
     }

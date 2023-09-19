@@ -212,7 +212,17 @@ a.planningSolutions-item:hover {
       margin-top: -60px;
     }
   }
-
+  .layout-hero-holder {
+    .landingPageHero {
+      margin-bottom: -30px;
+    }
+    @include breakpoint(max-md) {
+      padding: 26px 20px 42px;
+      .landingPageHero {
+        display: none;
+      }
+    }
+  }
   .blogTabs {
     margin-top: -3rem;
     position: relative;
@@ -262,7 +272,7 @@ a.planningSolutions-item:hover {
     .ant-tabs-nav {
       background-color: $background-color2;
       height: 66px;
-      color: #fff;
+      // color: #fff;
 
       .ant-tabs-nav-wrap {
         max-width: 1200px;
@@ -270,17 +280,18 @@ a.planningSolutions-item:hover {
 
         @include breakpoint(max-xl) {
           margin-left: 2rem;
+          max-width: 82vw;
         }
 
         .ant-tabs-tab {
           font-size: 17px;
           text-transform: capitalize;
 
-          &.ant-tabs-tab-active {
-            .ant-tabs-tab-btn {
-              color: #fff;
-            }
-          }
+          // &.ant-tabs-tab-active {
+          //   .ant-tabs-tab-btn {
+          //     color: #fff;
+          //   }
+          // } // so the tabs in blogs page can be with the theme color
 
           & + .ant-tabs-tab {
             margin: 0 0 0 27px;
@@ -302,12 +313,17 @@ a.planningSolutions-item:hover {
       .ant-tabs-tabpane {
         .blogArticles {
           margin-bottom: 3rem;
-          // margin-top: 3rem;
-
+          margin-top: 3rem;
+          @media screen and (max-width: 1499px) {
+            margin-top: 8rem;
+          }
           & > div > h4 {
             margin-bottom: 1.75rem;
             font-weight: 600;
             text-transform: capitalize;
+          }
+          @include breakpoint(max-md) {
+            padding: 0 20px;
           }
         }
       }
@@ -338,6 +354,15 @@ a.planningSolutions-item:hover {
 }
 
 .careersPage {
+  .layout-hero-holder {
+    .careersPage-img {
+      margin-bottom: -40px;
+    }
+    @include breakpoint(max-md) {
+      padding: 26px 20px 42px;
+      margin-bottom: 20px;
+    }
+  }
   .breadcrumbs {
     padding-bottom: 0;
 
@@ -345,7 +370,6 @@ a.planningSolutions-item:hover {
     p {
       width: 70%;
     }
-
     .Breadcrumb-body {
       max-width: 40%;
     }
@@ -369,7 +393,11 @@ a.planningSolutions-item:hover {
       }
     }
   }
-
+  @include breakpoint(max-md) {
+    .careersPage-img {
+      display: none;
+    }
+  }
   .careersPage-body {
     .planningSolutions {
       text-align: center;
@@ -385,7 +413,7 @@ a.planningSolutions-item:hover {
       & > p {
         font-size: 18px;
         color: $desc-color;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
       }
     }
 
@@ -404,6 +432,9 @@ a.planningSolutions-item:hover {
       }
 
       .coreValues-body {
+        @include breakpoint(max-md) {
+          padding: 20px;
+        }
         .coreValues-item {
           box-shadow: 0px 1px 6px #00000029;
           border: 4px solid rgba($theme-color, 0.2);
@@ -424,10 +455,11 @@ a.planningSolutions-item:hover {
             font-size: 20px;
             line-height: 41px;
             font-weight: 600;
-            color: $background-color2;
+            // color: $background-color2;
             margin: 17px 0;
             display: flex;
             align-items: center;
+            padding: 0 15px;
           }
         }
       }
@@ -516,22 +548,33 @@ a.planningSolutions-item:hover {
           }
         }
       }
+      @include breakpoint(max-md) {
+        padding: 20px;
+      }
     }
 
     @include breakpoint(max-xl) {
+      .ant-col {
+        margin-bottom: 2.5rem;
+      }
       .planningSolutions {
+        padding: 20px;
         & > h3 {
           font-size: 28px;
           margin-bottom: 0.75rem;
+          line-height: 36px;
+          margin-bottom: 1rem;
         }
 
         & > p {
           font-size: 16px;
+          line-height: 24px;
         }
 
         .planningSolutions-item {
-          // min-height: 280px;
-
+          @include breakpoint(max-xl) {
+            min-height: 200px;
+          }
           &:nth-child(4) {
             display: none;
           }

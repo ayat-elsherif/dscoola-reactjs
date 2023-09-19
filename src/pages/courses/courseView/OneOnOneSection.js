@@ -20,12 +20,12 @@ function OneOnOneSection({ myCourse }) {
   // },[])
   return (
     <div className="overLayer backgroundGradient">
-      <Row gutter={20} align="start" justify="space-between">
+      <Row align="start" justify="space-between">
         <Row align="middle" className="oneOnOneHeader d-flex d-xl-none">
-          <Col span={10}>
+          <Col>
             <h5>Try One-on-One Learning</h5>
           </Col>
-          <Col span={10} className="mt-xl-0">
+          <Col className="mt-xl-0">
             <div className="oneOnone-price">
               {dollarSign}
               pay
@@ -58,7 +58,7 @@ function OneOnOneSection({ myCourse }) {
             </Col>
           </Row>
         </Col>
-        <Col xl={7} lg={10}>
+        <Col xl={7} lg={10} style={{ textAlign: '-webkit-right' }}>
           <MainButton
             btnClass={'whiteBtn'}
             text={'Request Appointment'}
@@ -70,7 +70,7 @@ function OneOnOneSection({ myCourse }) {
       <OwnModal
         open={show}
         onCancel={handleClose}
-        className="RequestAppointment"
+        className="Request-appointment"
         title={'New Appointment'}
       >
         <RequestAppointment

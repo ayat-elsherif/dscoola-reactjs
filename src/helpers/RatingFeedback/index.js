@@ -9,7 +9,7 @@ export const RatingFeedback = ({ rating, showPercentage }) => {
     <div>
       <h1 className="rating-header">Student Feedback</h1>
       <Row className="rating-container">
-        <Col span={7}>
+        <Col lg={7}>
           <div className="rating-summary">
             <h2 className="rating-number">{rating?.rating_avg | 0}</h2>
             <div className="rating-stars">
@@ -19,7 +19,7 @@ export const RatingFeedback = ({ rating, showPercentage }) => {
           </div>
         </Col>
 
-        <Col span={16}>
+        <Col lg={16} xs={24}>
           <div className="rating-stats">
             <Stat
               stars={5}

@@ -6,7 +6,7 @@ export default function StartDate({ myCourse }) {
   return (
     <div className="overLayer">
       <div className="row">
-        <div className="col-xl-3 col-lg-4 d-flex align-items-center justify-content-center">
+        <div className=" overlayer-item col-xl-3 col-lg-4 col-sm-6">
           <div className="svg-img">{dateIcon}</div>
           <div className="">
             <span>Start Date</span>
@@ -18,7 +18,7 @@ export default function StartDate({ myCourse }) {
             </h6>
           </div>
         </div>
-        <div className="col-xl-3 col-lg-4 d-flex align-items-center justify-content-center">
+        <div className=" overlayer-item col-xl-3 col-lg-4 col-sm-6">
           <div className="svg-img">{dateIcon}</div>
           <div className="">
             <span>End Date</span>
@@ -29,14 +29,14 @@ export default function StartDate({ myCourse }) {
             </h6>
           </div>
         </div>
-        <div className="col-xl-3 col-lg-4 d-xl-flex align-items-center justify-content-center d-none">
+        <div className="overlayer-item col-xl-3 col-lg-4 col-sm-6 d-xl-flex d-lg-none d-md-flex">
           <div className="svg-img">{courseLength}</div>
           <div className="">
             <span>course length</span>
             <h6>30 session</h6>
           </div>
         </div>
-        <div className="col-xl-3 col-lg-4 d-flex align-items-center justify-content-center">
+        <div className="overlayer-item col-xl-3 col-lg-4 col-sm-6 ">
           <div className="svg-img">{clockIcon}</div>
           <div className="">
             <span>session duration</span>

@@ -9,7 +9,14 @@ function FormContactUs() {
     background-color: #fff;
     box-shadow: 0px 3px 6px #00000029;
     border-radius: 6px;
-
+    @media screen and (max-width: 991px) {
+      width: 80vw;
+      margin-bottom: 5rem;
+      margin-top: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
     h3 {
       font-weight: 500;
       font-size: 2.4rem;

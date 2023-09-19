@@ -7,7 +7,6 @@ import {
   cartLectures,
   cartQuizzes,
   cartCertificate,
-  playVideo,
 } from '../SVGs';
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
@@ -20,7 +19,6 @@ import { useNavigate } from 'react-router-dom';
 // import RequestBundle from './liveCourses.js/RequestBundle';
 // import SendGift from '../../../helpers/gift/SendGift';
 import ShareGroup from '../../../helpers/shareGroup/ShareGroup';
-import VideoJsPlayer from '../../../helpers/Video';
 import { levelsList } from '../../../apis/levelsList';
 // import { protectAxios } from '../../../apis/coursesAPI';
 
@@ -34,9 +32,9 @@ import {
   useRemoveFromMyWishlist,
 } from '../../dashboard/myWishlist/hooks/useWishList';
 import useApi from 'Hooks/network/useApi';
-import OwnModal from 'components/own/OwnModal';
 import DatesAvailability from './liveCourses/DatesAvailability';
 import RequestBundle from './RequestBundle';
+import useScreens from 'Hooks/ui/useScreens';
 // import fetch from '../../../auth/AuthInterceptor';
 // import { singleCourse } from '../../../features/singleCourse/singleCourse';
 // import { fetchSingleLiveCourse } from '../../../features/singleLiveCourse/singleLiveCourseSlice';
@@ -52,7 +50,6 @@ const Cartsidebar = ({
 }) => {
   const api = useApi();
   const [isWishList, setIsWishlist] = useState(myCourse?.course?.isWishlist);
-  const [openVideo, setOpenVideo] = useState(false);
   const [loading, setLoading] = useState(false);
   const [clickedBtn, setClickedBtn] = useState();
 
@@ -69,7 +66,7 @@ const Cartsidebar = ({
   const duration = myCourse?.course?.total_duration;
   const hours = duration?.slice(0, duration?.indexOf(':'));
   const oneDigitHour = duration?.slice(1, duration?.indexOf(':'));
-
+  const { isLg } = useScreens();
   const { currentUser } = useSelector((state) => state?.user);
   const courseContent = useSelector(
     (state) => state.courseContentState?.courseContentState,
@@ -147,11 +144,6 @@ const Cartsidebar = ({
     },
   ];
 
-  const videoObj = {
-    videoUrl: myCourse?.course?.videoPreviewUrl?.video_src,
-    videoType: 'video/' + myCourse?.course?.videoPreviewUrl?.type,
-  };
-
   const addToCard = (id, navigateToCard, isBundle) => {
     setLoading(true);
     const form = new FormData();
@@ -208,8 +200,8 @@ const Cartsidebar = ({
   // console.log(liveIsClosed, 'liveIsClosed');
   // console.log(isPreview, 'isPreview');
   return (
-    <div className={`cartsidebar ${isLoading ? 'card-in-loading' : ''}`}>
-      <OwnModal
+    <>
+      {/* <OwnModal
         open={openVideo}
         onCancel={() => {
           handleClose(setOpenVideo);
@@ -218,7 +210,6 @@ const Cartsidebar = ({
       >
         <VideoJsPlayer videoObj={videoObj} />
       </OwnModal>
-
       <div
         className="videoLoading"
         onClick={() => {
@@ -237,8 +228,7 @@ const Cartsidebar = ({
             />
           </>
         )}
-      </div>
-
+      </div> */}
       <div className="cartsidebar-body course-card-bar">
         {isLoading
           ? null
@@ -255,11 +245,12 @@ const Cartsidebar = ({
             <div className="cartsidebar-price">
               <AboutIcon />
               <span className="cartsidebar-enrolled-on">
-                You have been enrolled{' '}
+                <span className="cartsidebar-enrolled-on-text">
+                  You have been enrolled on:
+                </span>
                 {myCourse?.course?.isEnrolled?.enrolled_at ? (
                   <span className="cartsidebar-enrolled-on-date">
                     <span>
-                      on{'   '}
                       {dayjs(myCourse?.course?.isEnrolled?.enrolled_at).format(
                         'YYYY-MM-DD',
                       )}
@@ -347,7 +338,7 @@ const Cartsidebar = ({
                             </div>
                           </div>
                         )}
-                        <div className="cartsidebar-li-divider"></div>
+                        {/* <div className="cartsidebar-li-divider"></div> */}
                       </li>
                     );
                   }
@@ -446,7 +437,7 @@ const Cartsidebar = ({
             </Button>
           )}
 
-          <div className="cartsidebar-divider"></div>
+          {/* <div className="cartsidebar-divider"></div> */}
 
           <div className="d-flex justify-content-between cartsidebar-footer">
             <ShareGroup shareLabel={'Share'} />
@@ -525,7 +516,105 @@ const Cartsidebar = ({
       >
         <RequestBundle myCourse={myCourse} />
       </Modal>
-    </div>
+
+      {isLoading ? (
+        <div className="cart-btn-loadng">
+          <Skeleton.Button active shape="primary" block />
+          <Skeleton.Button active shape="default" block />
+        </div>
+      ) : myCourse?.course?.isEnrolled.is_enrolled ? (
+        <div className="fixed-button-cartsidebar">
+          <Button
+            className="go-to-course"
+            type="default"
+            disabled={isPreview}
+            onClick={() => {
+              dispatch(
+                loadedLecInfo({
+                  myCourse: myCourse,
+                }),
+              );
+              navigate(
+                `/course/${myCourse?.course?.slug}/${myCourse?.course?.id}/section/${courseContent?.sections[0]?.id}/preview/${courseContent?.sections?.[0]?.lectures?.[0]?.id}`,
+              );
+            }}
+          >
+            Go to Course
+          </Button>
+        </div>
+      ) : myCourse?.course?.price_plan !== 'free' ? (
+        <div className="fixed-button-cartsidebar">
+          <Button
+            // type="primary"
+            className="cart-button"
+            onClick={() => {
+              if (!isAuth) {
+                navigate('/sign-in');
+                return;
+              }
+              if (liveCourse) {
+                setOpenBundleModal(myCourse?.course?.id);
+                return;
+              }
+              if (myCourse?.course?.inCart) {
+                navigate('/cart');
+                return;
+              }
+              addToCard(myCourse?.course?.id);
+            }}
+            disabled={liveCourse || isPreview}
+            // disabled={(liveCourse && liveIsClosed) || isPreview}
+          >
+            {/* {console.log(liveCourse, 'liveCourseliveCourse')}
+                {console.log(
+                  liveIsClosed,
+                  'liveIsClosedliveIsClosedliveIsClosed',
+                )}
+                {console.log(isPreview, 'isPreviewisPreviewisPreview')} */}
+            {myCourse?.course?.inCart ? 'View Cart' : 'Add to cart'}{' '}
+          </Button>
+          {!myCourse?.course?.inCart && (
+            <Button
+              className="buy-now-in-cart"
+              disabled={liveCourse || isPreview}
+              // disabled={(liveCourse && liveIsClosed) || isPreview}
+              onClick={() => {
+                if (!isAuth) {
+                  navigate('/sign-in');
+                  return;
+                }
+                if (liveCourse) {
+                  setOpenBundleModal(myCourse?.course?.id);
+                  return;
+                }
+                if (myCourse?.course?.inCart) navigate('/cart');
+                else addToCard(myCourse?.course?.id, true);
+              }}
+            >
+              Buy Now
+            </Button>
+          )}
+        </div>
+      ) : (
+        <div className="fixed-button-cartsidebar">
+          <Button
+            disabled={liveCourse || isPreview}
+            // disabled={(liveCourse && liveIsClosed) || isPreview}
+            type="primary"
+            onClick={() => {
+              console.log({ isAuth });
+              if (!isAuth) {
+                navigate('/sign-in');
+                return;
+              }
+              enrollNow(myCourse?.course?.id);
+            }}
+          >
+            Enroll Now
+          </Button>
+        </div>
+      )}
+    </>
   );
 };
 

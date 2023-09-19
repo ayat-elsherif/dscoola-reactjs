@@ -20,6 +20,11 @@ function BtnShareCourse({ inline }) {
       background: transparent;
       box-shadow: none;
     }
+    @media screen and (max-width: 575px) {
+      min-width: 8.5rem;
+      height: 32px;
+      font-size: 1.7rem;
+    }
   `;
 
   const [isModalShareOpen, setIsModalShareOpen] = useState(false);

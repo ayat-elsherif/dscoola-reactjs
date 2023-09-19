@@ -33,7 +33,7 @@ function HomeBanner({ image, title, desc, learnMoreLink, invert }) {
           width: 593px;
           height: 261px;
         }
-        @media screen and (max-width: 545px) {
+        @media screen and (max-width: 575px) {
           width: 100%;
           height: 100%;
         }
@@ -46,14 +46,14 @@ function HomeBanner({ image, title, desc, learnMoreLink, invert }) {
         //   padding: 4rem;
         //   max-inline-size: 80ch;
         // }
-        @media screen and (max-width: 545px) {
+        @media screen and (max-width: 575px) {
           // padding: 2.5rem;
           padding: 3rem 2rem;
 
           max-inline-size: 74ch;
         }
         .learn-more-btn {
-          @media screen and (max-width: 545px) {
+          @media screen and (max-width: 575px) {
             height: 30px;
           }
         }
@@ -71,7 +71,7 @@ function HomeBanner({ image, title, desc, learnMoreLink, invert }) {
           letter-spacing: 0px;
           color: #f9f2f2;
           margin-bottom: 2rem;
-          @media screen and (max-width: 545px) {
+          @media screen and (max-width: 575px) {
             font-size: 1.2rem;
             line-height: 2rem;
           }
@@ -106,7 +106,7 @@ function HomeBanner({ image, title, desc, learnMoreLink, invert }) {
           //   padding: 2rem 2rem 5rem 1rem;
           //   max-inline-size: 67ch;
           // }
-          @media screen and (max-width: 545px) {
+          @media screen and (max-width: 575px) {
             padding: 3rem 2rem;
             max-inline-size: 67ch;
           }

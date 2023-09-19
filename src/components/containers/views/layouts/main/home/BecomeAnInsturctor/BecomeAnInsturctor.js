@@ -13,7 +13,7 @@ function BecomeAnInsturctor() {
     }
     .image {
       width: 22.2rem;
-      @media screen and (max-width: 545px) {
+      @media screen and (max-width: 575px) {
         width: 17.2rem !important;
       }
     }
@@ -32,7 +32,7 @@ function BecomeAnInsturctor() {
         font-size: 2.8rem;
         line-height: 2.7rem;
 
-        @media screen and (max-width: 545px) {
+        @media screen and (max-width: 575px) {
           display: none;
         }
       }

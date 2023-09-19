@@ -36,6 +36,7 @@ function OwnModal({
   title,
   centered,
   children,
+  extraClass,
   ...rest
 }) {
   const ModalStyles = css`
@@ -106,7 +107,9 @@ function OwnModal({
       closeIcon={closeIcon || <Closecon />}
       centered={centered}
       destroyOnClose
-      className={cx(ModalStyles, { warning: isWarning })}
+      className={`${cx(ModalStyles, { warning: isWarning })} ${
+        extraClass || ''
+      }`}
       {...rest}
     >
       <div className={className}>

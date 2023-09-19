@@ -38,7 +38,7 @@ const Courseheadersection = ({ myCourse, isLoading }) => {
 
   return (
     <section className="container">
-      <div className="course-container1">
+      <div className="course-header-description">
         <div className="course-headline">{myCourse?.course?.title}</div>
         <div className="course-Info">
           <Paragraph

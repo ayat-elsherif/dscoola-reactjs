@@ -224,7 +224,7 @@ function RequestAppointment({ myCourse, instructorId, handleClose }) {
           span: 8,
         }}
         wrapperCol={{
-          span: 16,
+          span: 24,
         }}
         initialValues={{
           remember: true,

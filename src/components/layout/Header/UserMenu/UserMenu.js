@@ -2,6 +2,8 @@ import { Avatar, Button, Col, Dropdown, Row } from 'antd';
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 // import { avatarImg } from 'constant/constant';
+import { css } from '@emotion/css';
+
 import './UserMenu.scss';
 import {
   CoursesIcon,
@@ -37,6 +39,20 @@ function UserMenu({ dashboard }) {
     navigate('/sign-in');
   };
 
+  const AvatarStyle = css`
+    width: 39px;
+    height: 39px;
+    img {
+      width: 36px;
+    }
+    @media screen and (max-width: 575px) {
+      width: 32px;
+      height: 32px;
+      img {
+        width: 32px;
+      }
+    }
+  `;
   const menuItem = (item) => (
     <div className="menu-item">
       {/* <div className="image-wrapper">
@@ -63,7 +79,11 @@ function UserMenu({ dashboard }) {
             />
           }
         /> */}
-        <Avatar size={39} src={currentUser?.photo_url}>
+        <Avatar
+          // size={{ lg: 39, sm: 39, xs: 32, xl: 39 }}
+          src={currentUser?.photo_url}
+          className={AvatarStyle}
+        >
           {Utils.getNameInitial(currentUser?.name)}
         </Avatar>
 
@@ -220,7 +240,11 @@ function UserMenu({ dashboard }) {
       >
         {dashboard ? (
           <div className="dashboard-menu-btn">
-            <Avatar size={39} src={currentUser?.photo_url}>
+            <Avatar
+              // size={{ lg: 39, sm: 39, xs: 32, xl: 39 }}
+              src={currentUser?.photo_url}
+              className={AvatarStyle}
+            >
               {Utils.getNameInitial(currentUser?.name)}
             </Avatar>
 
@@ -231,8 +255,8 @@ function UserMenu({ dashboard }) {
           </div>
         ) : (
           <Avatar
-            className="avatar-round-holder"
-            size={39}
+            className={`avatar-round-holder ${AvatarStyle}`}
+            // size={{ lg: 39, sm: 39, xs: 32, xl: 39 }}
             src={currentUser?.photo_url}
           >
             {Utils.getNameInitial(currentUser?.name)}
